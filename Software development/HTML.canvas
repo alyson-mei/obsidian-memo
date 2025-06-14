@@ -7,7 +7,7 @@
       "id": "f7f273ed96287c8f",
       "styleAttributes": {
       },
-      "text": "### Getting started\n\n`<`",
+      "text": "### Getting started\n\n```html\n<h1>I code, therefore, I am</h1>\n<h2>Rene Descartes</h2>\n```\n\n`<p></p>`\n`<img serc=\"mars.jpg\" width=\"100%\"> # scale`  ",
       "type": "text",
       "width": 498,
       "x": -220,

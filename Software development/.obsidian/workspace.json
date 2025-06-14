@@ -11,14 +11,17 @@
             "id": "7de34acf6d99d1fd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Jetpack Compose.md",
-                "mode": "source",
-                "source": false
+                "file": "HTML.canvas",
+                "viewState": {
+                  "x": -79.3328857421875,
+                  "y": -54.66668701171875,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "Jetpack Compose"
+              "icon": "lucide-layout-dashboard",
+              "title": "HTML"
             }
           }
         ]
@@ -165,19 +168,20 @@
   },
   "active": "7de34acf6d99d1fd",
   "lastOpenFiles": [
+    "Web.canvas",
+    "HTML.canvas",
+    "Jetpack Compose.md",
     "Networks.canvas",
     "Patterns.canvas",
     "Python.canvas",
     "Some android stuff.canvas",
     "States in Compose.md",
     "todo MVVM.md",
-    "Web.canvas",
     "Pomodoro Bot.canvas",
     "Internet basics.canvas",
     "Docker.canvas",
     "Daily Tracker Project.canvas",
     "Cybersecurity.canvas",
-    "Advanced python + some web + some db.canvas",
     "Android basics.md",
     "Pictures/eb2d6637.png",
     "Pictures/Pasted image 20240825112548.png",
@@ -191,7 +195,6 @@
     "Pictures/Pasted image 20250609113606.png",
     "My app.md",
     "Pictures/Pasted image 20250601192243.png",
-    "Jetpack Compose.md",
     "Coroutines.md",
     "App architecture.md",
     "Pictures/Pasted image 20250601193340.png",

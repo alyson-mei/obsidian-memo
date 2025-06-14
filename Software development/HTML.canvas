@@ -1,0 +1,17 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "height": 333,
+      "id": "f7f273ed96287c8f",
+      "styleAttributes": {
+      },
+      "text": "### Getting started\n\n`<`",
+      "type": "text",
+      "width": 498,
+      "x": -220,
+      "y": -140
+    }
+  ]
+}

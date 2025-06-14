@@ -3,13 +3,13 @@
   ],
   "nodes": [
     {
-      "height": 333,
+      "height": 507,
       "id": "f7f273ed96287c8f",
       "styleAttributes": {
       },
-      "text": "### Getting started\n\n```html\n<h1>I code, therefore, I am</h1>\n<h2>Rene Descartes</h2>\n```\n\n`<p></p>`\n`<img serc=\"mars.jpg\" width=\"100%\"> # scale`  ",
+      "text": "### Getting started\n\n```html\n<h1>I code, therefore, I am</h1>\n<h2>Rene Descartes</h2>\n```\n\n`<p></p>`\n`<img src=\"mars.jpg\" width=\"100%\"> # scale`  \n`<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0sfBghhyvJ0mC6ONbnM7wi1o_H484LZ9PA&s\" width=\"100%\"`\n\n```html\n<div>\n\t...\n</div>\n```\n\n`<button. </button>`",
       "type": "text",
-      "width": 498,
+      "width": 538,
       "x": -220,
       "y": -140
     }

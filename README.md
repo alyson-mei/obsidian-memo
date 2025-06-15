@@ -11,11 +11,11 @@ Model: Gemini 2.5 Flash Preview 05-20
 ![Time Progress](./time_progress.svg)
 
 ---
-Weather in Moscow (2025-06-15, 16:30)
+Weather in Moscow (2025-06-15, 16:45)
 
-- 🌡️ Temperature: 16.4° (feels like 16.4°)
+- 🌡️ Temperature: 16.3° (feels like 16.3°)
 - 💨 Wind: northern breeze
 - 💧 Humidity: 77%
-- ☁️ Condition: Partly cloudy
+- 🌦️ Condition: partly cloudy
 - 📉 Pressure: 1009 mb
 - 🌞 UV index: soft UV 1.1

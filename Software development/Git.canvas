@@ -23,6 +23,17 @@
       "width": 630,
       "x": -300,
       "y": -52
+    },
+    {
+      "height": 60,
+      "id": "b901e5963e450e18",
+      "styleAttributes": {
+      },
+      "text": "/home/alyson/PyProjects/obsidian_project/auto_git/auto_git.sh",
+      "type": "text",
+      "width": 260,
+      "x": -460,
+      "y": 400
     }
   ]
 }

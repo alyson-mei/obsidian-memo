@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Git.canvas",
+                "file": "Obsidian Memo project.canvas",
                 "viewState": {
-                  "x": -338,
-                  "y": 427,
+                  "x": -114.63785334972948,
+                  "y": -197.60549013630697,
                   "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Git"
+              "title": "Obsidian Memo project"
             }
           }
         ]
@@ -168,8 +168,10 @@
   },
   "active": "7de34acf6d99d1fd",
   "lastOpenFiles": [
-    "HTML.canvas",
     "Web.canvas",
+    "Obsidian Memo project.canvas",
+    "Git.canvas",
+    "HTML.canvas",
     "Jetpack Compose.md",
     "Networks.canvas",
     "Patterns.canvas",
@@ -180,8 +182,6 @@
     "Pomodoro Bot.canvas",
     "Internet basics.canvas",
     "Docker.canvas",
-    "Daily Tracker Project.canvas",
-    "Cybersecurity.canvas",
     "Android basics.md",
     "Pictures/eb2d6637.png",
     "Pictures/Pasted image 20240825112548.png",

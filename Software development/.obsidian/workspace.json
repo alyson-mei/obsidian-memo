@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "HTML.canvas",
+                "file": "HTML & CSS.canvas",
                 "viewState": {
-                  "x": 146.33441162109375,
-                  "y": 621.6335037231445,
+                  "x": 560.66796875,
+                  "y": 65.30047302246071,
                   "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "HTML"
+              "title": "HTML & CSS"
             }
           }
         ]
@@ -171,7 +171,7 @@
     "Obsidian Memo project.canvas",
     "Web.canvas",
     "Git.canvas",
-    "HTML.canvas",
+    "HTML & CSS.canvas",
     "Jetpack Compose.md",
     "Networks.canvas",
     "Patterns.canvas",

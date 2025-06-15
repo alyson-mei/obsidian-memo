@@ -9,7 +9,7 @@
       },
       "text": "### Getting started with HTML\n\n```html\n<h1>I code, therefore, I am</h1>\n<h2>Rene Descartes</h2>\n```\n\n`<p></p>`\n`<img src=\"mars.jpg\" width=\"100%\"> # scale`  \n`<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0sfBghhyvJ0mC6ONbnM7wi1o_H484LZ9PA&s\" width=\"100%\"`\n\n```html\n<div>\n\t...\n</div>\n```\n\n`<button. </button>`\n\n```html\n<input type = \"text\" placeholder=\"Enter username\">\n<input type = \"password\" placeholder=\"Enter username\">\n<input type = \"file\">\n```\n",
       "type": "text",
-      "width": 649,
+      "width": 705,
       "x": -220,
       "y": -140
     },
@@ -18,21 +18,32 @@
       "id": "97939c454474ab30",
       "styleAttributes": {
       },
-      "text": "### Anchor tags\n\n```html\n<a href=\"work.html\"> Check out my projects here.</a>\n<p> Check out the live demo \n\t<a href=\"https://www.google.com/\" target=\"_blank\">here</a>\n</p>\n\n</p>\n\tBack to the <a href=\"index.html\">index.html</a> page\n<p>\n```",
+      "text": "### Anchor tags\n\n```html\n<a href=\"work.html\"> Check out my projects here.</a>\n<p> Check out the live demo \n\t<a href=\"https://www.google.com/\" target=\"_blank\">here</a>\n</p>\n\n<p>\n\tBack to the <a href=\"index.html\">index.html</a> page\n</p>\n```",
       "type": "text",
-      "width": 649,
+      "width": 705,
       "x": -220,
       "y": 531
     },
     {
-      "height": 1002,
+      "height": 393,
+      "id": "264a50aea9482634",
+      "styleAttributes": {
+      },
+      "text": "### Structure\n\nIn a body tags you  see on the page\n \n\n```html\n<!doctype>\n\n<head>\n\t<link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n\n<body>\n\t<img src=\"google.png\">\n\t<input type=\"test\">\n\t<button>Google Search</button>\n\t<button>I'm feeling Lucky</button>\n\t<p>We protect your privacy. <a href=\"blog.html\",Learn how.</a></p>\n</body>\n```",
+      "type": "text",
+      "width": 705,
+      "x": -220,
+      "y": 917
+    },
+    {
+      "height": 1592,
       "id": "40ddf1d56650f42f",
       "styleAttributes": {
       },
-      "text": "### Intro to CSS\n\n```html\n<link rel=\"stylesheet\" href=\"styles.css\"/>\n```\n\n```css\nbody {\n\tbackground: whitesmoke; /* red, blue, yellow, etc */\n\tcolor: black; /* red, blue, yellow, etc */\n\tfont-size: 18px; /* 0px - 100px and beyond */\n\tfont-weight: bold; /* lighter, normal, bold */\n\ttext-align: center; /* left, center or right */\n\tmargin-top: 48px; /* From 0px and upwards */\n}\n```\n\n```css\ninput {\n\tdisplay: block;\n\twidth: 400px;\n}\n\nimg {\n\tdisplay: block;\n\twidth: 300px;\n}\n```\n\n**Inline vs.  block images**\n\n```css\nimg {\n\tdisplay: block;\n\twidth: 300px;\n}\n```\n\n**Div**\n\n```html\n<div>\n\t<img src=\"google.png\" />\n\t<input type=\"text\" />\n</d\n```",
+      "text": "### Intro to CSS\n\n```html\n<link rel=\"stylesheet\" href=\"styles.css\"/>\n```\n\n```css\nbody {\n\tbackground: whitesmoke; /* red, blue, yellow, etc */\n\tcolor: black; /* red, blue, yellow, etc */\n\tfont-size: 18px; /* 0px - 100px and beyond */\n\tfont-weight: bold; /* lighter, normal, bold */\n\ttext-align: center; /* left, center or right */\n\tmargin-top: 48px; /* From 0px and upwards */\n}\n```\n\n```css\ninput {\n\tdisplay: block;\n\twidth: 400px;\n}\n\nimg {\n\tdisplay: block;\n\twidth: 300px;\n}\n```\n\n**Inline vs.  block images**\n\n```css\nimg {\n\tdisplay: block;\n\twidth: 300px;\n}\n```\n\n**Div**\n\n```html\n<div>\n\t<img src=\"google.png\" />\n\t<input type=\"text\" />\n</div>\n```\n\n**Classes**\n\n```css\ndiv {\n\tmargin-top;; 100px;\n}\n```\n\n```html\n<div class='main\">\n\t<img src=\"google.png\" />\n\t<input type=\"text\" />\n\t\t<div>\n\t\t\t<button>Google Search</button>\n\t\t\t<button >I'm Feeling Lucky</button>\n\t</div>\n</div>\n```\n\n```css\n\n```",
       "type": "text",
       "width": 762,
-      "x": 479,
+      "x": 570,
       "y": -140
     }
   ]

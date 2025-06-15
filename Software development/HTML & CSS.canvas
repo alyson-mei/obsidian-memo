@@ -29,7 +29,7 @@
       "id": "40ddf1d56650f42f",
       "styleAttributes": {
       },
-      "text": "### Intro to CSS\n\n```html\n<link rel=\"stylesheet\" href=\"styles.css\"/>\n```\n\n```css\nbody {\n\tbackground: whitesmoke; /* red, blue, yellow, etc */\n\tcolor: black; /* red, blue, yellow, etc */\n\tfont-size: 18px; /* 0px - 100px and beyond */\n\tfont-weight: bold; /* lighter, normal, bold */\n\ttext-align: center; /* left, center or right */\n\tmargin-top: 48px; /* From 0px and upwards */\n}\n```\n\n```css\ninput {\n\tdisplay: block;\n\twidth: 400px;\n}\n\nimg {\n\tdisplay: block;\n\twidth: 300px;\n}\n```\n\n**Inline vs.  block images**",
+      "text": "### Intro to CSS\n\n```html\n<link rel=\"stylesheet\" href=\"styles.css\"/>\n```\n\n```css\nbody {\n\tbackground: whitesmoke; /* red, blue, yellow, etc */\n\tcolor: black; /* red, blue, yellow, etc */\n\tfont-size: 18px; /* 0px - 100px and beyond */\n\tfont-weight: bold; /* lighter, normal, bold */\n\ttext-align: center; /* left, center or right */\n\tmargin-top: 48px; /* From 0px and upwards */\n}\n```\n\n```css\ninput {\n\tdisplay: block;\n\twidth: 400px;\n}\n\nimg {\n\tdisplay: block;\n\twidth: 300px;\n}\n```\n\n**Inline vs.  block images**\n\n```css\nimg {\n\tdisplay: block;\n\twidth: 300px;\n}\n```\n\n**Div**\n\n```html\n<div>\n\t<img src=\"google.png\" />\n\t<input type=\"text\" />\n</d\n```",
       "type": "text",
       "width": 762,
       "x": 479,

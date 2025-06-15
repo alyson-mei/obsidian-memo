@@ -14,29 +14,18 @@
       "y": -140
     },
     {
-      "height": 331,
+      "height": 1385,
       "id": "97939c454474ab30",
       "styleAttributes": {
       },
-      "text": "### Anchor tags\n\n```html\n<a href=\"work.html\"> Check out my projects here.</a>\n<p> Check out the live demo \n\t<a href=\"https://www.google.com/\" target=\"_blank\">here</a>\n</p>\n\n<p>\n\tBack to the <a href=\"index.html\">index.html</a> page\n</p>\n```",
+      "text": "### Anchor tags\n\n```html\n<a href=\"work.html\"> Check out my projects here.</a>\n<p> Check out the live demo \n\t<a href=\"https://www.google.com/\" target=\"_blank\">here</a>\n</p>\n\n<p>\n\tBack to the <a href=\"index.html\">index.html</a> page\n</p>\n```\n\n### Structure\n\nIn a body tags you  see on the page\n Head - metadata\n\n```html\n<!doctype html>\n<html>\n\t<head>\n\t\t<link rel=\"stylesheet\" href=\"styles.css\">\n\t</head>\n\t\n\t<body>\n\t\t<img src=\"google.png\">\n\t\t<input type=\"test\">\n\t\t<button>Google Search</button>\n\t\t<button>I'm feeling Lucky</button>\n\t\t<p>We protect your privacy. <a href=\"blog.html\",Learn how.</a></p>\n\t</body>\n<html>\n```\n\n### Lists\n\n```html\n<!doctype html>\n<html>\n\t<head></head>\n\t<body>\n\t\t<h1>Beijing Olympics</h1>\n\t\t<ul>\n\t\t\t<li>Norway</li>\n\t\t\t<li>Germany</li>\n\t\t\t<li>China</li>\n\t\t\t<li>US</li>\n\t\t</ul>\n\t</body>\n</html>\n```\n\n### Description lists\n\n```html\n<dl>\n\t<dt>Beast of Bodmin</dt>\n\t<dd>A large feline inhabiting Bodmin Moor.</dd>\n\t<dt>Morgawr</dt>\n\t<dd>A sea serpent.</dd>\n\t<dt>Owlman</dt>\n\t<dd>A giant owl-like creature.</dd>\n</dl>\n```",
       "type": "text",
       "width": 705,
       "x": -220,
       "y": 531
     },
     {
-      "height": 393,
-      "id": "264a50aea9482634",
-      "styleAttributes": {
-      },
-      "text": "### Structure\n\nIn a body tags you  see on the page\n \n\n```html\n<!doctype>\n\n<head>\n\t<link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n\n<body>\n\t<img src=\"google.png\">\n\t<input type=\"test\">\n\t<button>Google Search</button>\n\t<button>I'm feeling Lucky</button>\n\t<p>We protect your privacy. <a href=\"blog.html\",Learn how.</a></p>\n</body>\n```",
-      "type": "text",
-      "width": 705,
-      "x": -220,
-      "y": 917
-    },
-    {
-      "height": 1592,
+      "height": 1671,
       "id": "40ddf1d56650f42f",
       "styleAttributes": {
       },

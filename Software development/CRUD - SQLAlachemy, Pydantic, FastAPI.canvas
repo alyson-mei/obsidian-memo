@@ -45,6 +45,17 @@
       "width": 617,
       "x": 250,
       "y": 528
+    },
+    {
+      "height": 171,
+      "id": "ebc4786e418f613d",
+      "styleAttributes": {
+      },
+      "text": "## Dependencies\n\n-  get_database() -> Generator[Session, None, None]",
+      "type": "text",
+      "width": 513,
+      "x": 943,
+      "y": -280
     }
   ]
 }

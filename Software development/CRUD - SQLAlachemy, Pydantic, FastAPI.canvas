@@ -3,15 +3,37 @@
   ],
   "nodes": [
     {
-      "height": 60,
+      "height": 766,
       "id": "5356fb619d482fc5",
       "styleAttributes": {
       },
-      "text": "",
+      "text": "### Project Structure \n\n```\n# app/ \n# ├── __init__.py \n# ├── main.py \n# ├── core/ \n# │ ├── __init__.py \n# │ ├── config.py \n# │ └── database.py \n# ├── models/ \n# │ ├── __init__.py \n# │ └── user.py \n# ├── schemas/ \n# │ ├── __init__.py \n# │ └── user.py \n# ├── crud/ \n# │ ├── __init__.py \n# │ └── user.py \n# ├── api/ \n# │ ├── __init__.py \n# │ ├── deps.py \n# │ └── v1/ \n# │ ├── __init__.py \n# │ ├── api.py \n# │ └── endpoints/ \n# │ ├── __init__.py \n# │ └── users.py # └── requirements.txt \n# requirements.txt\n```",
       "type": "text",
-      "width": 260,
+      "width": 536,
       "x": -340,
       "y": -280
+    },
+    {
+      "height": 342,
+      "id": "f2b10fec8d30b016",
+      "styleAttributes": {
+      },
+      "text": "### SQLAlchemy\n\n`# core/database.py`\n- engine \n- SessionLocal\n- Base\n- get_db() - for DI\n\n`# models/user.py`\n- class User(Base)",
+      "type": "text",
+      "width": 617,
+      "x": 250,
+      "y": -280
+    },
+    {
+      "height": 377,
+      "id": "95d6576e204be479",
+      "styleAttributes": {
+      },
+      "text": "### Pydantic\n\n`# schemas/user.py`\n\n- \\* Field(..., min_length=3, max_length=50) \n- class UserBase(BaseMode)\n- class UserCreate(UserBase)\n- class UserUpdate(BaseModel)\n- class UserInDB(UserBase) -> class Config\n- class User(UserInDB)",
+      "type": "text",
+      "width": 617,
+      "x": 250,
+      "y": 103
     }
   ]
 }

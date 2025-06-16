@@ -18,6 +18,6 @@ Weather in Moscow (2025-06-16, 11:00)
 - 🌡️ Temperature: 21.3° (feels like 21.3°)
 - 💨 Wind: north-northwesterly breeze
 - 💧 Humidity: 49%
-- 🌦️ Condition: Sunny 
+- ☀️ Condition: sunny and clear
 - 📉 Pressure: 1008 mb
 - 🌞 UV index: moderate UV 5.0

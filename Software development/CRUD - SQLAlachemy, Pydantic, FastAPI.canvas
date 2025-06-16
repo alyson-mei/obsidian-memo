@@ -34,6 +34,17 @@
       "width": 617,
       "x": 250,
       "y": 103
+    },
+    {
+      "height": 335,
+      "id": "b6a904b6d5da279a",
+      "styleAttributes": {
+      },
+      "text": "## Repository\n\n- class UserCRUD\n\t- get\n\t- get_by_email\n\t- get_by_username\n\t- get_multi\n\t- search\n\t- create\n\t- update\n\t- delete",
+      "type": "text",
+      "width": 617,
+      "x": 250,
+      "y": 528
     }
   ]
 }

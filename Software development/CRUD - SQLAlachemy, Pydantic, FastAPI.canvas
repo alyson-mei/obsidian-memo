@@ -2,9 +2,9 @@
   "edges": [
     {
       "fromNode": "cf5054a002645530",
-      "fromSide": "top",
+      "fromSide": "left",
       "id": "d0c4a32f29523bbc",
-      "label": "DATABASE_URL",
+      "label": "settings",
       "styleAttributes": {
       },
       "toNode": "21305af253b1195c",
@@ -12,7 +12,7 @@
     },
     {
       "fromNode": "769b9c0eb99ecfea",
-      "fromSide": "top",
+      "fromSide": "left",
       "id": "a5561dffa2ef3ed5",
       "label": "Base",
       "styleAttributes": {
@@ -22,17 +22,17 @@
     },
     {
       "fromNode": "9182ab0feb6c892c",
-      "fromSide": "top",
+      "fromSide": "left",
       "id": "1074487c10b94613",
       "label": "User",
       "styleAttributes": {
       },
       "toNode": "769b9c0eb99ecfea",
-      "toSide": "bottom"
+      "toSide": "right"
     },
     {
       "fromNode": "9182ab0feb6c892c",
-      "fromSide": "top",
+      "fromSide": "left",
       "id": "2e3674ec94918b1e",
       "label": "UserCreate, UserUpdate",
       "styleAttributes": {
@@ -48,11 +48,11 @@
       "styleAttributes": {
       },
       "toNode": "cf5054a002645530",
-      "toSide": "right"
+      "toSide": "top"
     },
     {
       "fromNode": "ef35af37ba946d79",
-      "fromSide": "top",
+      "fromSide": "left",
       "id": "13ab60f025601f0d",
       "label": "users",
       "styleAttributes": {
@@ -62,22 +62,63 @@
     },
     {
       "fromNode": "6cd867fe514ba735",
-      "fromSide": "top",
+      "fromSide": "left",
       "id": "55bbab8136541160",
       "label": "user_crud",
       "styleAttributes": {
       },
       "toNode": "9182ab0feb6c892c",
-      "toSide": "bottom"
+      "toSide": "right"
     },
     {
       "fromNode": "6cd867fe514ba735",
-      "fromSide": "top",
+      "fromSide": "left",
       "id": "9f5839385b725a19",
       "label": "User, UserCreate, UserUpdate",
       "styleAttributes": {
       },
       "toNode": "9c937c19760fcd67",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "6cd867fe514ba735",
+      "fromSide": "top",
+      "id": "2e6f96214503f2e7",
+      "label": "get_database",
+      "styleAttributes": {
+      },
+      "toNode": "d18d340f23787f9d",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "7650c79612a5e05c",
+      "fromSide": "left",
+      "id": "352d3436619f141f",
+      "label": "settings",
+      "styleAttributes": {
+      },
+      "toNode": "21305af253b1195c",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "7650c79612a5e05c",
+      "fromSide": "left",
+      "id": "a3da6772b193a18f",
+      "label": "api_router",
+      "styleAttributes": {
+      },
+      "toNode": "ef35af37ba946d79",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "7650c79612a5e05c",
+      "fromSide": "left",
+      "id": "84f4ddd76413903e",
+      "label": "Base",
+      "styleAttributes": {
+        "pathfindingMethod": null
+      },
+      "toNode": "cf5054a002645530",
       "toSide": "right"
     }
   ],
@@ -138,70 +179,15 @@
       "y": -280
     },
     {
-      "height": 132,
-      "id": "21305af253b1195c",
+      "height": 562,
+      "id": "7650c79612a5e05c",
       "styleAttributes": {
       },
-      "text": "### app/core/config.py\n\nsettings = Settings()",
+      "text": "### app/main.py\n\n```python\nBase.metadata.create_all(bind=engine)\n\napp = FastAPI(\n\ttitle=settings.PROJECT_NAME,\n\tversion=settings.VERSION,\n\topenapi_url=f\"{settings.API_V1_STR}/openapi.json\"\n)\n\napp.add_middleware(\n\tCORSMiddleware,\n\tallow_origins=settings.BACKEND_CORS_ORIGINS,\n\tallow_credentials=True,\n\tallow_methods=[\"*\"],\n\tallow_headers=[\"*\"]\n)\n\napp.include_router(api_router, prefix=settings.API_V1_STR)\n\n@app.get(\"/\")\n@app.get(\"/health\")\n```",
       "type": "text",
-      "width": 358,
-      "x": -560,
-      "y": 1100
-    },
-    {
-      "height": 421,
-      "id": "cf5054a002645530",
-      "styleAttributes": {
-      },
-      "text": "### app/core/database.py\n\n\nengine = create_engine(settings.DATABASE_URL, ...)\n↓\nSessionLocal = sessionmaker(bind=engine, ...)\n↓\n(database object generator)\n```python\ndef get_db():\n\tdb = SessionLocal()\t\n\ttry:\n\t\tyield db\n\tfinally:\n\t\tdb.close()\n```\n\n\\+ Base",
-      "type": "text",
-      "width": 477,
-      "x": -507,
-      "y": 1625
-    },
-    {
-      "height": 212,
-      "id": "769b9c0eb99ecfea",
-      "styleAttributes": {
-      },
-      "text": "### app/models/user.py\n\nclass User(Base)",
-      "type": "text",
-      "width": 376,
-      "x": -930,
-      "y": 2221
-    },
-    {
-      "height": 262,
-      "id": "d18d340f23787f9d",
-      "styleAttributes": {
-      },
-      "text": "### app/api/deps.py\n\n(proxy generator)\n```python\ndef get_database() -> Generator[Session, None, None]:\n\tyield from get_db()\n```",
-      "type": "text",
-      "width": 387,
-      "x": 450,
-      "y": 1839
-    },
-    {
-      "height": 146,
-      "id": "9182ab0feb6c892c",
-      "styleAttributes": {
-      },
-      "text": "### app/crud/user.py\n\nuser_crud = UserCRUD()",
-      "type": "text",
-      "width": 451,
-      "x": -640,
-      "y": 2876
-    },
-    {
-      "height": 271,
-      "id": "9c937c19760fcd67",
-      "styleAttributes": {
-      },
-      "text": "### app/schemas/user.py\n\n- class UserBase(BaseMode)\n- class UserCreate(UserBase)\n- class UserUpdate(BaseModel)\n- class UserInDB(UserBase) -> class Config\n- class User(UserInDB)",
-      "type": "text",
-      "width": 355,
-      "x": 95,
-      "y": 2433
+      "width": 586,
+      "x": 878,
+      "y": 2608
     },
     {
       "height": 182,
@@ -211,19 +197,85 @@
       "text": "\n### app/api/v1/api.py\n\napi_router = APIRouter()\napi_router.include_router(users.router, prefix=\"/users\", tags=[\"users\"])",
       "type": "text",
       "width": 621,
-      "x": 450,
-      "y": 3522
+      "x": 257,
+      "y": 3464
     },
     {
-      "height": 141,
+      "height": 421,
+      "id": "cf5054a002645530",
+      "styleAttributes": {
+      },
+      "text": "### app/core/database.py\n\n\nengine = create_engine(settings.DATABASE_URL, ...)\n↓\nSessionLocal = sessionmaker(bind=engine, ...)\n↓\n(database object generator)\n```python\ndef get_db():\n\tdb = SessionLocal()\t\n\ttry:\n\t\tyield db\n\tfinally:\n\t\tdb.close()\n```\n\n\\+ Base",
+      "type": "text",
+      "width": 477,
+      "x": -1968,
+      "y": 2733
+    },
+    {
+      "height": 262,
+      "id": "d18d340f23787f9d",
+      "styleAttributes": {
+      },
+      "text": "### app/api/deps.py\n\n(proxy generator)\n```python\ndef get_database() -> Generator[Session, None, None]:\n\tyield from get_db()\n```",
+      "type": "text",
+      "width": 387,
+      "x": -1312,
+      "y": 2556
+    },
+    {
+      "height": 146,
+      "id": "9182ab0feb6c892c",
+      "styleAttributes": {
+      },
+      "text": "### app/crud/user.py\n\nuser_crud = UserCRUD()",
+      "type": "text",
+      "width": 451,
+      "x": -772,
+      "y": 3889
+    },
+    {
+      "height": 318,
       "id": "6cd867fe514ba735",
       "styleAttributes": {
       },
-      "text": "### app/api/v1/endpoints/users.py",
+      "text": "### app/api/v1/endpoints/users.py\n\nrouter = APIRouter()\n\n@router.get(\"/\", response_model=List[User])\n@router.post(\"/\", response_model=User, status_code=201)\n@router.get(\"/{user_id}\", response_model=User)\n@router.put(\"/{user_id}\", response_model=User)\n@router.delete(\"/{user_id}\", status_code=204)\n@router.get(\"/stats/count\")",
       "type": "text",
       "width": 444,
-      "x": 539,
-      "y": 3184
+      "x": -321,
+      "y": 3170
+    },
+    {
+      "height": 271,
+      "id": "9c937c19760fcd67",
+      "styleAttributes": {
+      },
+      "text": "### app/schemas/user.py\n\n- class UserBase(BaseMode)\n- class UserCreate(UserBase)\n- class UserUpdate(BaseModel)\n- class UserInDB(UserBase) -> class Config\n- class User(UserInDB)",
+      "type": "text",
+      "width": 355,
+      "x": -2326,
+      "y": 3420
+    },
+    {
+      "height": 132,
+      "id": "21305af253b1195c",
+      "styleAttributes": {
+      },
+      "text": "### app/core/config.py\n\nsettings = Settings()",
+      "type": "text",
+      "width": 358,
+      "x": -2329,
+      "y": 2161
+    },
+    {
+      "height": 212,
+      "id": "769b9c0eb99ecfea",
+      "styleAttributes": {
+      },
+      "text": "### app/models/user.py\n\nclass User(Base)",
+      "type": "text",
+      "width": 376,
+      "x": -1301,
+      "y": 3048
     }
   ]
 }

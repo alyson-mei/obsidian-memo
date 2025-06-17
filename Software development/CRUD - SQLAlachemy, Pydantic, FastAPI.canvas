@@ -1,14 +1,44 @@
 {
   "edges": [
     {
-      "fromNode": "21305af253b1195c",
-      "fromSide": "bottom",
+      "fromNode": "cf5054a002645530",
+      "fromSide": "top",
       "id": "d0c4a32f29523bbc",
-      "label": "URL",
+      "label": "DATABASE_URL",
+      "styleAttributes": {
+      },
+      "toNode": "21305af253b1195c",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "769b9c0eb99ecfea",
+      "fromSide": "top",
+      "id": "a5561dffa2ef3ed5",
+      "label": "Base",
       "styleAttributes": {
       },
       "toNode": "cf5054a002645530",
-      "toSide": "top"
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "9182ab0feb6c892c",
+      "fromSide": "top",
+      "id": "1074487c10b94613",
+      "label": "User",
+      "styleAttributes": {
+      },
+      "toNode": "769b9c0eb99ecfea",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "9182ab0feb6c892c",
+      "fromSide": "top",
+      "id": "2e3674ec94918b1e",
+      "label": "UserCreate, UserUpdate",
+      "styleAttributes": {
+      },
+      "toNode": "9c937c19760fcd67",
+      "toSide": "bottom"
     }
   ],
   "nodes": [
@@ -61,7 +91,7 @@
       "id": "5356fb619d482fc5",
       "styleAttributes": {
       },
-      "text": "### Project Structure \n```\n# Project Structure: \n# app/ \n# ├── __init__.py \n# ├── main.py \n# ├── core/ \n# │ ├── __init__.py \n# │ ├── config.py \n# │ └── database.py \n# ├── models/ \n# │ ├── __init__.py \n# │ └── user.py \n# ├── schemas/ \n# │ ├── __init__.py \n# │ └── user.py \n# ├── crud/ # │ ├── __init__.py \n# │ └── user.py \n#├── api/ \n# │ ├── __init__.py \n# │ ├── deps.py \n# │ └── v1/ \n# │ ├── __init__.py \n# │ ├── api.py \n# │ └── endpoints/ \n# │ ├── __init__.py \n# │ └── users.py \n# └── requirements.txt\n```",
+      "text": "### Project Structure \n```\n# Project Structure: \n# app/ \n# ├── __init__.py \n# ├── main.py \n# ├── core/ \n# │ ├── __init__.py \n# │ ├── config.py \n# │ └── database.py \n# ├── models/ \n# │ ├── __init__.py \n# │ └── user.py \n# ├── schemas/ \n# │ ├── __init__.py \n# │ └── user.py \n# ├── crud/ \n# │ ├── __init__.py \n# │ └── user.py \n# ├── api/ \n# │ ├── __init__.py \n# │ ├── deps.py \n# │ └── v1/ \n# │ ├── __init__.py \n# │ ├── api.py \n# │ └── endpoints/ \n# │ ├── __init__.py \n# │ └── users.py \n# └── requirements.txt\n```",
       "type": "text",
       "width": 642,
       "x": -480,
@@ -72,22 +102,55 @@
       "id": "21305af253b1195c",
       "styleAttributes": {
       },
-      "text": "### app/core/config.py\n\nНастройки  ",
+      "text": "### app/core/config.py\n\nsettings = Settings()",
       "type": "text",
       "width": 358,
       "x": -560,
       "y": 1100
     },
     {
-      "height": 295,
+      "height": 421,
       "id": "cf5054a002645530",
       "styleAttributes": {
       },
-      "text": "### app/core/database.py\n\n\n↓",
+      "text": "### app/core/database.py\n\n\nengine = create_engine(settings.DATABASE_URL, ...)\n↓\nSessionLocal = sessionmaker(bind=engine, ...)\n↓\n(database object generator)\n```python\ndef get_db():\n\tdb = SessionLocal()\t\n\ttry:\n\t\tyield db\n\tfinally:\n\t\tdb.close()\n```\n\n\\+ Base",
+      "type": "text",
+      "width": 477,
+      "x": -986,
+      "y": 1358
+    },
+    {
+      "height": 212,
+      "id": "769b9c0eb99ecfea",
+      "styleAttributes": {
+      },
+      "text": "### app/models/user.py\n\nclass User(Base)",
       "type": "text",
       "width": 376,
-      "x": -936,
-      "y": 1408
+      "x": -935,
+      "y": 1911
+    },
+    {
+      "height": 271,
+      "id": "9c937c19760fcd67",
+      "styleAttributes": {
+      },
+      "text": "### app/schemas/user.py\n\n- class UserBase(BaseMode)\n- class UserCreate(UserBase)\n- class UserUpdate(BaseModel)\n- class UserInDB(UserBase) -> class Config\n- class User(UserInDB)",
+      "type": "text",
+      "width": 355,
+      "x": -269,
+      "y": 1911
+    },
+    {
+      "height": 146,
+      "id": "9182ab0feb6c892c",
+      "styleAttributes": {
+      },
+      "text": "### app/crud/user.py\n\nuser_crud = UserCRUD()",
+      "type": "text",
+      "width": 451,
+      "x": -720,
+      "y": 2400
     }
   ]
 }

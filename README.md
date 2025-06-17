@@ -13,11 +13,11 @@ LLM: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generat
 
 ---
 ## weather outside
-Weather in Moscow (2025-06-17, 21:15)
+Weather in Moscow (2025-06-17, 22:30)
 
 - 🌡️ Temperature: 17.0° (feels like 17.0°)
-- 💨 Wind: WNW light breeze
-- 💧 Humidity: 88%
-- 🌧️ Condition: light rain
+- 💨 Wind: west-northwestern light breeze
+- 💧 Humidity: 83%
+- 🌧️ Condition: light rain shower
 - 📉 Pressure: 1006 mb
-- 🌞 UV index: zero UV 0.0
+- 🌞 UV index: no UV 0.0

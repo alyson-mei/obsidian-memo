@@ -12,6 +12,15 @@
       "y": 900
     },
     {
+      "height": 909,
+      "id": "a89240b77a8ebd55",
+      "label": "Behavioral",
+      "type": "group",
+      "width": 1261,
+      "x": 860,
+      "y": 2060
+    },
+    {
       "height": 897,
       "id": "fae07acbd22a56d0",
       "label": "Structural",
@@ -135,11 +144,44 @@
       "id": "21790388011515aa",
       "styleAttributes": {
       },
-      "text": "### Iterator\n\n```typescript\nfunction range(start: number, end: number, step=1) {\n\treturn {\n\t\tnext() {\n\t\t\tif (start < end) {\n\t\t\t\tstart = start + step;\n\t\t\t\treturn { value: start, done: false }\n\t\t\t}\n\t\t\treturn { done: true, value: end };\n\t\t}\n\t}\n}\n```",
+      "text": "### Iterator\n\n```typescript\nfunction range(start: number, end: number, step=1) {\n\treturn {\n\t\t[Symbol.iterator]() {\n\t\t\treturn this;\n\t\t},\n\t\tnext() {\n\t\t\tif (start < end) {\n\t\t\t\tstart = start + step;\n\t\t\t\treturn { value: start, done: false }\n\t\t\t}\n\t\t\treturn { done: true, value: end };\n\t\t}\n\t}\n}\n```",
       "type": "text",
       "width": 613,
       "x": 879,
       "y": 2081
+    },
+    {
+      "height": 429,
+      "id": "52b4bc8258edb2da",
+      "styleAttributes": {
+      },
+      "text": "### Observer\nAllows many objects to subscribe to events that are broadcast by another object \n\n\n",
+      "type": "text",
+      "width": 543,
+      "x": 1557,
+      "y": 2081
+    },
+    {
+      "height": 394,
+      "id": "12fec4ee12c55932",
+      "styleAttributes": {
+      },
+      "text": "### Mediator\n\nMiddleman / broker. Many to many is dangerous\nMiddleware",
+      "type": "text",
+      "width": 613,
+      "x": 879,
+      "y": 2556
+    },
+    {
+      "height": 382,
+      "id": "e610f294485be240",
+      "styleAttributes": {
+      },
+      "text": "### State\n\nStart with one base class then provide it with different functionality",
+      "type": "text",
+      "width": 543,
+      "x": 1557,
+      "y": 2556
     }
   ]
 }

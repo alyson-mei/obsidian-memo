@@ -15,9 +15,9 @@
               "state": {
                 "file": "Patterns.canvas",
                 "viewState": {
-                  "x": 455,
-                  "y": 274,
-                  "zoom": -0.8250945069425665
+                  "x": 1030.097817229482,
+                  "y": 1138.9335660064125,
+                  "zoom": -0.42509450694256645
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "44ef85c9389af807",

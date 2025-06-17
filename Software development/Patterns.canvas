@@ -45,6 +45,39 @@
       "width": 524,
       "x": -313,
       "y": 312
+    },
+    {
+      "height": 476,
+      "id": "5d8d62feb824732f",
+      "styleAttributes": {
+      },
+      "text": "### Singleton\n\nOnly be instantiated once\n\n```typescript\nclass Settings {\n\n\tstatic instance: Settings;\t\n\tpublic readonly mode = 'dark';\n\n\tprivate constructor() {\n\t\n\t}\n\n\tstatic getInstance(): Settings {\n\t\tif (!Settings.instance) {\n\t\t\tSettings.instance = new Settings();\n\t\t}\n\t}\n}\n```",
+      "type": "text",
+      "width": 618,
+      "x": -313,
+      "y": 922
+    },
+    {
+      "height": 476,
+      "id": "72fc6ca2710dd6f7",
+      "styleAttributes": {
+      },
+      "text": "### Prototype\nAlternative way to implement inheritance\n\n```typescript\nconst zombie {\n\teatBrains() {\n\t\treturn 'yum brain';\n\t}\n}\n\nconst chad = Object.create(zombie, {name: {value: 'chad'} });\n\nchad.eatBrains();\n\nchad.__proto__;\nObject.getPrototypeOf(chad);\n```",
+      "type": "text",
+      "width": 609,
+      "x": 347,
+      "y": 922
+    },
+    {
+      "height": 476,
+      "id": "2d0ab6c2e6a4928f",
+      "styleAttributes": {
+      },
+      "text": "",
+      "type": "text",
+      "width": 650,
+      "x": 1009,
+      "y": 922
     }
   ]
 }

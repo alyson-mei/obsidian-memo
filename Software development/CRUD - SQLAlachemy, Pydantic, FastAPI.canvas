@@ -11,11 +11,13 @@
       "toSide": "bottom"
     },
     {
+      "fromEnd": "arrow",
       "fromNode": "769b9c0eb99ecfea",
       "fromSide": "left",
       "id": "a5561dffa2ef3ed5",
       "label": "Base",
       "styleAttributes": {
+        "path": "dotted"
       },
       "toNode": "cf5054a002645530",
       "toSide": "bottom"
@@ -48,7 +50,7 @@
       "styleAttributes": {
       },
       "toNode": "cf5054a002645530",
-      "toSide": "top"
+      "toSide": "right"
     },
     {
       "fromNode": "ef35af37ba946d79",

@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "CRUD - SQLAlachemy, Pydantic, FastAPI.canvas",
+                "file": "Patterns.canvas",
                 "viewState": {
-                  "x": -34.20040151680837,
-                  "y": 96.01235103286729,
-                  "zoom": -0.4
+                  "x": 455,
+                  "y": 274,
+                  "zoom": -0.8250945069425665
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "CRUD - SQLAlachemy, Pydantic, FastAPI"
+              "title": "Patterns"
             }
           }
         ]
@@ -168,8 +168,8 @@
   },
   "active": "7de34acf6d99d1fd",
   "lastOpenFiles": [
-    "HTML & CSS.canvas",
     "CRUD - SQLAlachemy, Pydantic, FastAPI.canvas",
+    "HTML & CSS.canvas",
     "Obsidian Memo project.canvas",
     "Web.canvas",
     "Git.canvas",

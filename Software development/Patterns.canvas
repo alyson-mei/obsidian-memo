@@ -3,6 +3,15 @@
   ],
   "nodes": [
     {
+      "height": 1092,
+      "id": "2bf118146755582e",
+      "label": "Creational",
+      "type": "group",
+      "width": 2012,
+      "x": -340,
+      "y": 900
+    },
+    {
       "height": 555,
       "id": "a9180a6960385195",
       "styleAttributes": {
@@ -47,7 +56,7 @@
       "y": 312
     },
     {
-      "height": 476,
+      "height": 498,
       "id": "5d8d62feb824732f",
       "styleAttributes": {
       },
@@ -58,7 +67,7 @@
       "y": 922
     },
     {
-      "height": 476,
+      "height": 498,
       "id": "72fc6ca2710dd6f7",
       "styleAttributes": {
       },
@@ -69,15 +78,37 @@
       "y": 922
     },
     {
-      "height": 476,
+      "height": 908,
       "id": "2d0ab6c2e6a4928f",
       "styleAttributes": {
       },
-      "text": "",
+      "text": "### Builder\n\nStandard way: everything in a constructor\nAlternative way: step by step\n\n```typescript\nclass HotDog {\n\tconstructor(\n\t\tpublic bread: string,\n\t\tpublic ketchup?: boolean,\n\t\tpublic mustard?: boolean,\n\t\tpublic kraut?: boolean\n\t) {}\n}\n```\nvs. \n\n```typescript\nclass HotDog {\n\tconstructor(\n\t) {}\n\n\taddKetchup() {\n\t\tthis.ketchup = true;\n\t}\n\taddMustard() {\n\t\tthis.mustard = true;\n\t}\n\taddKraut() {\n\t\tthis.kraut = true;\n\t}\n}\n\nconst myLunch = new HotDog('gluten free')\n\nmyLunch\n\t.addKetchup()\n\t.addMustard()\n\t.addKraut();\n```",
       "type": "text",
       "width": 650,
       "x": 1009,
       "y": 922
+    },
+    {
+      "height": 472,
+      "id": "5e92d1d640a252bb",
+      "styleAttributes": {
+      },
+      "text": "### Factory\n\n```typescript\n\nclass ButtonFactory {\n\tcreateButton(os: string): IOSButton | AndroidButton {\n\t\tif (os === 'ios') {\n\t\t\treturn new IOSButton();\n\t\t} else {\n\t\t\treturn new AndroidButton();\n\t\t}\n\t}\n}\n\nconst factory = new ButtonFactory();\nconst btn1 = factory.createButton(os);\nconst btn2 = factory.createButton(os);\n```",
+      "type": "text",
+      "width": 618,
+      "x": 38,
+      "y": 1466
+    },
+    {
+      "height": 612,
+      "id": "5a1d7d860a1c3bbb",
+      "styleAttributes": {
+      },
+      "text": "### Facade\n\nSimplified API to hide other low level ",
+      "type": "text",
+      "width": 476,
+      "x": -313,
+      "y": 2154
     }
   ]
 }

@@ -12,6 +12,15 @@
       "y": 900
     },
     {
+      "height": 897,
+      "id": "fae07acbd22a56d0",
+      "label": "Structural",
+      "type": "group",
+      "width": 1163,
+      "x": -340,
+      "y": 2053
+    },
+    {
       "height": 555,
       "id": "a9180a6960385195",
       "styleAttributes": {
@@ -100,15 +109,37 @@
       "y": 1466
     },
     {
-      "height": 612,
+      "height": 857,
       "id": "5a1d7d860a1c3bbb",
       "styleAttributes": {
       },
-      "text": "### Facade\n\nSimplified API to hide other low level ",
+      "text": "### Facade\n\nSimplified API to hide other low level \n\n```typescript \nclass PlumbingSystem {\n\tsetPressure(v: number) {}\n\tturnOn() {}\n\tturnOff()\n}\n\nclass ElectricalSystem {\n\tsetVoltage(v: number) {}\n\tturnOn() {}\n\tturnOff()\n}\n\nclass House {\n\n\tprivate plumbing = new PlumbingSystem();\n\tprivate electrical = new ElectricalSystem();\n\n\tpublic turnOnSystems() {\n\t\tthis.electrical.setVoltage(120);\n\t\tthis.electrical.turnOn();\n\t\tthis.plumbing.setPressure(500);\n\t\tthis.plumbing.turnOn();\n\t}\n\n\tpublic ShutDown() {\n\t\tthis.plumbing.turnOff();\n\t\tthis.electrical.turnOff();\n\t}\n}\n\nconst client = new House();\nclient.turnOnSystems();\n```",
       "type": "text",
-      "width": 476,
+      "width": 516,
       "x": -313,
-      "y": 2154
+      "y": 2081
+    },
+    {
+      "height": 857,
+      "id": "ac22c37c16101e2e",
+      "styleAttributes": {
+      },
+      "text": "### Proxy\nSubstitute\n\n```typescript\nconst original = { name: 'jeff' };\n\nconst reactive = new Proxy(original, {\n\tget(target, key) {\n\t\tconsole.log('Tracking: ', key);\n\t\treturn target[key];\n\t},\n\tset(target, key, value) {\n\t\tconsole.log('updating UI...');\n\t\treturn Reflect.set(target, key, value);\n\t},\n})\n```",
+      "type": "text",
+      "width": 555,
+      "x": 255,
+      "y": 2081
+    },
+    {
+      "height": 429,
+      "id": "21790388011515aa",
+      "styleAttributes": {
+      },
+      "text": "### Iterator\n\n```typescript\nfunction range(start: number, end: number, step=1) {\n\treturn {\n\t\tnext() {\n\t\t\tif (start < end) {\n\t\t\t\tstart = start + step;\n\t\t\t\treturn { value: start, done: false }\n\t\t\t}\n\t\t\treturn { done: true, value: end };\n\t\t}\n\t}\n}\n```",
+      "type": "text",
+      "width": 613,
+      "x": 879,
+      "y": 2081
     }
   ]
 }

@@ -1,5 +1,15 @@
 {
   "edges": [
+    {
+      "fromNode": "21305af253b1195c",
+      "fromSide": "bottom",
+      "id": "d0c4a32f29523bbc",
+      "label": "URL",
+      "styleAttributes": {
+      },
+      "toNode": "cf5054a002645530",
+      "toSide": "top"
+    }
   ],
   "nodes": [
     {
@@ -56,6 +66,28 @@
       "width": 642,
       "x": -480,
       "y": -280
+    },
+    {
+      "height": 132,
+      "id": "21305af253b1195c",
+      "styleAttributes": {
+      },
+      "text": "### app/core/config.py\n\nНастройки  ",
+      "type": "text",
+      "width": 358,
+      "x": -560,
+      "y": 1100
+    },
+    {
+      "height": 295,
+      "id": "cf5054a002645530",
+      "styleAttributes": {
+      },
+      "text": "### app/core/database.py\n\n\n↓",
+      "type": "text",
+      "width": 376,
+      "x": -936,
+      "y": 1408
     }
   ]
 }

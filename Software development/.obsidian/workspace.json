@@ -23,8 +23,23 @@
               "icon": "lucide-layout-dashboard",
               "title": "CRUD - SQLAlachemy, Pydantic, FastAPI"
             }
+          },
+          {
+            "id": "68725fb01af99f68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cosmic app.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cosmic app"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "44ef85c9389af807",
@@ -167,10 +181,11 @@
       "templates:Insert template": false
     }
   },
-  "active": "7de34acf6d99d1fd",
+  "active": "68725fb01af99f68",
   "lastOpenFiles": [
-    "Patterns.canvas",
     "CRUD - SQLAlachemy, Pydantic, FastAPI.canvas",
+    "Cosmic app.md",
+    "Patterns.canvas",
     "HTML & CSS.canvas",
     "Obsidian Memo project.canvas",
     "Web.canvas",
@@ -182,7 +197,6 @@
     "States in Compose.md",
     "todo MVVM.md",
     "Pomodoro Bot.canvas",
-    "Internet basics.canvas",
     "Android basics.md",
     "Pictures/eb2d6637.png",
     "Pictures/Pasted image 20240825112548.png",
@@ -199,7 +213,6 @@
     "Coroutines.md",
     "App architecture.md",
     "Pictures/Pasted image 20250601193340.png",
-    "Untitled.md",
     "Welcome.md"
   ]
 }

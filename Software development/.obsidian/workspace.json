@@ -32,8 +32,8 @@
               "state": {
                 "file": "Langchain Interrupt 2025.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": 12.800152587890608,
+                  "x": 1284.2183690203826,
+                  "y": 175.14626498876976,
                   "zoom": 0
                 }
               },
@@ -186,6 +186,9 @@
   },
   "active": "68725fb01af99f68",
   "lastOpenFiles": [
+    "Pasted image 20250619154429.png",
+    "Pasted image 20250619154216.png",
+    "Pasted image 20250619154206.png",
     "Cosmic app.md",
     "Langchain Interrupt 2025.canvas",
     "CRUD - SQLAlachemy, Pydantic, FastAPI.canvas",
@@ -212,10 +215,8 @@
     "Pictures/Pasted image 20250609122246.png",
     "Pictures/Pasted image 20250609113606.png",
     "My app.md",
-    "Pictures/Pasted image 20250601192243.png",
     "Coroutines.md",
     "App architecture.md",
-    "Pictures/Pasted image 20250601193340.png",
     "Welcome.md"
   ]
 }

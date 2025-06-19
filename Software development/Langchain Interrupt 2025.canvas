@@ -25,14 +25,14 @@
       "y": -113
     },
     {
-      "height": 859,
+      "height": 952,
       "id": "6d628773258ec59c",
       "styleAttributes": {
       },
-      "text": "",
+      "text": "### How JP Morgan Built An AI Agent for Investment Research with LangGraph | LangChain Interrupt\n![[Pasted image 20250619154732.png]]\n\n![[Pasted image 20250619155010.png]]\n![[Pasted image 20250619155950.png]]",
       "type": "text",
       "width": 568,
-      "x": 1079,
+      "x": 1077,
       "y": -113
     }
   ]

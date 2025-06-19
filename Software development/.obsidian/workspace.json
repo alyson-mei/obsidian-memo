@@ -28,14 +28,17 @@
             "id": "68725fb01af99f68",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Cosmic app.md",
-                "mode": "source",
-                "source": false
+                "file": "Langchain Interrupt 2025.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 12.800152587890608,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "Cosmic app"
+              "icon": "lucide-layout-dashboard",
+              "title": "Langchain Interrupt 2025"
             }
           }
         ],
@@ -183,8 +186,9 @@
   },
   "active": "68725fb01af99f68",
   "lastOpenFiles": [
-    "CRUD - SQLAlachemy, Pydantic, FastAPI.canvas",
     "Cosmic app.md",
+    "Langchain Interrupt 2025.canvas",
+    "CRUD - SQLAlachemy, Pydantic, FastAPI.canvas",
     "Patterns.canvas",
     "HTML & CSS.canvas",
     "Obsidian Memo project.canvas",
@@ -196,7 +200,6 @@
     "Some android stuff.canvas",
     "States in Compose.md",
     "todo MVVM.md",
-    "Pomodoro Bot.canvas",
     "Android basics.md",
     "Pictures/eb2d6637.png",
     "Pictures/Pasted image 20240825112548.png",

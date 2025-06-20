@@ -14,15 +14,15 @@ Weather in Moscow (2025-06-20, 20:00)
 - 🌡️ Temperature: 14.4° (feels like 13.6°)
 - 💨 Wind: west-north-western breeze
 - 💧 Humidity: 94%
-- ⛈️ Condition: thundery showers with very light rain
+- ⛈️ Condition: Moderate or heavy rain with thunder
 - 📉 Pressure: 1001 mb
-- 🌞 UV index: super low 0.1
+- 🌞 UV index: minimal UV 0.1
 ## time never waits
 ![Time Progress](./time_progress.svg)
 
 ---
 ## cat as a service 🐱
-![cat](https://cataas.com/cat/cute?t=1750438872)
+![cat](https://cataas.com/cat/cute?t=1750439762)
 
 ---
 ## bing image of the day (test)

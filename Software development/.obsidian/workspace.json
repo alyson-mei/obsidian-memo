@@ -30,15 +30,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Langchain Interrupt 2025.canvas",
+                "file": "Obsidian Memo project.canvas",
                 "viewState": {
-                  "x": 1284.2183690203826,
-                  "y": 739.4796084946291,
+                  "x": -245.5,
+                  "y": 159.2,
                   "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Langchain Interrupt 2025"
+              "title": "Obsidian Memo project"
             }
           }
         ],
@@ -186,24 +186,25 @@
   },
   "active": "68725fb01af99f68",
   "lastOpenFiles": [
-    "Pasted image 20250619155950.png",
+    "My app.md",
+    "LangGraph.canvas",
+    "Networks.canvas",
     "Pasted image 20250619155010.png",
+    "Patterns.canvas",
+    "Pomodoro Bot.canvas",
+    "Some android stuff.canvas",
+    "Langchain Interrupt 2025.canvas",
+    "Pasted image 20250619155950.png",
     "Pasted image 20250619154732.png",
     "Pasted image 20250619154429.png",
     "Pasted image 20250619154216.png",
     "Pasted image 20250619154206.png",
     "Cosmic app.md",
-    "Langchain Interrupt 2025.canvas",
     "CRUD - SQLAlachemy, Pydantic, FastAPI.canvas",
-    "Patterns.canvas",
     "HTML & CSS.canvas",
     "Obsidian Memo project.canvas",
     "Web.canvas",
-    "Git.canvas",
     "Jetpack Compose.md",
-    "Networks.canvas",
-    "Python.canvas",
-    "Some android stuff.canvas",
     "States in Compose.md",
     "todo MVVM.md",
     "Android basics.md",
@@ -213,8 +214,6 @@
     "Pictures/Pasted image 20250610120613.png",
     "Pictures/Pasted image 20250602140151.png",
     "Compose.md",
-    "Pictures/Pasted image 20250610101027.png",
-    "My app.md",
     "Coroutines.md",
     "App architecture.md",
     "Welcome.md"

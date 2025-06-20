@@ -6,6 +6,8 @@
       "height": 1092,
       "id": "2bf118146755582e",
       "label": "Creational",
+      "styleAttributes": {
+      },
       "type": "group",
       "width": 2012,
       "x": -340,
@@ -15,6 +17,8 @@
       "height": 909,
       "id": "a89240b77a8ebd55",
       "label": "Behavioral",
+      "styleAttributes": {
+      },
       "type": "group",
       "width": 1261,
       "x": 860,
@@ -24,6 +28,8 @@
       "height": 897,
       "id": "fae07acbd22a56d0",
       "label": "Structural",
+      "styleAttributes": {
+      },
       "type": "group",
       "width": 1163,
       "x": -340,

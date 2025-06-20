@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-06-21T01:30:47.685336</dc:date>
+    <dc:date>2025-06-21T01:45:47.072292</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -39,43 +39,43 @@ z
    </g>
    <g id="patch_3">
     <path d="M 73.31125 192.763636 
-L 268.359993 192.763636 
-L 268.359993 163.309091 
+L 268.37187 192.763636 
+L 268.37187 163.309091 
 L 73.31125 163.309091 
 z
-" clip-path="url(#p28cb7a07b8)" style="fill: #f2a8a8"/>
+" clip-path="url(#p27430c71dc)" style="fill: #f2a8a8"/>
    </g>
    <g id="patch_4">
     <path d="M 73.31125 155.945455 
-L 164.067894 155.945455 
-L 164.067894 126.490909 
+L 164.115016 155.945455 
+L 164.115016 126.490909 
 L 73.31125 126.490909 
 z
-" clip-path="url(#p28cb7a07b8)" style="fill: #d6a8d1"/>
+" clip-path="url(#p27430c71dc)" style="fill: #d6a8d1"/>
    </g>
    <g id="patch_5">
     <path d="M 73.31125 119.127273 
-L 351.631625 119.127273 
-L 351.631625 89.672727 
+L 351.776132 119.127273 
+L 351.776132 89.672727 
 L 73.31125 89.672727 
 z
-" clip-path="url(#p28cb7a07b8)" style="fill: #f3d6ba"/>
+" clip-path="url(#p27430c71dc)" style="fill: #f3d6ba"/>
    </g>
    <g id="patch_6">
     <path d="M 73.31125 82.309091 
-L 374.298571 82.309091 
-L 374.298571 52.854545 
+L 374.917887 82.309091 
+L 374.917887 52.854545 
 L 73.31125 52.854545 
 z
-" clip-path="url(#p28cb7a07b8)" style="fill: #90c3d4"/>
+" clip-path="url(#p27430c71dc)" style="fill: #90c3d4"/>
    </g>
    <g id="patch_7">
     <path d="M 73.31125 45.490909 
-L 99.3225 45.490909 
-L 99.3225 16.036364 
+L 103.657708 45.490909 
+L 103.657708 16.036364 
 L 73.31125 16.036364 
 z
-" clip-path="url(#p28cb7a07b8)" style="fill: #a8d5ba"/>
+" clip-path="url(#p27430c71dc)" style="fill: #a8d5ba"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="ytick_1">
@@ -537,7 +537,7 @@ z
    </g>
    <g id="text_6">
     <!-- 46.9% -->
-    <g transform="translate(272.521793 180.916364) scale(0.12 -0.12)">
+    <g transform="translate(272.53367 180.916364) scale(0.12 -0.12)">
      <defs>
       <path id="Poppins-Regular-34" d="M 256 1030 
 L 256 1472 
@@ -689,7 +689,7 @@ z
    </g>
    <g id="text_7">
     <!-- 21.8% -->
-    <g transform="translate(168.229694 144.098182) scale(0.12 -0.12)">
+    <g transform="translate(168.276816 144.098182) scale(0.12 -0.12)">
      <defs>
       <path id="Poppins-Regular-31" d="M 243 4096 
 L 243 4627 
@@ -753,7 +753,7 @@ z
    </g>
    <g id="text_8">
     <!-- 66.9% -->
-    <g transform="translate(355.793425 107.28) scale(0.12 -0.12)">
+    <g transform="translate(355.937932 107.28) scale(0.12 -0.12)">
      <use xlink:href="#Poppins-Regular-36"/>
      <use xlink:href="#Poppins-Regular-36" transform="translate(63.499985 0)"/>
      <use xlink:href="#Poppins-Regular-2e" transform="translate(126.999969 0)"/>
@@ -762,8 +762,8 @@ z
     </g>
    </g>
    <g id="text_9">
-    <!-- 72.3% -->
-    <g transform="translate(378.460371 70.461818) scale(0.12 -0.12)">
+    <!-- 72.5% -->
+    <g transform="translate(379.079687 70.461818) scale(0.12 -0.12)">
      <defs>
       <path id="Poppins-Regular-37" d="M 3245 4173 
 L 1466 0 
@@ -775,6 +775,18 @@ L 3245 4614
 L 3245 4173 
 z
 " transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#Poppins-Regular-37"/>
+     <use xlink:href="#Poppins-Regular-32" transform="translate(54.599991 0)"/>
+     <use xlink:href="#Poppins-Regular-2e" transform="translate(112.099976 0)"/>
+     <use xlink:href="#Poppins-Regular-35" transform="translate(133.09996 0)"/>
+     <use xlink:href="#Poppins-Regular-25" transform="translate(195.899948 0)"/>
+    </g>
+   </g>
+   <g id="text_10">
+    <!-- 7.3% -->
+    <g transform="translate(107.819508 33.643636) scale(0.12 -0.12)">
+     <defs>
       <path id="Poppins-Regular-33" d="M 384 3462 
 Q 429 4051 838 4384 
 Q 1248 4717 1901 4717 
@@ -812,25 +824,15 @@ z
 " transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#Poppins-Regular-37"/>
-     <use xlink:href="#Poppins-Regular-32" transform="translate(54.599991 0)"/>
-     <use xlink:href="#Poppins-Regular-2e" transform="translate(112.099976 0)"/>
-     <use xlink:href="#Poppins-Regular-33" transform="translate(133.09996 0)"/>
-     <use xlink:href="#Poppins-Regular-25" transform="translate(191.999954 0)"/>
-    </g>
-   </g>
-   <g id="text_10">
-    <!-- 6.2% -->
-    <g transform="translate(103.4843 33.643636) scale(0.12 -0.12)">
-     <use xlink:href="#Poppins-Regular-36"/>
-     <use xlink:href="#Poppins-Regular-2e" transform="translate(63.499985 0)"/>
-     <use xlink:href="#Poppins-Regular-32" transform="translate(84.499969 0)"/>
-     <use xlink:href="#Poppins-Regular-25" transform="translate(141.999954 0)"/>
+     <use xlink:href="#Poppins-Regular-2e" transform="translate(54.599991 0)"/>
+     <use xlink:href="#Poppins-Regular-33" transform="translate(75.599976 0)"/>
+     <use xlink:href="#Poppins-Regular-25" transform="translate(134.499969 0)"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p28cb7a07b8">
+  <clipPath id="p27430c71dc">
    <rect x="73.31125" y="7.2" width="416.18" height="194.4"/>
   </clipPath>
  </defs>

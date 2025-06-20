@@ -1,0 +1,7 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1750430969.022392 2947271 ssl_transport_security_utils.cc:114] Corruption detected.
+E0000 00:00:1750430969.022530 2947271 ssl_transport_security_utils.cc:71] error:1e000065:Cipher functions:OPENSSL_internal:BAD_DECRYPT
+E0000 00:00:1750430969.022539 2947271 ssl_transport_security_utils.cc:71] error:1000008b:SSL routines:OPENSSL_internal:DECRYPTION_FAILED_OR_BAD_RECORD_MAC
+E0000 00:00:1750430969.031674 2947271 secure_endpoint.cc:234] Decryption error: TSI_DATA_CORRUPTED
+E0000 00:00:1750430969.031816 2947271 ssl_transport_security_utils.cc:88] SSL_write failed with error SSL_ERROR_SSL
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised Unknown: None Stream removed.

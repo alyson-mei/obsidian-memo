@@ -14,7 +14,7 @@ Weather in Moscow (2025-06-21, 19:30)
 - 🌡️ Temperature: 16.0° (feels like 16.0°)
 - 💨 Wind: northern breeze
 - 💧 Humidity: 45%
-- ☀️ Condition: sunny
+- 🌅 Condition: Sunny
 - 📉 Pressure: 1010 mb
 - 🌞 UV index: soft UV 0.4
 ## time never waits
@@ -22,7 +22,7 @@ Weather in Moscow (2025-06-21, 19:30)
 
 ---
 ## cat as a service 🐱
-![cat](https://cataas.com/cat/cute?t=1750523460)
+![cat](https://cataas.com/cat/cute?t=1750524361)
 
 ---
 ## bing image of the day (test)

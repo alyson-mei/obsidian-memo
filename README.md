@@ -9,20 +9,20 @@ LLM: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generat
 
 ---
 ## weather outside
-Weather in Moscow (2025-06-22, 01:45)
+Weather in Moscow (2025-06-22, 02:00)
 
-- 🌡️ Temperature: 9.1° (feels like 8.1°)
-- 💨 Wind: southern gentle breeze
+- 🌡️ Temperature: 9.4° (feels like 8.1°)
+- 💨 Wind: southwesterly breeze
 - 💧 Humidity: 81%
-- 🌃 Condition: clear night
-- 📉 Pressure: 1011 mb
-- 🌚 UV index: no UV 0.0
+- ☁️ Condition: Cloudy
+- 📉 Pressure: 1010 mb
+- 🌞 UV index: no UV 0.0
 ## time never waits
 ![Time Progress](./time_progress.svg)
 
 ---
 ## cat as a service 🐱
-![cat](https://cataas.com/cat/cute?t=1750545962)
+![cat](https://cataas.com/cat/cute?t=1750547465)
 
 ---
 ## bing image of the day (test)

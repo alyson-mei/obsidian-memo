@@ -9,25 +9,25 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 02:14
+## monday, 30 june 2025 | 02:15
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-06-30, 02:00)
+Weather in Moscow (2025-06-30, 02:15)
 
-🌡️ Temp: 13.1°C <br>
-⛅ Condition: Partly Cloudy <br>
-💨 Wind: Moderate WNW breeze at 4.8 m/s, with gusts up to 9 m/s <br>
-💧 Humidity: 84% (quite humid) <br>
-📉 Pressure: 991 mb (sea level), 978 mb (surface) <br>
-☁️ Cloud cover: 57% (with a low cloud base at 0.4 km) <br>
-👁️ Visibility: Good at 16 km <br>
+🌡️ Temp: 12.9°C (feels like 12.9°C) <br>
+⛅ Condition: Partly cloudy <br>
+💨 Wind: Westerly breeze at 5.3 m/s, with gusts up to 9.5 m/s <br>
+💧 Humidity: 84% <br>
+📉 Pressure: 991 mb (sea level) <br>
+☁️ Cloud cover: 57% (with a low base at 0.4 km) <br>
+👁 Visibility: 16 km <br>
 
-🌙 Clearer Night, Gentle Breeze <br>
-A partly cloudy night in Moscow, with a fresh breeze making its presence felt. Despite the low-hanging clouds, visibility is good, offering a clearer view of the night sky.
+🌌 Quiet Night <br>
+A tranquil night under a partly cloudy sky. The air is cool and a gentle breeze whispers, making for a calm late-night atmosphere.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -70,4 +70,4 @@ Standing at 2,810 meters (9,219 feet), Roraima is a remarkable tepui, characteri
 Visitors are immersed in a sensory experience unlike any other, witnessing waterfalls cascading off its sheer cliffs and feeling the pervasive mist that gives the mountain its mystical aura. Considered a sacred site by the Indigenous Pemón people, Mount Roraima continues to mystify scientists and beckon adventurers with its unparalleled beauty and geological significance, truly feeling like a world apart.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751238841)
+![Cat](https://cataas.com/cat/cute?t=1751238916)

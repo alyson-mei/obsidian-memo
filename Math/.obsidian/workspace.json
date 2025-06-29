@@ -1,0 +1,182 @@
+{
+  "main": {
+    "id": "4e7addcd1af38d91",
+    "type": "split",
+    "children": [
+      {
+        "id": "becb5e785213c487",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d16c4cbc478bd2ec",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Linear algebra.canvas",
+                "viewState": {
+                  "x": 958.6588890655173,
+                  "y": 56.95988861452359,
+                  "zoom": 0.3999999999999999
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Linear algebra"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c6864cfb905b3ad7",
+    "type": "split",
+    "children": [
+      {
+        "id": "469891bab3b53fbe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e280c636bdfd1edc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "162cc99b135bdc5e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6128d12e8606e30a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "4f3cbbf3fd4f676f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c0d61bbfc3cd267",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7b7e9aed1458e9a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Мера Лебега.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Мера Лебега"
+            }
+          },
+          {
+            "id": "b70e2e85cc232a75",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Мера Лебега.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Мера Лебега"
+            }
+          },
+          {
+            "id": "75058e8fca548374",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "681cb61833af1744",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Мера Лебега.canvas"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Мера Лебега"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e280c636bdfd1edc",
+  "lastOpenFiles": [
+    "Linear algebra.canvas",
+    "Finance.canvas",
+    "Basic math.canvas",
+    "Untitled.md",
+    "Todo.md",
+    "Pasted image 20250330203202.png",
+    "Pasted image 20250330203138.png",
+    "Set theory.canvas",
+    "Мера Лебега.canvas",
+    "Welcome.md"
+  ]
+}

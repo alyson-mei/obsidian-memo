@@ -1,0 +1,39 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "height": 299,
+      "id": "efe17febdeddcdd9",
+      "styleAttributes": {
+      },
+      "text": "### Setup\nRequirements:\n- python-telegram-bot\n- asyncio\n- nest_asyncio\n\nFor token:\n- dotenv",
+      "type": "text",
+      "width": 428,
+      "x": -280,
+      "y": 40
+    },
+    {
+      "height": 434,
+      "id": "ff899ccaf1b31fdf",
+      "styleAttributes": {
+      },
+      "text": "### Issues\n1\\. Python's asyncio uses something called an \"event loop\" to manage async tasks. By default you can't start one event loop inside another. The error \"cannot close a running event loop\" appears 'cause code was trying to start, use and close loops in a way that was conflictiog\n`nest_asyncio` solves this by allowing asyncio loops to be nested\n\n**Best practices**:\n- Include `nest_asyncio` at the beginning of the script\n- `asyncio.run()` for the entry point\n- Keep boot structure clean\n- Logging instead of prints when possible, exception handling\n- More robust approach like running as a service, look into proper shutdowns",
+      "type": "text",
+      "width": 671,
+      "x": -280,
+      "y": 404
+    },
+    {
+      "height": 299,
+      "id": "63014bc10b369f37",
+      "styleAttributes": {
+      },
+      "text": "### Database",
+      "type": "text",
+      "width": 590,
+      "x": 193,
+      "y": 40
+    }
+  ]
+}

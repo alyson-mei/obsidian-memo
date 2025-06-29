@@ -9,7 +9,7 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 02:31
+## monday, 30 june 2025 | 02:39
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
@@ -39,15 +39,13 @@ mostly i write for myself, but maybe someone else will find something familiar h
 welcome to the archive of small revelations 🌙
 
 ### 29 jun 2025 
-**mug's silent diagrams 💧**
+the street's wet algorithm 💧
 
-2 AM, deep in a recursion loop, my brain a tangle of logic. reached for the pale blue thinking mug, its warmth a familiar anchor.
+home now, but my mind is still on the walk back. that low, systematic whir of the cleaning drones, the way the water darkened the asphalt into a mirror.
 
-my eyes, still locked onto the shifting code on screen, idly traced the condensation on the ceramic. tiny droplets, subtle imperfections, under the monitor's glow. then, my mind, so deeply absorbed in the algorithm, started seeing patterns. faint, shimmering lines coalescing, mimicking the very logic gates and branching pathways i was wrestling with. an optical trick, sure, but for a moment, the mug held a miniature, liquid reflection of my digital world. a silent, ephemeral diagram of the problem i was trying to solve, right there in my hand.
+they were just running a simple protocol, a cleaning routine. but the result... the neon from the noodle bar and the tech shop bleeding into the water, creating this swirling, temporary art. a perfect, unintentional mosaic erased as quickly as it was made. it felt like watching an algorithm generate beauty by accident. kiku is asleep in the corner nest now, a warm weight against my leg, oblivious. i'm just staring at my own silent screen, thinking about all the simple loops i write.
 
-kiku, a soft ginger weight on the vintage keyboard, purred, oblivious to the tiny code unfolding on my mug.
-
-funny how the universe finds ways to show you answers, even in a drop of water. always more to decode than just lines of code ☕
+makes you wonder how much beauty is just a side effect of some cold, efficient process. a fleeting masterpiece, written in water and light, meant only for the night 🎨
 
 ## bing image of the day
 ### Blue lagoon of Pulau Ay, Banda Islands, Indonesia
@@ -70,4 +68,4 @@ Standing at 2,810 meters (9,219 feet), Roraima is a remarkable tepui, characteri
 Visitors are immersed in a sensory experience unlike any other, witnessing waterfalls cascading off its sheer cliffs and feeling the pervasive mist that gives the mountain its mystical aura. Considered a sacred site by the Indigenous Pemón people, Mount Roraima continues to mystify scientists and beckon adventurers with its unparalleled beauty and geological significance, truly feeling like a world apart.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751239861)
+![Cat](https://cataas.com/cat/cute?t=1751240342)

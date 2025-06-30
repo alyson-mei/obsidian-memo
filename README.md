@@ -9,24 +9,25 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 08:14
+## monday, 30 june 2025 | 08:15
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-06-30, 08:00)
+Weather in Moscow (2025-06-30, 08:15)
 
-🌡️ Temp: 12°C <br>
+🌡️ Temp: 12°C (feels like 12°C) <br>
 ☁️ Condition: Cloudy <br>
-💨 Wind: A brisk westerly breeze at 5.6 m/s, with gusts up to 10.1 m/s <br>
-💧 Humidity: 78% <br>
+💨 Wind: A fresh westerly breeze at 5.7 m/s, with strong gusts up to 10.3 m/s <br>
+💧 Humidity: 79% <br>
 📉 Pressure: Low at 989 mb <br>
-☁️ Cloud cover: 97% <br>
+☁️ Cloud cover: 99% (very low clouds at 0.4 km) <br>
+👁️ Visibility: Good at 14 km <br>
 
-☁️ A Grey and Blustery Morning <br>
-The day begins under a thick blanket of clouds, with a cool, brisk wind sweeping through. A fresh start that feels full of quiet energy.
+🌬️ A Blustery, Grey Morning <br>
+The day starts under a thick blanket of clouds, with a brisk wind sweeping through. A cool, energizing morning to wake up to.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -67,4 +68,4 @@ Standing at 2,810 meters (9,219 feet), Roraima is a remarkable tepui, characteri
 Visitors are immersed in a sensory experience unlike any other, witnessing waterfalls cascading off its sheer cliffs and feeling the pervasive mist that gives the mountain its mystical aura. Considered a sacred site by the Indigenous Pemón people, Mount Roraima continues to mystify scientists and beckon adventurers with its unparalleled beauty and geological significance, truly feeling like a world apart.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751260441)
+![Cat](https://cataas.com/cat/cute?t=1751260533)

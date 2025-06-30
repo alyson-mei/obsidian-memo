@@ -9,25 +9,25 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 10:59
+## monday, 30 june 2025 | 11:00
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-06-30, 10:45)
+Weather in Moscow (2025-06-30, 11:00)
 
 🌡️ Temp: 12°C (feels like 12°C) <br>
-🌦️ Condition: Light rain (0.6 mm/h) <br>
-💨 Wind: W breeze at 5 m/s, gusts up to 8.7 m/s <br>
-💧 Humidity: 82% <br>
+🌦️ Condition: Light rain (0.8 mm/h) <br>
+💨 Wind: Westerly breeze at 4.7 m/s, with gusts up to 8.4 m/s <br>
+💧 Humidity: 85% <br>
 📉 Pressure: 989 mb (sea level), 975 mb (surface) <br>
-☁️ Cloud cover: 98% (low clouds at 0.7 km) <br>
-👁️ Visibility: 8 km <br>
+☁️ Cloud cover: 98% (very low clouds at 0.7 km) <br>
+👁️ Visibility: around 8 km <br>
 
-🌧️ A Gray and Moody Morning <br>
-The city is wrapped in a cool, damp blanket this morning under a sky of solid gray. The soft, persistent rain makes it a perfect day to stay cozy indoors.
+💧 A Grey and Damp Morning <br>
+The city is washed in a cool, gentle rain. A perfect day for staying inside with a warm drink, listening to the soft patter on the window.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -66,4 +66,4 @@ Imagine a landscape painted with a giant's brush, where mountains ripple in impo
 What makes Zhangye Danxia so unforgettable is its vibrant palette. Unlike muted desert tones, these hills boast dramatic, striped patterns of deep reds, bright yellows, and rich blues, creating one of the world's most unusual and photogenic landscapes. To walk the viewing platforms is to experience a true sensory overload, with undulating waves of color stretching to the horizon under a vast sky. The full impact of nature's artistry is most profound during sunrise or sunset, when the low-angled light intensifies the hues, setting the mountains ablaze with color. For the most breathtaking views, many travelers recommend positioning yourself at a high viewing platform as the sun goes down.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751270341)
+![Cat](https://cataas.com/cat/cute?t=1751270431)

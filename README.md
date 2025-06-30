@@ -9,25 +9,25 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 04:29
+## monday, 30 june 2025 | 04:30
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-06-30, 04:15)
+Weather in Moscow (2025-06-30, 04:30)
 
 🌡️ Temp: 12°C (feels like 12°C) <br>
 ☁️ Condition: Cloudy <br>
-💨 Wind: A moderate westerly breeze at 5.1 m/s, with gusts up to 8.2 m/s <br>
+💨 Wind: A fresh westerly breeze at 4.9 m/s, with gusts up to 8.2 m/s <br>
 💧 Humidity: 82% <br>
-📉 Pressure: 991 mb (sea level), 977 mb (surface) <br>
-☁️ Cloud cover: 97% (very low clouds at 0.3 km) <br>
+📉 Pressure: Low at 991 mb <br>
+☁️ Clouds: Almost completely overcast (99%) with a very low cloud base <br>
 👁️ Visibility: Good, around 13 km <br>
 
-☁️ A Windy, Overcast Night <br>
-The city is quiet under a thick blanket of clouds. A steady breeze whispers through the streets, a cool and restless end to the night.
+🌬️ A Blustery Night <br>
+The city is quiet under a thick blanket of clouds, with a restless wind whispering through the empty streets. A cool, moody start to the day.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -68,4 +68,4 @@ Standing at 2,810 meters (9,219 feet), Roraima is a remarkable tepui, characteri
 Visitors are immersed in a sensory experience unlike any other, witnessing waterfalls cascading off its sheer cliffs and feeling the pervasive mist that gives the mountain its mystical aura. Considered a sacred site by the Indigenous Pemón people, Mount Roraima continues to mystify scientists and beckon adventurers with its unparalleled beauty and geological significance, truly feeling like a world apart.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751246941)
+![Cat](https://cataas.com/cat/cute?t=1751247035)

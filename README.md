@@ -9,25 +9,24 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 02:59
+## monday, 30 june 2025 | 03:00
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-06-30, 02:45)
+Weather in Moscow (2025-06-30, 03:00)
 
 🌡️ Temp: 13°C <br>
 ☁️ Condition: Cloudy <br>
-💨 Wind: A westerly breeze at 4.1 m/s, with gusts up to 7.2 m/s <br>
+💨 Wind: A brisk westerly wind at 5.6 m/s, with gusts reaching up to 10.3 m/s <br>
 💧 Humidity: 83% <br>
-☁️ Cloud cover: 85% with a low cloud base <br>
-👁️ Visibility: Excellent (16 km) <br>
-📉 Pressure: 991 mb (low) <br>
+📉 Pressure: Low at 991 mb <br>
+👁️ Visibility: Excellent at 16 km <br>
 
-🌬️ A Restless, Cloudy Night <br>
-The city is quiet under a thick blanket of clouds. A cool, gusty wind whispers through the empty streets, a perfect backdrop for late-night thoughts.
+🌬️ Windswept Night <br>
+A cool, restless night with a strong breeze rustling through the quiet city. The clouds are hanging low, blanketing the sky.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -68,4 +67,4 @@ Standing at 2,810 meters (9,219 feet), Roraima is a remarkable tepui, characteri
 Visitors are immersed in a sensory experience unlike any other, witnessing waterfalls cascading off its sheer cliffs and feeling the pervasive mist that gives the mountain its mystical aura. Considered a sacred site by the Indigenous Pemón people, Mount Roraima continues to mystify scientists and beckon adventurers with its unparalleled beauty and geological significance, truly feeling like a world apart.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751241541)
+![Cat](https://cataas.com/cat/cute?t=1751241631)

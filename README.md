@@ -9,24 +9,24 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 10:14
+## monday, 30 june 2025 | 10:15
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-06-30, 10:00)
+Weather in Moscow (2025-06-30, 10:15)
 
-🌡️ Temp: 12°C (feels just the same) <br>
-☁️ Condition: Completely overcast, but no rain is expected. <br>
-💨 Wind: A light westerly breeze at 3.4 m/s, with strong gusts up to 10 m/s. <br>
-💧 Humidity: 87% <br>
+🌡️ Temp: 12°C (feels just like it) <br>
+☁️ Condition: Heavily overcast (98%) <br>
+💨 Wind: A fresh westerly breeze at 6.3 m/s, with strong gusts up to 10.4 m/s <br>
+💧 Humidity: 82% <br>
 📉 Pressure: Low at 989 mb <br>
-☀️ UV index: 1 (low) <br>
+👁️ Visibility: Good, around 15 km <br>
 
-☁️ A Blanket of Grey <br>
-A cool, grey morning with the sky feeling very close and heavy. The gusty wind adds a bit of life to an otherwise still and quiet day.
+☁️ A Blustery, Gray Morning <br>
+A cool, windy morning under a thick blanket of clouds. Despite the gloom, it's a dry day, perfect for a brisk walk if you don't mind the wind.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -63,4 +63,4 @@ _© fabio lamanna/Alamy Stock Phot_
 A beautiful natural wonder awaits discovery.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751267641)
+![Cat](https://cataas.com/cat/cute?t=1751267740)

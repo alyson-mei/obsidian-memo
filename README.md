@@ -9,24 +9,24 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 09:44
+## monday, 30 june 2025 | 09:45
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-06-30, 09:30)
+Weather in Moscow (2025-06-30, 09:45)
 
-🌡️ Temp: 12°C (feels just the same) <br>
-☁️ Condition: Completely overcast <br>
-💨 Wind: A brisk westerly wind at 4.8 m/s, with gusts reaching 9.2 m/s <br>
-💧 Humidity: 83% <br>
-📉 Pressure: Low at 989 mb (sea level) <br>
-👁️ Visibility: Good, around 11 km <br>
+🌡️ Temp: 12°C <br>
+☁️ Condition: Overcast <br>
+💨 Wind: W breeze at 3.1 m/s, with gusts up to 9.7 m/s <br>
+💧 Humidity: 86% <br>
+📉 Pressure: 989 mb (sea level) <br>
+👁️ Visibility: 15 km <br>
 
-☁️ A Moody, Overcast Morning <br>
-The sky is a solid grey blanket this morning, with a brisk wind rustling through the city. A good day to stay inside with a warm drink and watch the world hurry by.
+☁️ A Grey and Moody Morning <br>
+The sky is a solid blanket of grey this morning, with a cool breeze making its presence felt. A good day to stay inside with a warm drink and watch the world from the window.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -67,4 +67,4 @@ Standing at 2,810 meters (9,219 feet), Roraima is a remarkable tepui, characteri
 Visitors are immersed in a sensory experience unlike any other, witnessing waterfalls cascading off its sheer cliffs and feeling the pervasive mist that gives the mountain its mystical aura. Considered a sacred site by the Indigenous Pemón people, Mount Roraima continues to mystify scientists and beckon adventurers with its unparalleled beauty and geological significance, truly feeling like a world apart.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751265841)
+![Cat](https://cataas.com/cat/cute?t=1751265932)

@@ -9,25 +9,25 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 03:44
+## monday, 30 june 2025 | 03:45
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-06-30, 03:30)
+Weather in Moscow (2025-06-30, 03:45)
 
-🌡️ Temp: 12°C <br>
-☁️ Condition: Mostly cloudy <br>
-💨 Wind: Westerly breeze at 5.9 m/s, with gusts up to 9.3 m/s <br>
+🌡️ Temp: 12°C (feels like 12°C) <br>
+☁️ Condition: Cloudy <br>
+💨 Wind: Fresh westerly breeze at 6 m/s, with gusts up to 9.5 m/s <br>
 💧 Humidity: 81% <br>
-📉 Pressure: 991 mb (sea level) <br>
-👁️ Visibility: Excellent at 16 km <br>
-☁️ Clouds: 74% cover, very low at 0.4 km <br>
+📉 Pressure: 991 mb (sea level), 977 mb (surface) <br>
+☁️ Cloud cover: Overcast (97%) with very low clouds at 300m <br>
+👁️ Visibility: Good, around 13 km <br>
 
-🌬️ A Blustery Night <br>
-The wind whispers through the quiet city streets under a blanket of low clouds. A cool, restless night for dreaming.
+☁️ A Blustery, Overcast Night <br>
+The city is quiet under a thick blanket of clouds. A restless wind whispers through the streets, a perfect backdrop for late-night thoughts or a deep, sound sleep.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -68,4 +68,4 @@ Standing at 2,810 meters (9,219 feet), Roraima is a remarkable tepui, characteri
 Visitors are immersed in a sensory experience unlike any other, witnessing waterfalls cascading off its sheer cliffs and feeling the pervasive mist that gives the mountain its mystical aura. Considered a sacred site by the Indigenous Pemón people, Mount Roraima continues to mystify scientists and beckon adventurers with its unparalleled beauty and geological significance, truly feeling like a world apart.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751244241)
+![Cat](https://cataas.com/cat/cute?t=1751244336)

@@ -9,24 +9,24 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 09:59
+## monday, 30 june 2025 | 10:01
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-06-30, 09:45)
+Weather in Moscow (2025-06-30, 10:00)
 
-🌡️ Temp: 12°C <br>
-☁️ Condition: Overcast <br>
-💨 Wind: W breeze at 3.1 m/s, with gusts up to 9.7 m/s <br>
-💧 Humidity: 86% <br>
-📉 Pressure: 989 mb (sea level) <br>
-👁️ Visibility: 15 km <br>
+🌡️ Temp: 12°C (feels just the same) <br>
+☁️ Condition: Completely overcast, but no rain is expected. <br>
+💨 Wind: A light westerly breeze at 3.4 m/s, with strong gusts up to 10 m/s. <br>
+💧 Humidity: 87% <br>
+📉 Pressure: Low at 989 mb <br>
+☀️ UV index: 1 (low) <br>
 
-☁️ A Grey and Moody Morning <br>
-The sky is a solid blanket of grey this morning, with a cool breeze making its presence felt. A good day to stay inside with a warm drink and watch the world from the window.
+☁️ A Blanket of Grey <br>
+A cool, grey morning with the sky feeling very close and heavy. The gusty wind adds a bit of life to an otherwise still and quiet day.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -57,14 +57,10 @@ For a tropical tale with extra flavour, look no further than Pulau Ay, photograp
 _© fabio lamanna/Alamy Stock Phot_
 
 ## natural wonder of the day
-### Mount Roraima, Venezuela
-![Wonder](https://images.rove.me/w_1920,q_85/thcveivgqgcsxugfth21/venezuela-mount-roraima-hiking.jpg)
+### Unknown Location
 
-Imagine a colossal island floating in the sky, its summit often veiled in mist and mystery. This is Mount Roraima, a majestic flat-topped mountain rising dramatically at the triple border of Venezuela, Brazil, and Guyana, within Venezuela's Canaima National Park, a UNESCO World Heritage Site.
 
-Standing at 2,810 meters (9,219 feet), Roraima is a remarkable tepui, characterized by its brutal 400-meter vertical cliffs that erupt from dense tropical rainforest. Its vast summit, stretching nearly 30 square kilometers, is an otherworldly landscape of weather-carved rock formations resembling sculptures, unique plant species, serene black water pools, sunken valleys, and jagged stone towers. This surreal environment has captivated imaginations for centuries, famously inspiring Sir Arthur Conan Doyle's novel "The Lost World" and even influencing Pixar's "Up." 
-
-Visitors are immersed in a sensory experience unlike any other, witnessing waterfalls cascading off its sheer cliffs and feeling the pervasive mist that gives the mountain its mystical aura. Considered a sacred site by the Indigenous Pemón people, Mount Roraima continues to mystify scientists and beckon adventurers with its unparalleled beauty and geological significance, truly feeling like a world apart.
+A beautiful natural wonder awaits discovery.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751266741)
+![Cat](https://cataas.com/cat/cute?t=1751266876)

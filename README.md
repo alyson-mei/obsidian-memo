@@ -9,24 +9,25 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 08:59
+## monday, 30 june 2025 | 09:00
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-06-30, 08:45)
+Weather in Moscow (2025-06-30, 09:00)
 
-🌡️ Temp: 12°C (feels just the same) <br>
-☁️ Condition: Completely overcast <br>
-💨 Wind: A strong westerly breeze at 6.4 m/s, with gusts up to 10.9 m/s <br>
-💧 Humidity: 81% <br>
-📉 Pressure: Low at 989 mb <br>
-👁️ Visibility: Good, around 14 km <br>
+🌡️ Temp: 12°C (feels just like it) <br>
+☁️ Condition: Overcast <br>
+💨 Wind: A brisk westerly wind at 5.8 m/s, with gusts up to 10.3 m/s <br>
+💧 Humidity: 80% <br>
+📉 Pressure: 989 mb (sea level) <br>
+☁️ Clouds: Almost completely overcast (98%) with a very low base at 400 meters <br>
+👁️ Visibility: Good at 14 km <br>
 
-🌬️ Blustery Gray Morning <br>
-A cool and windy start to the day under a heavy blanket of low clouds. The world feels muted, swept clean by the persistent breeze.
+☁️ A Moody, Overcast Morning <br>
+The sky is a solid sheet of gray, and a brisk wind is shaking the trees. A classic cool, cloudy morning perfect for a warm drink by the window.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -67,4 +68,4 @@ Standing at 2,810 meters (9,219 feet), Roraima is a remarkable tepui, characteri
 Visitors are immersed in a sensory experience unlike any other, witnessing waterfalls cascading off its sheer cliffs and feeling the pervasive mist that gives the mountain its mystical aura. Considered a sacred site by the Indigenous Pemón people, Mount Roraima continues to mystify scientists and beckon adventurers with its unparalleled beauty and geological significance, truly feeling like a world apart.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751263141)
+![Cat](https://cataas.com/cat/cute?t=1751263236)

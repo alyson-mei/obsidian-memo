@@ -9,25 +9,25 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 07:44
+## monday, 30 june 2025 | 07:45
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-06-30, 07:30)
+Weather in Moscow (2025-06-30, 07:45)
 
-🌡️ Temp: 12°C (feels like 12°C) <br>
+🌡️ Temp: 12°C <br>
 ☁️ Condition: Cloudy <br>
-💨 Wind: A moderate westerly breeze at 5 m/s, with gusts reaching 9.2 m/s <br>
-💧 Humidity: 79% <br>
-📉 Pressure: 990 mb (sea level), 976 mb (surface) <br>
-☁️ Cloud cover: A thick blanket of clouds (98%) hanging low at 0.4 km <br>
-👁️ Visibility: Very good at 16 km <br>
+💨 Wind: A noticeable westerly wind at 5.3 m/s, with gusts up to 9.2 m/s <br>
+💧 Humidity: 77% <br>
+📉 Pressure: 989 mb (sea level), 976 mb (surface) <br>
+☁️ Cloud cover: 97% (very low clouds at 0.5 km) <br>
+👁️ Visibility: Good, around 14 km <br>
 
-☁️ A Cool and Cloudy Dawn <br>
-The night gives way to a grey, overcast morning. A brisk wind sweeps through the city, carrying a cool freshness before the world fully awakens.
+☁️ A Gray and Blustery Morning <br>
+The day starts under a thick blanket of clouds, with a cool wind sweeping through. A quiet, pensive start to the week.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -68,4 +68,4 @@ Standing at 2,810 meters (9,219 feet), Roraima is a remarkable tepui, characteri
 Visitors are immersed in a sensory experience unlike any other, witnessing waterfalls cascading off its sheer cliffs and feeling the pervasive mist that gives the mountain its mystical aura. Considered a sacred site by the Indigenous Pemón people, Mount Roraima continues to mystify scientists and beckon adventurers with its unparalleled beauty and geological significance, truly feeling like a world apart.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751258641)
+![Cat](https://cataas.com/cat/cute?t=1751258741)

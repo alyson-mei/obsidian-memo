@@ -9,7 +9,7 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## monday, 30 june 2025 | 10:19
+## monday, 30 june 2025 | 10:20
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
@@ -57,10 +57,12 @@ For a tropical tale with extra flavour, look no further than Pulau Ay, photograp
 _© fabio lamanna/Alamy Stock Phot_
 
 ## natural wonder of the day
-### Unknown Location
+### Zhangye Danxia National Geopark, China
+![Wonder](http://4.bp.blogspot.com/-mxtqj95phnw/VkyFKTjhH_I/AAAAAAAANMY/nagIAAR4Aa4/s1600/Zhangye+Danxia+National+Geological+Park%2C+China%211.jpg)
 
+Imagine a landscape painted with a giant's brush, where mountains ripple in impossible stripes of crimson, gold, and emerald. This is the Zhangye Danxia National Geopark in China's Gansu Province, a geological masterpiece famously known as the 'Rainbow Mountains.' This surreal scenery is a 'Danxia landform,' created over millions of years as different colored layers of sandstone and minerals were compressed and then sculpted by erosion, revealing a vast panorama of smooth, sharp, and spectacularly colorful rock formations.
 
-A beautiful natural wonder awaits discovery.
+What makes Zhangye Danxia so unforgettable is its vibrant palette. Unlike muted desert tones, these hills boast dramatic, striped patterns of deep reds, bright yellows, and rich blues, creating one of the world's most unusual and photogenic landscapes. To walk the viewing platforms is to experience a true sensory overload, with undulating waves of color stretching to the horizon under a vast sky. The full impact of nature's artistry is most profound during sunrise or sunset, when the low-angled light intensifies the hues, setting the mountains ablaze with color. For the most breathtaking views, many travelers recommend positioning yourself at a high viewing platform as the sun goes down.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1751267941)
+![Cat](https://cataas.com/cat/cute?t=1751268001)

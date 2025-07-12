@@ -1,0 +1,375 @@
+{
+  "edges": [
+    {
+      "fromNode": "0eee235422e6d229",
+      "fromSide": "bottom",
+      "id": "f50392758576fb5c",
+      "toNode": "e8d6a42d1ffcbe96",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "1e5dfd3b9e4e3496",
+      "fromSide": "bottom",
+      "id": "26036ae39cf3c136",
+      "toNode": "930e56809cfd2952",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "3bc2b7deb38df848",
+      "fromSide": "bottom",
+      "id": "cac5f62cef746a54",
+      "toNode": "ac5875b2423ef8c1",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "3bc2b7deb38df848",
+      "fromSide": "bottom",
+      "id": "86fdb79e28d03644",
+      "toNode": "f9fadc865600ea16",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "f9fadc865600ea16",
+      "fromSide": "bottom",
+      "id": "d07cf3e9ad163835",
+      "toNode": "8bb9d1b6860a4d18",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "f9fadc865600ea16",
+      "fromSide": "bottom",
+      "id": "afbac98a4d13b9c0",
+      "toNode": "7363e49e61701854",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "f9fadc865600ea16",
+      "fromSide": "bottom",
+      "id": "52a46ddcaac19d9f",
+      "toNode": "76bc2384f1247f7a",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "f9fadc865600ea16",
+      "fromSide": "bottom",
+      "id": "67fd97cdf5bb6fe0",
+      "toNode": "ed30bd0670f61eeb",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "ac5875b2423ef8c1",
+      "fromSide": "bottom",
+      "id": "63069f1da6a62bb7",
+      "toNode": "0eee235422e6d229",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "ac5875b2423ef8c1",
+      "fromSide": "bottom",
+      "id": "b673d666b203e476",
+      "toNode": "1e5dfd3b9e4e3496",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "c953fa43f4c57681",
+      "fromSide": "bottom",
+      "id": "08c941c8f31f64e3",
+      "toNode": "122fb2cbd299ff4a",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "9d87a0c462a24e7f",
+      "fromSide": "bottom",
+      "id": "9e81eea7c70fe5a8",
+      "toNode": "c953fa43f4c57681",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "9d87a0c462a24e7f",
+      "fromSide": "bottom",
+      "id": "c95373aa5c690762",
+      "toNode": "b1b3d382b3741667",
+      "toSide": "top"
+    },
+    {
+      "color": "4",
+      "fromNode": "8bb9d1b6860a4d18",
+      "fromSide": "right",
+      "id": "4b7e5a48f3fdcbe7",
+      "toNode": "ed30bd0670f61eeb",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "70072f19627bdf6c",
+      "fromSide": "bottom",
+      "id": "1de8e3071a97de31",
+      "toNode": "9d87a0c462a24e7f",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "70072f19627bdf6c",
+      "fromSide": "bottom",
+      "id": "fa37a83cd340d2f1",
+      "toNode": "a7df2ce73a8f25da",
+      "toSide": "top"
+    },
+    {
+      "color": "4",
+      "fromNode": "9d87a0c462a24e7f",
+      "fromSide": "right",
+      "id": "d3b87aa1e82862ed",
+      "toNode": "a7df2ce73a8f25da",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "3bc2b7deb38df848",
+      "fromSide": "bottom",
+      "id": "1fdc77197c65c415",
+      "toNode": "70072f19627bdf6c",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "3bc2b7deb38df848",
+      "fromSide": "bottom",
+      "id": "e2e7da1a67c3f7c0",
+      "toNode": "568e39bb84b0c127",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "3bc2b7deb38df848",
+      "fromSide": "bottom",
+      "id": "31a0aac8eaaa4125",
+      "toNode": "54b0f483df3849c8",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "54b0f483df3849c8",
+      "fromSide": "bottom",
+      "id": "f3f7cab39b8b5fb4",
+      "toNode": "e56e726deb0cd52e",
+      "toSide": "top"
+    }
+  ],
+  "nodes": [
+    {
+      "height": 140,
+      "id": "3bc2b7deb38df848",
+      "styleAttributes": {
+      },
+      "text": "baseHashMap<K,V>\nindexHashMap<Int,K>\ncoindexHashMap<K, Int>\nsize: Int",
+      "type": "text",
+      "width": 299,
+      "x": -83,
+      "y": -455
+    },
+    {
+      "height": 182,
+      "id": "0eee235422e6d229",
+      "styleAttributes": {
+      },
+      "text": "$\\textcolor{orange}{\\textrm{k not in keys of baseHashMap}}$:\n$\\textcolor{grey}{\\textrm{//so we add the [k,v]}}$\nbaseHashMap[k] = v\nindexHashMap[size] = k\ncoindexHashMap[k] = size\nsize++",
+      "type": "text",
+      "width": 290,
+      "x": -1237,
+      "y": 120
+    },
+    {
+      "height": 220,
+      "id": "e8d6a42d1ffcbe96",
+      "styleAttributes": {
+      },
+      "text": "Example:\n( 0 $\\leftrightarrow$ 3 $\\rightarrow$ \"abc\",\n1 $\\leftrightarrow$ 5 $\\rightarrow$ \"def\" ).set(4, \"gij\")\nto\n( 0 $\\leftrightarrow$ 3 $\\rightarrow$ \"abc\",\n1 $\\leftrightarrow$ 5 $\\rightarrow$ \"def\",\n2 $\\leftrightarrow$ 4 $\\rightarrow$ \"gij\") \n\n",
+      "type": "text",
+      "width": 290,
+      "x": -1237,
+      "y": 342
+    },
+    {
+      "height": 50,
+      "id": "ac5875b2423ef8c1",
+      "styleAttributes": {
+      },
+      "text": "set(k, v)\n\n",
+      "type": "text",
+      "width": 128,
+      "x": -957,
+      "y": -48
+    },
+    {
+      "height": 182,
+      "id": "1e5dfd3b9e4e3496",
+      "styleAttributes": {
+      },
+      "text": "k in keys of baseHashMap:\n$\\textcolor{grey}{\\textrm{//so we just the value at k}}$\nbaseHashMap[k] = v",
+      "type": "text",
+      "width": 300,
+      "x": -920,
+      "y": 120
+    },
+    {
+      "height": 220,
+      "id": "930e56809cfd2952",
+      "styleAttributes": {
+      },
+      "text": "Example:\n( 0 $\\leftrightarrow$ 3 $\\rightarrow$ \"abc\",\n1 $\\leftrightarrow$ 5 $\\rightarrow$ \"def\" ).set(-1, \"gij\")\nto\n( 0 $\\leftrightarrow$ -1 $\\rightarrow$ \"gij\",\n1 $\\leftrightarrow$ 5 $\\rightarrow$ \"def\",) \n\n",
+      "type": "text",
+      "width": 300,
+      "x": -920,
+      "y": 342
+    },
+    {
+      "height": 60,
+      "id": "9d87a0c462a24e7f",
+      "styleAttributes": {
+      },
+      "text": "removeAtK(k)\n",
+      "type": "text",
+      "width": 250,
+      "x": 91,
+      "y": 129
+    },
+    {
+      "height": 60,
+      "id": "70072f19627bdf6c",
+      "styleAttributes": {
+      },
+      "text": "remove",
+      "type": "text",
+      "width": 250,
+      "x": 116,
+      "y": -48
+    },
+    {
+      "height": 60,
+      "id": "a7df2ce73a8f25da",
+      "styleAttributes": {
+      },
+      "text": "removeAtIndex(int)",
+      "type": "text",
+      "width": 210,
+      "x": 366,
+      "y": 129
+    },
+    {
+      "height": 67,
+      "id": "b1b3d382b3741667",
+      "styleAttributes": {
+      },
+      "text": "k not in keys of baseHashMap $\\rightarrow$ \nreturn null",
+      "type": "text",
+      "width": 300,
+      "x": 366,
+      "y": 342
+    },
+    {
+      "height": 198,
+      "id": "c953fa43f4c57681",
+      "styleAttributes": {
+      },
+      "text": "$\\textcolor{orange}{\\textrm{k in keys of baseHashMap}}$:\nv = baseHashMap.remove(k)\n(remove coind(k) from indexHashMap)\nindex = (remove ind(k) from coindexHashMap)\nleft shift in indexHashMap\nreturn v\n",
+      "type": "text",
+      "width": 268,
+      "x": 73,
+      "y": 342
+    },
+    {
+      "height": 410,
+      "id": "122fb2cbd299ff4a",
+      "styleAttributes": {
+      },
+      "text": "Example:\n( 0 $\\leftrightarrow$ 3 $\\rightarrow$ \"abc\",\n1 $\\leftrightarrow$ 5 $\\rightarrow$ \"def\",\n2 $\\leftrightarrow$ 4 $\\rightarrow$ \"gij\").remove(5)\nto 1)\n( 0 $\\leftrightarrow$ 3 $\\rightarrow$ \"abc\",\n1 $\\leftrightarrow$ 5 $\\rightarrow$ $\\textcolor{orange}{\\textrm{null}}$,\n2 $\\leftrightarrow$ 4 $\\rightarrow$ \"gij\")\nto 2)\n( 0 $\\leftrightarrow$ 3 $\\rightarrow$ \"abc\",\n1 $\\textcolor{orange}{\\leftarrow}$ 5 $\\rightarrow$ null,\n2 $\\leftrightarrow$ 4 $\\rightarrow$ \"gij\"\nto 3) \n( 0 $\\leftrightarrow$ 3 $\\rightarrow$ \"abc\",\n$\\textcolor{orange}{1}$ $\\leftrightarrow$ 4 $\\rightarrow$ \"gij\")\n\n",
+      "type": "text",
+      "width": 268,
+      "x": 73,
+      "y": 599
+    },
+    {
+      "height": 82,
+      "id": "8bb9d1b6860a4d18",
+      "styleAttributes": {
+      },
+      "text": "get(k) $\\rightarrow$\nreturn BaseHashMap[k]",
+      "type": "text",
+      "width": 283,
+      "x": -574,
+      "y": 129
+    },
+    {
+      "height": 50,
+      "id": "f9fadc865600ea16",
+      "styleAttributes": {
+      },
+      "text": "get",
+      "type": "text",
+      "width": 125,
+      "x": -337,
+      "y": -48
+    },
+    {
+      "height": 84,
+      "id": "ed30bd0670f61eeb",
+      "styleAttributes": {
+      },
+      "text": "getVAtIndex(index) $\\rightarrow$\nreturn get[indexHashMap[index])",
+      "type": "text",
+      "width": 297,
+      "x": -269,
+      "y": 127
+    },
+    {
+      "height": 88,
+      "id": "76bc2384f1247f7a",
+      "styleAttributes": {
+      },
+      "text": "getKAtIndex(index) $\\rightarrow$\nreturn indexHashMap[index]",
+      "type": "text",
+      "width": 283,
+      "x": -574,
+      "y": 225
+    },
+    {
+      "height": 88,
+      "id": "7363e49e61701854",
+      "styleAttributes": {
+      },
+      "text": "getIndexAtK(k) $\\rightarrow$\nreturn coindexHashMap[k]",
+      "type": "text",
+      "width": 297,
+      "x": -269,
+      "y": 225
+    },
+    {
+      "height": 60,
+      "id": "568e39bb84b0c127",
+      "styleAttributes": {
+      },
+      "text": "keys, values, show",
+      "type": "text",
+      "width": 250,
+      "x": 1104,
+      "y": -48
+    },
+    {
+      "height": 268,
+      "id": "e56e726deb0cd52e",
+      "styleAttributes": {
+      },
+      "text": "Example:\n( 0 $\\leftrightarrow$ 3 $\\rightarrow$ \"abc\",\n1 $\\leftrightarrow$ 5 $\\rightarrow$ \"def\" ).change(3,  6)\nto \n( 0 $\\leftrightarrow$ 3 $\\rightarrow$ null,\n1 $\\leftrightarrow$ 5 $\\rightarrow$ \"def\" )\nto \n( 0 $\\leftrightarrow$ 6 $\\rightarrow$ \"abc\",\n1 $\\leftrightarrow$ 5 $\\rightarrow$ \"def\" )",
+      "type": "text",
+      "width": 277,
+      "x": 695,
+      "y": 74
+    },
+    {
+      "height": 60,
+      "id": "54b0f483df3849c8",
+      "styleAttributes": {
+      },
+      "text": "changeKAtIndex(index, k)",
+      "type": "text",
+      "width": 277,
+      "x": 695,
+      "y": -48
+    }
+  ]
+}

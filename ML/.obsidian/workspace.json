@@ -1,0 +1,196 @@
+{
+  "main": {
+    "id": "9cad90c81d375768",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a0f7768e82faa2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c8e7a1232cfd5a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Time series.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Time series"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "480ed48dd9243b9d",
+    "type": "split",
+    "children": [
+      {
+        "id": "eed65cafc43c31e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa79aa2491097907",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "7bb33967662c92c1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "76fb19070d88cb2c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "05e91479a8bb4d1d",
+    "type": "split",
+    "children": [
+      {
+        "id": "c953e3a7b58a5c1f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6bef73a6396958e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "dff67927fc6a92b4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "5ca7468d205d4a64",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "eabf65d49cdd3ef6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "daily-notes:Open today's daily note": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "1c8e7a1232cfd5a2",
+  "lastOpenFiles": [
+    "Screenshot_20250109_170651.png",
+    "2025-04-07_18-39-21.png",
+    "ML map.canvas",
+    "NLP + RL.canvas",
+    "Pasted image 20250109172218.png",
+    "RAG.canvas",
+    "RNN-vs-LSTM-vs-GRU-1024x308.png",
+    "Screenshot 2025-04-15 at 11-23-03 MVC - MDN Web Docs Glossary Definitions of Web-related terms MDN.png",
+    "Screenshot_20250109_172646.png",
+    "Screenshot_20250121_161804.png",
+    "Screenshot_20250306_220444.png",
+    "Time series.md",
+    "Screenshot_20250420_210248.png",
+    "Statistics_canvas.canvas",
+    "Probability & SP.canvas",
+    "Strivers.canvas",
+    "Statistics.md",
+    "LangGraph.canvas",
+    "SQL.canvas",
+    "Risk.canvas",
+    "Risk 1.canvas",
+    "Q ML.md",
+    "2025-06-14.md",
+    "2025-02-23.md",
+    "2 L1.md",
+    "Untitled.md",
+    "SQL.md",
+    "L1.md",
+    "Untitled 1.md",
+    "ML mind map.md",
+    "Welcome.md"
+  ]
+}

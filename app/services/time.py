@@ -21,6 +21,34 @@ from app.config import setup_logger
 
 logger = setup_logger("time_service", indent=6)
 
+def get_part_of_day_description(hour: int) -> str:
+    """
+    Return a human-readable description for the part of day based on the hour.
+
+    Args:
+        hour (int): The hour of the day (0-23).
+
+    Returns:
+        str: Description of the part of day.
+    """
+    logger.info(f"Getting part of day description for hour: {hour}")
+    if 5 <= hour < 8:
+        return "early morning"
+    elif 8 <= hour < 12:
+        return "morning"
+    elif 12 <= hour < 13:
+        return "noon"
+    elif 13 <= hour < 17:
+        return "afternoon"
+    elif 17 <= hour < 18:
+        return "early evening"
+    elif 18 <= hour < 21:
+        return "evening"
+    elif 21 <= hour < 23:
+        return "late evening"
+    else:
+        return "night"
+
 def get_days_in_month(year: int, month: int) -> int:
     """
     Get the number of days in a given month of a given year.
@@ -198,109 +226,3 @@ def get_time_info() -> Dict[str, Union[str, float]]:
         "percentage_year": percentage_year,
     }
 
-
-# Example usage and testing
-if __name__ == "__main__":
-   # Test current time
-   info = get_time_info()
-   print("Current Time Information:")
-   print(f"📅 {info['datetime']}")
-   print(f"📊 Day: {info['percentage_day']:.1f}% complete")
-   print(f"📊 Week: {info['percentage_week']:.1f}% complete") 
-   print(f"📊 Month: {info['percentage_month']:.1f}% complete")
-   print(f"📊 Season: {info['percentage_season']:.1f}% complete")
-   print(f"📊 Year: {info['percentage_year']:.1f}% complete")
-   
-   print("\n" + "="*50)
-   print("Testing Edge Cases:")
-   
-   # Edge case 1: New Year's Day
-   print("\n1. New Year's Day (January 1st):")
-   test_date = datetime(2024, 1, 1, 0, 1)
-   print(f"   Date: {test_date}")
-   start_season, end_season = get_season_range(test_date)
-   print(f"   Season range: {start_season} to {end_season}")
-   
-   # Edge case 2: Leap year February 29th
-   print("\n2. Leap Year - February 29th:")
-   test_date = datetime(2024, 2, 29, 12, 0)
-   print(f"   Date: {test_date}")
-   print(f"   Days in month: {get_days_in_month(2024, 2)}")
-   
-   # Edge case 3: Non-leap year February
-   print("\n3. Non-Leap Year February:")
-   print(f"   Days in Feb 2023: {get_days_in_month(2023, 2)}")
-   print(f"   Days in Feb 2024: {get_days_in_month(2024, 2)}")
-   
-   # Edge case 4: December 31st (end of year)
-   print("\n4. New Year's Eve (December 31st):")
-   test_date = datetime(2024, 12, 31, 23, 59)
-   print(f"   Date: {test_date}")
-   print(f"   Next year starts: {get_start_of_next_year(test_date)}")
-   
-   # Edge case 5: Season transitions
-   print("\n5. Season Transitions:")
-   transitions = [
-       datetime(2024, 2, 28, 23, 59),  # End of winter
-       datetime(2024, 3, 1, 0, 0),     # Start of spring
-       datetime(2024, 11, 30, 23, 59), # End of autumn
-       datetime(2024, 12, 1, 0, 0),    # Start of winter
-   ]
-   for date in transitions:
-       start_season, end_season = get_season_range(date)
-       print(f"   {date} -> Season: {start_season.strftime('%b %d')} to {end_season.strftime('%b %d')}")
-   
-   # Edge case 6: Week boundaries (Monday transitions)
-   print("\n6. Week Boundaries (ISO weeks):")
-   test_dates = [
-       datetime(2024, 6, 23, 23, 59),  # Sunday night
-       datetime(2024, 6, 24, 0, 0),    # Monday morning
-   ]
-   for date in test_dates:
-       iso_week = date.isocalendar()[1]
-       print(f"   {date.strftime('%A %b %d, %H:%M')} -> Week {iso_week}")
-   
-   # Edge case 7: Midnight transitions
-   print("\n7. Midnight Transitions:")
-   midnight = datetime(2024, 6, 22, 0, 0)
-   almost_midnight = datetime(2024, 6, 21, 23, 59)
-   print(f"   {almost_midnight}: Day {almost_midnight.hour * 60 + almost_midnight.minute} minutes")
-   print(f"   {midnight}: Day {midnight.hour * 60 + midnight.minute} minutes")
-   
-   # Edge case 8: Month boundaries with different lengths
-   print("\n8. Month Length Variations:")
-   months_to_test = [
-       (2024, 1, "January - 31 days"),
-       (2024, 2, "February - 29 days (leap)"),
-       (2024, 4, "April - 30 days"),
-       (2023, 2, "February - 28 days (non-leap)"),
-   ]
-   for year, month, desc in months_to_test:
-       days = get_days_in_month(year, month)
-       print(f"   {desc}: {days} days")
-   
-   # Edge case 9: Year boundaries across centuries
-   print("\n9. Century/Millennium Boundaries:")
-   century_dates = [
-       datetime(1999, 12, 31, 23, 59),
-       datetime(2000, 1, 1, 0, 0),
-       datetime(2099, 12, 31, 23, 59),
-       datetime(2100, 1, 1, 0, 0),
-   ]
-   for date in century_dates:
-       next_year = get_start_of_next_year(date)
-       print(f"   {date.year} -> Next year: {next_year.year}")
-   
-   # Edge case 10: Invalid month handling
-   print("\n10. Error Handling Test:")
-   try:
-       result = get_days_in_month(2024, 13)  # Invalid month
-       print(f"   Month 13: {result} days")
-   except ValueError as e:
-       print(f"   ✓ Caught expected error: {e}")
-   
-   try:
-       result = get_days_in_month(2024, 0)  # Invalid month
-       print(f"   Month 0: {result} days")
-   except ValueError as e:
-       print(f"   ✓ Caught expected error: {e}")

@@ -175,11 +175,3 @@ async def get_weather() -> Dict[str, Any]:
     except Exception as e:
         logger.error(f"Critical error in weather service: {e}")
         return get_fallback_weather()
-
-
-async def main() -> None:
-    weather_data = await get_weather()
-    print(weather_data)
-
-if __name__ == '__main__':
-    asyncio.run(main())

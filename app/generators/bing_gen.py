@@ -22,7 +22,7 @@ Dependencies:
 - app.config (for logger setup)
 """
 
-from app.services.bing import get_peapix_image
+from app.services.bing import get_peapix_data
 from app.data.database import AsyncSessionLocal
 from app.data.repository import RepositoryFactory
 from app.data.models import Bing
@@ -43,7 +43,7 @@ async def generate_bing_message(country: str = "ca", count: int = 1) -> dict:
     """
     
     logger.info("Generating Bing message")
-    bing_data = await get_peapix_image(country, count)
+    bing_data = await get_peapix_data(country, count)
     
     if bing_data and bing_data["url"] != "" and bing_data["title"] != "":
         logger.info("Saving Bing message to database")
@@ -52,12 +52,12 @@ async def generate_bing_message(country: str = "ca", count: int = 1) -> dict:
                 repo = RepositoryFactory(session).get_repository(Bing)
                 await repo.truncate(max_entries=12, keep_entries=4)
                 await repo.create(
-                    url=bing_data.get("url"),
+                    image_url=bing_data.get("image_url"),
                     title=bing_data.get("title"),
                     description=bing_data.get("description"),
-                    page_date=bing_data.get("page_date"),
+                    date=bing_data.get("date"),
                     copyright=bing_data.get("copyright"),
-                    page_url=bing_data.get("pageUrl"),
+                    page_url=bing_data.get("page_url"),
                 )
         except Exception as e:
             logger.error(f"Failed to save Bing message: {e}")
@@ -65,7 +65,6 @@ async def generate_bing_message(country: str = "ca", count: int = 1) -> dict:
     else:
         logger.error(f"Failed to generate Bing message")
     
-
     return bing_data
 
 async def main() -> None:

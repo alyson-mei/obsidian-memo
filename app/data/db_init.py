@@ -20,7 +20,6 @@ Dependencies:
 - app.config (for logger setup)
 """
 
-from app.data.models import *
 from app.data.database import Base, engine
 from app.config import setup_logger
 

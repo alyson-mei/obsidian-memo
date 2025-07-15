@@ -122,17 +122,3 @@ async def tavily_search(
             "images": [],
             "answer": ""
         }
-
-async def main() -> None:
-    """
-    Example usage of tavily_search.
-    """
-    query = "An interesting fact about some beautiful place in the world"
-    resp = await tavily_search(query)
-    print("Response:", resp)
-    print("Type:", type(resp))
-    print("Keys:", resp.keys() if isinstance(resp, dict) else "Not a dict")
-
-if __name__ == "__main__":
-    from app.config import TAVILY_API_KEY
-    asyncio.run(main())

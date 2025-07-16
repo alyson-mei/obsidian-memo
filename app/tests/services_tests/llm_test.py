@@ -3,7 +3,11 @@ import asyncio
 from pydantic import BaseModel
 
 from app.services.llm import call_llm, call_llm_structured
-from app.config import TIMEOUT, MODEL_NAME, MODEL_NAME_PRO
+from app.config import settings 
+
+MODEL_NAME = settings.model_name
+MODEL_NAME_PRO = settings.model_name_pro
+TIMEOUT = settings.timeout
 
 @pytest.mark.asyncio
 @pytest.mark.parametrize("model", [MODEL_NAME, MODEL_NAME_PRO])
@@ -13,7 +17,12 @@ async def test_call_llm(model):
         call_llm("You are concise AI assistant", "Explain async/await in one sentence", model=model)
     ]
 
-    results = await asyncio.gather(*tasks, return_exceptions=True)
+    llm_responses = await asyncio.gather(*tasks, return_exceptions=True)
+    assert all(isinstance(response, dict) for response in llm_responses), "LLM response should be a dictionary"
+    for response in llm_responses:
+        assert response["error"] is None, f"Error occurred: {response["error"]}"
+    
+    results = [response["data"] for response in llm_responses]
     assert all(isinstance(result, str) for result in results), "All results should be strings"
 
     print(f"====== Basic LLM Calls ({model}) ======")
@@ -53,7 +62,12 @@ async def test_call_llm_structured(model):
         )
     ]
 
-    results = await asyncio.gather(*tasks, return_exceptions=True)
+    llm_responses = await asyncio.gather(*tasks, return_exceptions=True)
+    assert all(isinstance(response, dict) for response in llm_responses), "LLM response should be a dictionary"
+    for response in llm_responses:
+        assert response["error"] is None, f"Error occurred: {response["error"]}"
+    
+    results = [response["data"] for response in llm_responses]
     assert all(isinstance(result, (TestResponse, SummaryResponse)) for result in results), "All results should be instances of the expected response models"
     
     print(f"====== Structured LLM Calls ({model}) ======")

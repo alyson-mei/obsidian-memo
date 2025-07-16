@@ -35,7 +35,7 @@ from datetime import datetime, timedelta
 from typing import Optional
 from pathlib import Path
 
-from app.generators.commit_gen import generate_and_save_commit_messages
+from app.generators.commit_gen import generate_commit_messages
 from app.generators.time_gen import generate_time_message
 from app.generators.weather_gen import generate_weather_message
 from app.generators.bing_gen import generate_bing_message
@@ -580,7 +580,7 @@ async def single_updater(test: bool = False) -> None:
                     weather_data = await get_weather()
                     tasks.extend([
                         generate_weather_message(weather_data),
-                        generate_and_save_commit_messages(weather_data)
+                        generate_commit_messages(weather_data)
                     ])
                     task_names.extend(["weather", "commit"])
                     logger.info("Scheduled weather and commit message generation")
@@ -732,7 +732,7 @@ async def test_main() -> None:
         await asyncio.gather(
             generate_time_message(time_info),
             generate_weather_message(weather_data),
-            generate_and_save_commit_messages(weather_data),
+            generate_commit_messages(weather_data),
             generate_bing_message(),
             generate_geo_message(),
             generate_journal_message()

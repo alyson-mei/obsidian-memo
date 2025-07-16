@@ -43,7 +43,7 @@ def test_get_time_info():
         "percentage_year"
     ]
     for key in keys:
-        assert key in info, f"Field {key} is missing from time info"
+        assert key in info and info[key], f"Field {key} is missing from time info"
 
 def test_current_time_info():
     """Test current time information display"""

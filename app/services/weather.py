@@ -20,11 +20,12 @@ Logging is used throughout for observability. Configuration is handled via app.c
 import aiohttp, asyncio
 from typing import Optional, Dict, Any
 
-from app.config import WEATHER_API, WEATHER_URL
-from app.config import setup_logger
+from app.config import settings, setup_logger
 
 logger = setup_logger("weather_service", indent=6)
 
+WEATHER_API = settings.weather_api
+WEATHER_URL = settings.weather_url
 WEATHER_CODES = {
     "0": {"text": "Unknown", "emoji": "❓"},
     "1000": {"text": "Clear, Sunny", "emoji": "☀️"},
@@ -103,19 +104,7 @@ def extract_weather_summary(weather_data: dict) -> dict:
 
     return weather_summary
 
-def get_fallback_weather() -> Dict[str, Any]:
-    """Return fallback weather data when API fails."""
-    return {
-        "status": "unavailable",
-        "message": "Weather data temporarily unavailable",
-        "current": {
-            "temp_c": None,
-            "condition": "Unknown"
-        },
-        "forecast": []
-    }
-
-async def get_weather_call(timeout: int = 5, retries: int = 2) -> Optional[Dict[str, Any]]:
+async def get_weather_call(timeout: int = 3, retries: int = 3) -> Optional[Dict[str, Any]]:
     """
     Fetch weather data with proper error handling and timeouts.
     
@@ -154,9 +143,8 @@ async def get_weather_call(timeout: int = 5, retries: int = 2) -> Optional[Dict[
             logger.warning(f"Weather fetch failed: {e}")
             
         if attempt < retries - 1:
-            wait_time = 1
-            logger.info(f"Waiting {wait_time}s before retry...")
-            await asyncio.sleep(wait_time)
+            logger.info(f"Waiting {timeout}s before retry...")
+            await asyncio.sleep(timeout)
 
     logger.error("All weather API attempts failed")
     return None
@@ -165,13 +153,27 @@ async def get_weather() -> Dict[str, Any]:
     """
     Get weather data with fallback handling.
     """
-    try: 
-        weather_data = await get_weather_call()
-        if weather_data:
-            return weather_data
-        else:
-            logger.info("Using fallback weather data")
-            return get_fallback_weather()
-    except Exception as e:
-        logger.error(f"Critical error in weather service: {e}")
-        return get_fallback_weather()
+    weather_data = await get_weather_call()
+    if weather_data:
+        return {
+            "data": weather_data,
+            "source": "primary",
+            "error": None
+        }        
+    else:
+        logger.info("Using fallback weather data")
+        fallback = {        
+            "status": "unavailable",
+            "message": "Weather data temporarily unavailable",
+            "current": {
+                "temp_c": None,
+                "condition": "Unknown"
+            },
+        "forecast": []
+        }
+        return {
+            "data": fallback,
+            "source": "fallback",
+            "error": "No data from primary source"
+        }
+

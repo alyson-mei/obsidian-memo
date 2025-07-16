@@ -23,7 +23,7 @@ Dependencies:
 """
 
 from app.services.bing import get_peapix_data
-from app.data.database import AsyncSessionLocal
+from app.data import database
 from app.data.repository import RepositoryFactory
 from app.data.models import Bing
 from app.config import setup_logger
@@ -45,10 +45,10 @@ async def generate_bing_message(country: str = "ca", count: int = 1) -> dict:
     logger.info("Generating Bing message")
     bing_data = await get_peapix_data(country, count)
     
-    if bing_data and bing_data["url"] != "" and bing_data["title"] != "":
+    if bing_data and bing_data["image_url"] != "" and bing_data["title"] != "":
         logger.info("Saving Bing message to database")
         try:
-            async with AsyncSessionLocal() as session:
+            async with database.AsyncSessionLocal() as session:
                 repo = RepositoryFactory(session).get_repository(Bing)
                 await repo.truncate(max_entries=12, keep_entries=4)
                 await repo.create(
@@ -66,11 +66,3 @@ async def generate_bing_message(country: str = "ca", count: int = 1) -> dict:
         logger.error(f"Failed to generate Bing message")
     
     return bing_data
-
-async def main() -> None:
-   response_content = await generate_bing_message()
-   print(response_content)
-
-if __name__ == '__main__':
-   import asyncio
-   asyncio.run(main())

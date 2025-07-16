@@ -40,6 +40,8 @@ class BaseRepository:
         self.model = model
         self.session = session
 
+    # ===== Create =====
+
     async def create(self, upsert=False, **kwargs):
         """
         Create or upsert a new record.
@@ -93,6 +95,8 @@ class BaseRepository:
         logger.info(f"Created {len(objs)} new {self.model.__name__} records in batch.")
         return objs
     
+    # ===== Read =====
+    
     async def get_last(self): 
         """
         Get the most recent record.
@@ -127,6 +131,8 @@ class BaseRepository:
         result = await self.session.execute(statement)
         logger.info(f"Fetched last {n} {self.model.__name__} entries.")
         return result.scalars().all()
+    
+    # ===== Delete =====
 
     async def delete_by_id(self, obj_id: int):
         """

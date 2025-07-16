@@ -11,9 +11,9 @@ from the Peapix API, as well as scraping additional details (date, description) 
 Logging is used throughout for observability. All network requests and parsing steps are robustly handled.
 """
 
-import asyncio, aiohttp
+import aiohttp
 from typing import Dict
-from bs4 import BeautifulSoup  # type: ignore
+from bs4 import BeautifulSoup
 
 from app.config import setup_logger
 
@@ -196,15 +196,24 @@ async def get_peapix_data(country: str = "ca", count: int = 1) -> Dict[str, str]
                     "page_url": page_url
                 }
                 logger.info("Fetched data successfully.")
-                return result
+                return {
+                    "data": result,
+                    "source": "primary",
+                    "error": None
+                }
 
         except Exception as e:
             logger.error(f"Request error: {e}")
-            return {
+            fallback = {
                 "image_url": "",
                 "title": "",
                 "description": "",
                 "date": "",
                 "copyright": "",
                 "page_url": ""
+            }
+            return {
+                "data": fallback,
+                "source": "fallback",
+                "error": "No data from primary source"
             }

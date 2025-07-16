@@ -26,10 +26,10 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 from io import BytesIO
 
-from app.resources.styles import POPPINS_REGULAR, TIME_PROGRESS_COLORS
+from app.assets.styles import POPPINS_REGULAR, TIME_PROGRESS_COLORS
 from app.data.repository import RepositoryFactory
 from app.data.models import Time
-from app.data.database import AsyncSessionLocal
+from app.data import database 
 from app.config import setup_logger
 
 logger = setup_logger("time_generator", indent=4)
@@ -112,7 +112,7 @@ async def generate_time_message(time_info: dict) -> None:
     datetime = time_info["datetime"]
     logger.info(f"Saving time message to database")
     try:
-        async with AsyncSessionLocal() as session:
+        async with database.AsyncSessionLocal() as session:
             repo = RepositoryFactory(session).get_repository(Time)
             await repo.truncate(max_entries=12, keep_entries=4)
             await repo.create(
@@ -124,11 +124,4 @@ async def generate_time_message(time_info: dict) -> None:
         logger.error(f"Failed to save time message: {e}")
     logger.info("Time message saved to database.")
 
-async def main():
-    from app.services.time import get_time_info
-    time_info = get_time_info()
-    await generate_time_message(time_info)
-
-if __name__ == "__main__":
-    import asyncio
-    asyncio.run(main())
+    return light_svg, dark_svg

@@ -20,13 +20,17 @@ from pydantic import BaseModel
 from langchain.chat_models import init_chat_model
 from langchain_core.messages import SystemMessage, HumanMessage
 
-from app.config import MODEL_NAME, MODEL_PROVIDER, DEFAULT_RESPONSE, TIMEOUT, setup_logger
+from app.config import settings, setup_logger
 
 logger = setup_logger("llm_service", indent=6)
+MODEL_NAME = settings.model_name
+MODEL_PROVIDER = settings.model_provider
+DEFAULT_RESPONSE = settings.default_response
+TIMEOUT = settings.timeout
 
 async def call_llm(
         system_prompt: str,
-        user_prompt: str,
+        human_prompt: str,
         model: str = MODEL_NAME,
         model_provider: str = MODEL_PROVIDER,
         temperature: float = 0.7,
@@ -38,7 +42,7 @@ async def call_llm(
     
     Args:
         system_prompt: System message for the LLM
-        user_prompt: User message for the LLM
+        human_prompt: User message for the LLM
         model: Model name to use
         model_provider: Provider for the model
         temperature: Sampling temperature
@@ -64,7 +68,7 @@ async def call_llm(
         response = await asyncio.wait_for(
             llm.ainvoke([
                 SystemMessage(content=system_prompt),
-                HumanMessage(content=user_prompt)
+                HumanMessage(content=human_prompt)
             ]),
             timeout=timeout
         )
@@ -72,23 +76,34 @@ async def call_llm(
         elapsed = time.time() - start_time
         logger.info(f"LLM call completed in {elapsed:.2f}s")
         
-        result = response.content.strip() if response.content else default_response
-        return result
+        if response.content:
+            return {
+                "data": response.content.strip(),
+                "source": "primary",
+                "error": None
+            }
+        else: 
+            return {
+                "data": default_response,
+                "source": "default_response",
+                "error": "No data from primary source"
+            }
         
-    except asyncio.TimeoutError:
-        logger.warning(f"LLM call timed out after {timeout}s")
-        return default_response
     except Exception as e:
         elapsed = time.time() - start_time
         logger.error(f"LLM call failed after {elapsed:.2f}s: {e}")
-        return default_response
+        return {
+            "data": default_response,
+            "source": "default_response",
+            "error": e
+        }
 
 
 T = TypeVar('T', bound=BaseModel)
 
 async def call_llm_structured(
         system_prompt: str,
-        user_prompt: str,
+        human_prompt: str,
         response_model: Type[T],
         model: str = MODEL_NAME,
         model_provider: str = MODEL_PROVIDER,
@@ -101,7 +116,7 @@ async def call_llm_structured(
     
     Args:
         system_prompt: System message for the LLM
-        user_prompt: User message for the LLM
+        human_prompt: User message for the LLM
         response_model: Pydantic model class for response validation
         model: Model name to use
         model_provider: Provider for the model
@@ -134,7 +149,7 @@ async def call_llm_structured(
         response = await asyncio.wait_for(
             llm.ainvoke([
                 SystemMessage(content=enhanced_prompt), 
-                HumanMessage(content=user_prompt)
+                HumanMessage(content=human_prompt)
             ]),
             timeout=timeout
         )
@@ -155,12 +170,17 @@ async def call_llm_structured(
             
         result = response_model.model_validate_json(content)
         logger.debug(f"Successfully parsed structured response: {type(result).__name__}")
-        return result
+        return {
+            "data": result,
+            "source": "primary",
+            "error": None
+        }        
         
-    except asyncio.TimeoutError:
-        logger.warning(f"Structured LLM call timed out after {timeout}s")
-        return default_factory() if default_factory else None
     except Exception as e:
         elapsed = time.time() - start_time
         logger.error(f"Structured LLM call failed after {elapsed:.2f}s: {e}")
-        return default_factory() if default_factory else None
+        return {
+            "data": default_factory() if default_factory else None,
+            "source": "default_factory",
+            "error": "No data from primary source"
+        } 

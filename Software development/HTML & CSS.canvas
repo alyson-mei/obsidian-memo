@@ -1,0 +1,39 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "height": 635,
+      "id": "f7f273ed96287c8f",
+      "styleAttributes": {
+      },
+      "text": "### Getting started with HTML\n\n```html\n<h1>I code, therefore, I am</h1>\n<h2>Rene Descartes</h2>\n```\n\n`<p></p>`\n`<img src=\"mars.jpg\" width=\"100%\"> # scale`  \n`<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0sfBghhyvJ0mC6ONbnM7wi1o_H484LZ9PA&s\" width=\"100%\"`\n\n```html\n<div>\n\t...\n</div>\n```\n\n`<button. </button>`\n\n```html\n<input type = \"text\" placeholder=\"Enter username\">\n<input type = \"password\" placeholder=\"Enter username\">\n<input type = \"file\">\n```\n",
+      "type": "text",
+      "width": 705,
+      "x": -220,
+      "y": -140
+    },
+    {
+      "height": 1385,
+      "id": "97939c454474ab30",
+      "styleAttributes": {
+      },
+      "text": "### Anchor tags\n\n```html\n<a href=\"work.html\"> Check out my projects here.</a>\n<p> Check out the live demo \n\t<a href=\"https://www.google.com/\" target=\"_blank\">here</a>\n</p>\n\n<p>\n\tBack to the <a href=\"index.html\">index.html</a> page\n</p>\n```\n\n### Structure\n\nIn a body tags you  see on the page\n Head - metadata\n\n```html\n<!doctype html>\n<html>\n\t<head>\n\t\t<link rel=\"stylesheet\" href=\"styles.css\">\n\t</head>\n\t\n\t<body>\n\t\t<img src=\"google.png\">\n\t\t<input type=\"test\">\n\t\t<button>Google Search</button>\n\t\t<button>I'm feeling Lucky</button>\n\t\t<p>We protect your privacy. <a href=\"blog.html\",Learn how.</a></p>\n\t</body>\n<html>\n```\n\n### Lists\n\n```html\n<!doctype html>\n<html>\n\t<head></head>\n\t<body>\n\t\t<h1>Beijing Olympics</h1>\n\t\t<ul>\n\t\t\t<li>Norway</li>\n\t\t\t<li>Germany</li>\n\t\t\t<li>China</li>\n\t\t\t<li>US</li>\n\t\t</ul>\n\t</body>\n</html>\n```\n\n### Description lists\n\n```html\n<dl>\n\t<dt>Beast of Bodmin</dt>\n\t<dd>A large feline inhabiting Bodmin Moor.</dd>\n\t<dt>Morgawr</dt>\n\t<dd>A sea serpent.</dd>\n\t<dt>Owlman</dt>\n\t<dd>A giant owl-like creature.</dd>\n</dl>\n```",
+      "type": "text",
+      "width": 705,
+      "x": -220,
+      "y": 531
+    },
+    {
+      "height": 1671,
+      "id": "40ddf1d56650f42f",
+      "styleAttributes": {
+      },
+      "text": "### Intro to CSS\n\n```html\n<link rel=\"stylesheet\" href=\"styles.css\"/>\n```\n\n```css\nbody {\n\tbackground: whitesmoke; /* red, blue, yellow, etc */\n\tcolor: black; /* red, blue, yellow, etc */\n\tfont-size: 18px; /* 0px - 100px and beyond */\n\tfont-weight: bold; /* lighter, normal, bold */\n\ttext-align: center; /* left, center or right */\n\tmargin-top: 48px; /* From 0px and upwards */\n}\n```\n\n```css\ninput {\n\tdisplay: block;\n\twidth: 400px;\n}\n\nimg {\n\tdisplay: block;\n\twidth: 300px;\n}\n```\n\n**Inline vs.  block images**\n\n```css\nimg {\n\tdisplay: block;\n\twidth: 300px;\n}\n```\n\n**Div**\n\n```html\n<div>\n\t<img src=\"google.png\" />\n\t<input type=\"text\" />\n</div>\n```\n\n**Classes**\n\n```css\ndiv {\n\tmargin-top;; 100px;\n}\n```\n\n```html\n<div class='main\">\n\t<img src=\"google.png\" />\n\t<input type=\"text\" />\n\t\t<div>\n\t\t\t<button>Google Search</button>\n\t\t\t<button >I'm Feeling Lucky</button>\n\t</div>\n</div>\n```\n\n```css\n\n```",
+      "type": "text",
+      "width": 762,
+      "x": 570,
+      "y": -140
+    }
+  ]
+}

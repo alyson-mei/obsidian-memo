@@ -1,0 +1,499 @@
+{
+  "edges": [
+    {
+      "fromNode": "91c4b293a9431f25",
+      "fromSide": "right",
+      "id": "392e195d66e160fa",
+      "label": "init_db()",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toNode": "ad986b6373242ddc",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "060102b054f0a759",
+      "fromSide": "bottom",
+      "id": "75c32cb3340660ec",
+      "label": "environment variables",
+      "styleAttributes": {
+      },
+      "toNode": "2aab22f955539b2f",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "ad986b6373242ddc",
+      "fromSide": "bottom",
+      "id": "da7d3ae1d5339d53",
+      "label": "configs",
+      "styleAttributes": {
+        "arrow": null,
+        "pathfindingMethod": "square"
+      },
+      "toNode": "060102b054f0a759",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "74dd26d545be610c",
+      "fromSide": "top",
+      "id": "83eeabf0f18d5fdc",
+      "label": "get_session()",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toNode": "ad986b6373242ddc",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "d13aa08448042b18",
+      "fromSide": "top",
+      "id": "a8966a5f67aa1f7d",
+      "label": "import",
+      "styleAttributes": {
+      },
+      "toNode": "74dd26d545be610c",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "fa0e48ee0bcc2b5f",
+      "fromSide": "top",
+      "id": "01648f320fabd68e",
+      "label": "inheritance",
+      "styleAttributes": {
+      },
+      "toNode": "62dc6ed357e92f7e",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "810ca4e6660b8b07",
+      "fromSide": "left",
+      "id": "cbdf7ce4aaf71ec8",
+      "label": "get_engine()",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toNode": "ad986b6373242ddc",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "fa0e48ee0bcc2b5f",
+      "fromSide": "left",
+      "id": "bb406a21ab867951",
+      "label": "import",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toNode": "810ca4e6660b8b07",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "74dd26d545be610c",
+      "fromSide": "top",
+      "id": "169e78cd31f3f6c5",
+      "label": "import",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toNode": "810ca4e6660b8b07",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "74dd26d545be610c",
+      "fromSide": "left",
+      "id": "fca96d4dfbf39846",
+      "label": "import",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "toNode": "fa0e48ee0bcc2b5f",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "a2d1ed18ef2780f7",
+      "fromSide": "top",
+      "id": "0733c5c0502269c0",
+      "styleAttributes": {
+      },
+      "toNode": "7ef28616be2c1015",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "a9859b9f26f8ef12",
+      "fromSide": "top",
+      "id": "526e07bc6cc34fdb",
+      "styleAttributes": {
+      },
+      "toNode": "a2d1ed18ef2780f7",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "d13b59207c58da92",
+      "fromSide": "top",
+      "id": "10f4da753f03b235",
+      "styleAttributes": {
+      },
+      "toNode": "ccb5c8ddc119446c",
+      "toSide": "bottom"
+    },
+    {
+      "fromEnd": "arrow",
+      "fromNode": "ccb5c8ddc119446c",
+      "fromSide": "left",
+      "id": "4893fe6bbad1801e",
+      "styleAttributes": {
+      },
+      "toNode": "a2d1ed18ef2780f7",
+      "toSide": "right"
+    },
+    {
+      "fromEnd": "arrow",
+      "fromNode": "ccb5c8ddc119446c",
+      "fromSide": "left",
+      "id": "57b03f7aac0497e6",
+      "label": "!",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toNode": "7ef28616be2c1015",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "aebbb60def14a895",
+      "fromSide": "left",
+      "id": "730f1ae0a345f9b6",
+      "styleAttributes": {
+      },
+      "toNode": "a9859b9f26f8ef12",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "08426f33f69a8376",
+      "fromSide": "left",
+      "id": "9fa80a61eeb7d4d8",
+      "styleAttributes": {
+      },
+      "toNode": "d13b59207c58da92",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "08426f33f69a8376",
+      "fromSide": "left",
+      "id": "474c91188828848d",
+      "styleAttributes": {
+      },
+      "toNode": "aebbb60def14a895",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "08426f33f69a8376",
+      "fromSide": "bottom",
+      "id": "1c080805541cf9e2",
+      "label": "!",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toNode": "a9859b9f26f8ef12",
+      "toSide": "bottom"
+    }
+  ],
+  "nodes": [
+    {
+      "height": 800,
+      "id": "c9769604fadd47ec",
+      "label": "Setup",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1213,
+      "x": -1638,
+      "y": -177
+    },
+    {
+      "height": 631,
+      "id": "4a8404592eb2e90b",
+      "label": "Data Layer",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1333,
+      "x": -456,
+      "y": 1156
+    },
+    {
+      "height": 800,
+      "id": "47dafb49464ee451",
+      "label": "Notes",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1000,
+      "x": -303,
+      "y": -177
+    },
+    {
+      "height": 631,
+      "id": "2d9359e2b9ec7646",
+      "label": "Business Layer",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 582,
+      "x": 993,
+      "y": 900
+    },
+    {
+      "height": 631,
+      "id": "e74c14d52f43419e",
+      "label": "Infrastructure Layer",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 398,
+      "x": -1084,
+      "y": 900
+    },
+    {
+      "height": 631,
+      "id": "fb8a2f101e8e99db",
+      "label": "Database",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 385,
+      "x": -1705,
+      "y": 900
+    },
+    {
+      "height": 313,
+      "id": "8c980b1b647f5ab3",
+      "label": "Models",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 584,
+      "x": -425,
+      "y": 1240
+    },
+    {
+      "height": 313,
+      "id": "dff98f0e93300f8a",
+      "label": "Repositories",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 574,
+      "x": 264,
+      "y": 1240
+    },
+    {
+      "height": 60,
+      "id": "2aab22f955539b2f",
+      "styleAttributes": {
+      },
+      "text": "### .env",
+      "type": "text",
+      "width": 311,
+      "x": -1048,
+      "y": 1414
+    },
+    {
+      "height": 62,
+      "id": "060102b054f0a759",
+      "styleAttributes": {
+      },
+      "text": "### core/config.py",
+      "type": "text",
+      "width": 311,
+      "x": -1048,
+      "y": 1239
+    },
+    {
+      "height": 60,
+      "id": "ad986b6373242ddc",
+      "styleAttributes": {
+      },
+      "text": "### core/db_init.py\n",
+      "type": "text",
+      "width": 311,
+      "x": -1048,
+      "y": 1010
+    },
+    {
+      "height": 60,
+      "id": "91c4b293a9431f25",
+      "styleAttributes": {
+        "shape": null
+      },
+      "text": "### data/daily_tracker.db",
+      "type": "text",
+      "width": 311,
+      "x": -1667,
+      "y": 1010
+    },
+    {
+      "height": 732,
+      "id": "4bed48e68f444ce9",
+      "styleAttributes": {
+      },
+      "text": "### venv\n```bash\npython -m venv .venv  # Создаёт папку .venv\n```\na) \n`requirements.txt`:\n```txt\n# Для работы с БД и SQL\nsqlalchemy>=2.0\npsycopg2-binary  # или другой драйвер БД (например, sqlite3 встроен в Python)\npython-dotenv    # для загрузки .env\n...\n```\n\n```bash\nsource .venv/bin/activate # Активация venv (если терминал не сделал это автоматически) \npip install -r requirements.txt\n```\nb) \n```bash\npip install sqlalchemy typer rich\npip freeze > requirements.txt\n```",
+      "type": "text",
+      "width": 552,
+      "x": -1613,
+      "y": -151
+    },
+    {
+      "height": 732,
+      "id": "4ad0d06fb9110c4e",
+      "styleAttributes": {
+      },
+      "text": "### .env\n\n**1\\.**  `.env` (environment variables) - конфигурационный файл, который хранит чувствительные или изменяемые параметры приложения в формате `KEY=VALUE`. Не попадает в Git (в `.gitignore`), чтобы избежать утечки данных\n\nВ `.env`:\n1) Пути к файлам/БД\n2) Ключи API и токены\n3) Параметры приложения\n4) Настройки безопасности\n\n**2\\.** Взаимодействие с приложением\n```python\nfrom dotenv import load_dotenv\nimport os\n\nload_dotenv()\ndb_path = os.getenv(\"DATABASE_PATH\")\n```\n**3\\.** Best practices\n1) `.gitignore`\n2) `.env.example`\n3) Не хранить токены/пароли прямо в коде, использовать секреты (Kubernetes Secrets)",
+      "type": "text",
+      "width": 533,
+      "x": -1009,
+      "y": -151
+    },
+    {
+      "height": 63,
+      "id": "62dc6ed357e92f7e",
+      "styleAttributes": {
+      },
+      "text": "#### core/repositories/base_repository.py",
+      "type": "text",
+      "width": 498,
+      "x": 310,
+      "y": 1270
+    },
+    {
+      "height": 60,
+      "id": "fa0e48ee0bcc2b5f",
+      "styleAttributes": {
+      },
+      "text": "#### core/repositories/repository_factory.py",
+      "type": "text",
+      "width": 498,
+      "x": 310,
+      "y": 1457
+    },
+    {
+      "height": 60,
+      "id": "74dd26d545be610c",
+      "styleAttributes": {
+      },
+      "text": "#### cli/command_handlers.py",
+      "type": "text",
+      "width": 498,
+      "x": 1033,
+      "y": 1070
+    },
+    {
+      "height": 63,
+      "id": "d13aa08448042b18",
+      "styleAttributes": {
+      },
+      "text": "#### cli/cli.py",
+      "type": "text",
+      "width": 498,
+      "x": 1033,
+      "y": 1270
+    },
+    {
+      "height": 60,
+      "id": "810ca4e6660b8b07",
+      "styleAttributes": {
+      },
+      "text": "#### core/repositories/static_models/models.py",
+      "type": "text",
+      "width": 517,
+      "x": -390,
+      "y": 1365
+    },
+    {
+      "height": 732,
+      "id": "1802ccb801d7f43d",
+      "styleAttributes": {
+      },
+      "text": "### get_engine(), get_session()\n **get_engine()** создаёт движок SQLAlchemy\n- объект, который инкапсулирует подключение к бд\n- знает, где находится база, как к ней подключиться, через какой драйвер\n- сам по себе ещё не делает запросов, он умеет их отправлять\n- тяжёлый объект, создаётся один раз на приложение\n\n**get_session()** создаёт сессию SQLAlchemy\n- объект, который управляет чтением, записью, обновлением, удалением объектов в бд\n- открывает транзакцию с бд\n- сопоставляет модели с реальными записями в таблицах\n- лёгкий объект, можно открывать/закрывать много раз\n\n`Session` зависит от `Engine`: получает из него физические подключения к бд, механизмы выполнения SQL\n\n| Шаг | Что происходит                                                                                               |\n| --- | ------------------------------------------------------------------------------------------------------------ |\n| 1   | Ты создаёшь `Session` через `Session = sessionmaker(bind=engine)`                                            |\n| 2   | Ты открываешь `session = Session()`                                                                          |\n| 3   | `Session` внутри открывает физическое соединение через `Engine.connect()`                                    |\n| 4   | Когда ты делаешь `session.add()`, `session.commit()`, `session.query()`, `Session` использует это соединение |\n| 5   | Когда ты делаешь `session.commit()` — изменения отправляются в БД через `Engine`                             |\n| 6   | Когда `session.close()`, соединение закрывается или возвращается в пул                                       |",
+      "type": "text",
+      "width": 822,
+      "x": -263,
+      "y": -151
+    },
+    {
+      "height": 60,
+      "id": "ccb5c8ddc119446c",
+      "styleAttributes": {
+      },
+      "text": "### base_repository.py",
+      "type": "text",
+      "width": 324,
+      "x": -1257,
+      "y": 1840
+    },
+    {
+      "height": 60,
+      "id": "d13b59207c58da92",
+      "styleAttributes": {
+      },
+      "text": "### repository_factory.py",
+      "type": "text",
+      "width": 324,
+      "x": -1257,
+      "y": 1968
+    },
+    {
+      "height": 60,
+      "id": "aebbb60def14a895",
+      "styleAttributes": {
+      },
+      "text": "### db_init.py",
+      "type": "text",
+      "width": 260,
+      "x": -880,
+      "y": 2108
+    },
+    {
+      "height": 60,
+      "id": "7ef28616be2c1015",
+      "styleAttributes": {
+      },
+      "text": "### model_registry.json",
+      "type": "text",
+      "width": 294,
+      "x": -1718,
+      "y": 1840
+    },
+    {
+      "height": 60,
+      "id": "a2d1ed18ef2780f7",
+      "styleAttributes": {
+      },
+      "text": "### registry.py",
+      "type": "text",
+      "width": 294,
+      "x": -1718,
+      "y": 1968
+    },
+    {
+      "height": 60,
+      "id": "a9859b9f26f8ef12",
+      "styleAttributes": {
+      },
+      "text": "### factory.py",
+      "type": "text",
+      "width": 294,
+      "x": -1718,
+      "y": 2108
+    },
+    {
+      "height": 60,
+      "id": "08426f33f69a8376",
+      "styleAttributes": {
+      },
+      "text": "### test",
+      "type": "text",
+      "width": 260,
+      "x": -546,
+      "y": 1968
+    }
+  ]
+}

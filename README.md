@@ -9,25 +9,25 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## sunday, 20 july 2025 | 01:44
+## sunday, 20 july 2025 | 01:45
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-07-20, 01:30)
+Weather in Moscow (2025-07-20, 01:45)
 
-🌡️ Temp: 20°C (feels like 20°C) <br>
-☁️ Condition: Cloudy <br>
-💨 Wind: An E-SE breeze at 3.4 m/s, with gusts up to 7.4 m/s <br>
-💧 Humidity: 76% <br>
-📉 Pressure: 1011 mb (sea level), 992 mb (surface) <br>
-☁️ Cloud cover: 100% (a thick blanket of clouds, with base at 4.3 km and ceiling at 8.4 km) <br>
-👁 Visibility: 16 km, offering clear views <br>
+🌡️ Temp: 19.6°C (feels like 19.6°C) <br>
+☁️ Condition: Completely overcast <br>
+💨 Wind: Light ESE breeze at 3.4 m/s, with occasional gusts up to 7.3 m/s <br>
+💧 Humidity: 77% <br>
+📉 Pressure: 1010.5 mb (sea level), 991.8 mb (surface) <br>
+☁️ Cloud cover: 100% (high clouds) <br>
+👁️ Visibility: Excellent at 16 km <br>
 
-☁️ A Quiet, Cloudy Early Morning <br>
-The early hours are starting under a blanket of clouds, bringing a soft, mild feel to the air. A gentle start to the day, perfect for quiet contemplation.
+☁️ Quiet, Cloud-Covered Morning <br>
+A peaceful, warm start to the day, wrapped in a blanket of clouds. The city sleeps quietly under the gentle cover.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -68,4 +68,4 @@ Comprising approximately 1,260 to 1,776 individual mounds, these geological wond
 Visiting the Chocolate Hills offers a breathtaking sensory experience. From various viewpoints, you can gaze upon the seemingly endless expanse of these 'chocolate kisses,' feeling the immensity of nature's artistry. The sheer number and consistent shape of the hills create a mesmerizing pattern that stretches to the horizon, leaving visitors in awe of this unparalleled natural spectacle. It's a vista that evokes wonder, making it a must-see destination for any traveler.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1752965041)
+![Cat](https://cataas.com/cat/cute?t=1752965119)

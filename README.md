@@ -9,19 +9,25 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## sunday, 20 july 2025 | 01:29
+## sunday, 20 july 2025 | 01:30
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather Report ⚠️
+Weather in Moscow (2025-07-20, 01:30)
 
-It seems like the weather data is currently unavailable. ❓
+🌡️ Temp: 20°C (feels like 20°C) <br>
+☁️ Condition: Cloudy <br>
+💨 Wind: An E-SE breeze at 3.4 m/s, with gusts up to 7.4 m/s <br>
+💧 Humidity: 76% <br>
+📉 Pressure: 1011 mb (sea level), 992 mb (surface) <br>
+☁️ Cloud cover: 100% (a thick blanket of clouds, with base at 4.3 km and ceiling at 8.4 km) <br>
+👁 Visibility: 16 km, offering clear views <br>
 
-☁️ A Bit of a Mystery Morning ☁️ <br>
-The weather is playing shy this morning, keeping its details under wraps. Perhaps it's a perfect excuse for a quiet, unplanned start to the day.
+☁️ A Quiet, Cloudy Early Morning <br>
+The early hours are starting under a blanket of clouds, bringing a soft, mild feel to the air. A gentle start to the day, perfect for quiet contemplation.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -62,4 +68,4 @@ Comprising approximately 1,260 to 1,776 individual mounds, these geological wond
 Visiting the Chocolate Hills offers a breathtaking sensory experience. From various viewpoints, you can gaze upon the seemingly endless expanse of these 'chocolate kisses,' feeling the immensity of nature's artistry. The sheer number and consistent shape of the hills create a mesmerizing pattern that stretches to the horizon, leaving visitors in awe of this unparalleled natural spectacle. It's a vista that evokes wonder, making it a must-see destination for any traveler.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1752964141)
+![Cat](https://cataas.com/cat/cute?t=1752964216)

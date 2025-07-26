@@ -1,0 +1,255 @@
+{
+	"edges":[],
+	"nodes":[
+		{
+			"height":1299,
+			"id":"a813c485af1e7fea",
+			"label":"Course",
+			"styleAttributes":{},
+			"type":"group",
+			"width":2601,
+			"x":-480,
+			"y":4320
+		},
+		{
+			"height":964,
+			"id":"f167dbd3138040da",
+			"styleAttributes":{},
+			"text":"### Basic commands\n- `ls` - List directory contents\n`-l`, `-a`, `-la`, `-lh`, `-lt`, `-ltr`, `-R`, `--color=auto`, `-i`\n- `cd`\n`~`, `-`, `..`, `../..`, `/path/to/directory`, `relative/path`\n- `pwd`\n`-P`\n- `cp`\n`cp source destination` | `cp file1 file2 file3 directory/` \n`-r` recursive, `-p` (preserve), `-u` (update), `-v` (verbose), `-i` (interactive mode)\n`-R --preserve=all source dest` # Full archive copy with all attributes\n- `mv oldname newname` | `mv file1 file2 directory/` \n`-i`, `-u`, `-v`\n- `rm file1 file2` | `rm -r directory`\n`-f` file \n- `mkdir directory`, `rmdir directory` | `mkdir -p path/to/nested/directory` | `mkdir -m 755 directory`\n- `cat`\n- `more`, `less`\n- `head file`\n- `grep`\n- `sed`\n- `awk`",
+			"type":"text",
+			"width":956,
+			"x":-479,
+			"y":-258
+		},
+		{
+			"height":627,
+			"id":"e5664eb85c604b80",
+			"styleAttributes":{},
+			"text":"### Scripting\n",
+			"type":"text",
+			"width":785,
+			"x":527,
+			"y":-258
+		},
+		{
+			"height":1275,
+			"id":"8ea92119b6b691d6",
+			"styleAttributes":{},
+			"text":"### Navigation & Directory management\n\n```bash\n# basic nav\npwd\nls -la\ncd /path/to/directory\ncd - \ncd ~\n\n# directory operations\nmkdir -p dir1/dir2/dir3 # nested\nrmdir directory # remove empty\nrm -rf directory # remove with content recoursively\n```\n\n### File operations \n```bash\n# Creating and viewing files\n\ntouch filename.txt\ncat file.txt\nhead -n 10 file.txt # show first 10 lines\ntail -n 10 file.txt # last 10 lines\n\n# Copying and moving\ncp source.txt dest.txt    # Copy file\ncp -r source_dir dest_dir # Copy directory recursively\nmv oldname.txt newname.txt # Move/rename file\n```\n\n### File info\n```bash\nls -lh file.txt           # Human-readable file size\ndu -sh directory/         # Directory size\ndf -h                     # Disk usage\nfile filename             # Determine file type\nwc -l file.txt           # Count lines in file\nwc -w file.txt           # Count words in file\n```",
+			"type":"text",
+			"width":642,
+			"x":-479,
+			"y":1020
+		},
+		{
+			"height":1275,
+			"id":"76cde8fca498e1b6",
+			"styleAttributes":{},
+			"text":"### grep - Text Search Master\n\n```bash\n# Basic search\ngrep \"pattern\" file.txt           # Search for pattern in file\ngrep -i \"pattern\" file.txt        # Case-insensitive search\ngrep -r \"pattern\" directory/      # Recursive search in directory\ngrep -n \"pattern\" file.txt        # Show line numbers\ngrep -v \"pattern\" file.txt        # Invert match (exclude pattern)\n\n# Advanced grep\ngrep -E \"pattern1|pattern2\" file.txt    # Extended regex (OR)\ngrep -A 3 -B 2 \"pattern\" file.txt       # 3 lines after, 2 before match\ngrep -c \"pattern\" file.txt              # Count matches\n```\n\n### sed - Stream Editor\n\n```bash\n# Substitution\nsed 's/old/new/' file.txt              # Replace first occurrence per line\nsed 's/old/new/g' file.txt             # Replace all occurrences\nsed 's/old/new/gi' file.txt            # Case-insensitive global replace\nsed -i 's/old/new/g' file.txt          # Edit file in-place\n\n# Line operations\nsed -n '10,20p' file.txt               # Print lines 10-20\nsed '5d' file.txt                      # Delete line 5\nsed '/pattern/d' file.txt              \n```\n\n### awk - Pattern Processing\n\n```bash\n# Field processing\nawk '{print $1, $3}' file.txt          # Print columns 1 and 3\nawk -F':' '{print $1}' /etc/passwd     # Use colon as field separator\nawk '{sum += $1} END {print sum}' file.txt  # Sum first column\n\n# Conditional processing\nawk '$3 > 100 {print $0}' file.txt     # Print lines where column 3 > 100\nawk '/pattern/ {print NR, $0}' file.txt # Print line number for matches\n```\n\n### sort & uniq\n```bash\n# Sorting\nsort file.txt                          # Sort alphabetically\nsort -n file.txt                       # Numeric sort\nsort -r file.txt                       # Reverse sort\nsort -k2 file.txt                      # Sort by second column\n\n# Removing duplicates\nuniq file.txt                          # Remove consecutive duplicates\nsort file.txt | uniq                   # Remove all duplicates\nsort file.txt | uniq -c                # Count occurrences\n```",
+			"type":"text",
+			"width":772,
+			"x":195,
+			"y":1020
+		},
+		{
+			"height":1275,
+			"id":"1053d04d05cc7426",
+			"styleAttributes":{},
+			"text":"### Process Management\n\n```bash\n# Process information\nps aux                    # List all processes\nps aux | grep process     # Find specific process\ntop                       # Real-time process viewer\nhtop                      # Enhanced process viewer (if installed)\n\n# Process control\nkill PID                  # Terminate process by PID\nkill -9 PID              # Force kill process\nkillall process_name     # Kill all processes by name\njobs                     # List active jobs\nbg                       # Put job in background\nfg                       # Bring job to foreground\n\n# Running processes\ncommand &                # Run in background\nnohup command &          # Run immune to hangups\n```\n\n### System Information\n\n```bash\n# System status\nuname -a                 # System information\nwhoami                   # Current user\nid                       # User and group IDs\nuptime                   # System uptime and load\nfree -h                  # Memory usage\ndf -h                    # Disk space usage\n\n# Network\nnetstat -tuln           # Network connections\nss -tuln                # Modern alternative to netstat\nping hostname           # Test connectivity\n```\n\n### File Permissions\n```bash\n# Understanding permissions: rwxrwxrwx (user group other)\n# r=4, w=2, x=1\n\nchmod 755 file.txt      # rwxr-xr-x (common for executables)\nchmod 644 file.txt      # rw-r--r-- (common for files)\nchmod +x script.sh      # Add execute permission\nchmod -w file.txt       # Remove write permission\n\n# Ownership\nchown user:group file.txt    # Change owner and group\nchown user file.txt          # Change owner only\nchgrp group file.txt         # Change group only\n```",
+			"type":"text",
+			"width":880,
+			"x":1022,
+			"y":1020
+		},
+		{
+			"height":1275,
+			"id":"b409d41c9db3985d",
+			"styleAttributes":{},
+			"text":"### Basic Redirection\n\n\n```bash\n# Output redirection\ncommand > file.txt       # Redirect stdout to file (overwrite)\ncommand >> file.txt      # Redirect stdout to file (append)\ncommand 2> error.log     # Redirect stderr to file\ncommand &> all.log       # Redirect both stdout and stderr\n\n# Input redirection\ncommand < input.txt      # Use file as input\n```\n### Powerful Pipelines\n\n```bash\n# Basic pipeline\nls -la | grep \"txt\"                    # List files, filter for .txt\n\n# Multi-stage processing\ncat access.log | grep \"ERROR\" | awk '{print $1}' | sort | uniq -c | sort -nr\n# Read log → filter errors → extract IP → sort → count unique → sort by count\n\n# Complex data processing\nps aux | awk '{print $11}' | sort | uniq -c | sort -nr | head -10\n# Get processes → extract command → sort → count → sort by usage → top 10\n\n# Log analysis example\ntail -f /var/log/nginx/access.log | grep -E \"(404|500)\" | awk '{print $1, $9, $7}'\n# Follow log → filter errors → show IP, status, \n```\n\n### Advanced Redirection\n\n```bash\n# Tee - write to file AND stdout\ncommand | tee output.txt           # Save and display\ncommand | tee -a output.txt        # Save (append) and display\n\n# Here documents\ncat << EOF > config.txt\nSetting 1: value1\nSetting 2: value2\nEOF\n\n# Process substitution\ndiff <(sort file1.txt) <(sort file2.txt)    # Compare sorted files\n```",
+			"type":"text",
+			"width":938,
+			"x":1956,
+			"y":1020
+		},
+		{
+			"height":1097,
+			"id":"17fd4dbbf474f72a",
+			"styleAttributes":{},
+			"text":"### Command Line Arguments\n\n```bash\n#!/bin/bash\n\n# Check argument count\nif [ $# -lt 2 ]; then\n    echo \"Usage: $0 <source> <destination>\"\n    exit 1\nfi\n\nsource_file=$1\ndest_file=$2\n\n# Optional arguments with defaults\nverbose=${3:-false}\n\nif [ \"$verbose\" = \"true\" ]; then\n    echo \"Copying $source_file to $dest_file\"\nfi\n\ncp \"$source_file\" \"$dest_file\"\n```\n\n### Case Statements\n\n```bash\ncase $1 in\n    start)\n        echo \"Starting service...\"\n        ;;\n    stop)\n        echo \"Stopping service...\"\n        ;;\n    restart)\n        echo \"Restarting service...\"\n        ;;\n    status)\n        echo \"Checking status...\"\n        ;;\n    *)\n        echo \"Usage: $0 {start|stop|restart|status}\"\n        exit 1\n        ;;\nesac\n```",
+			"type":"text",
+			"width":938,
+			"x":1956,
+			"y":2345
+		},
+		{
+			"height":357,
+			"id":"699b7878b67eb51c",
+			"styleAttributes":{},
+			"text":"## 1 Getting started\n\n`ls (-l)`\n`pwd`\n\n`echo $SHELL`\n`nano myscript.sh`\n\n`chmod +x myscript.sh`\n`./myscript.sh`\n`cat myscript.sh`\n\n`ls > myscript1.sh`",
+			"type":"text",
+			"width":403,
+			"x":-460,
+			"y":4340
+		},
+		{
+			"height":538,
+			"id":"841823de96cdc394",
+			"styleAttributes":{},
+			"text":"## 2 More about variables\n\n`myname=\"Alyson\"`\n`echo $myname`\n\n`ls=\"ls\"`\n`echo $ls` \n\n```bash\n#!/bin/bash\nmyname=\"Alyson\"  \nage=28  \n  \necho \"My name is $myname. I'm $age years old\"\n```\n\n`files=$(ls)`\n`now=$(date)`\n`echo $USER`\n\n`env`\n",
+			"type":"text",
+			"width":403,
+			"x":-460,
+			"y":4741
+		},
+		{
+			"height":670,
+			"id":"12f358b6c027fb22",
+			"styleAttributes":{},
+			"text":"## If statements\n\n\\* nano suspend: ctrl+t, ctrl+z\n\n```bash\nif [ $num -eq 200 ]\nthen \n\techo \"The condition is true.\"\nfi\n\nif [ -f ~/myfile ]  \nthen  \n   echo \"The file exists.\"  \nelse  \n   echo \"The file does not exist.\"  \nfi\n```\n\n`-ne`\n`-gt`\n`! $num -eq 200`\n`-f, -d`\n\n`touch`\n`which htop`\n\n`&&` `||`",
+			"type":"text",
+			"width":391,
+			"x":-21,
+			"y":4340
+		},
+		{
+			"height":284,
+			"id":"b5f9466911da6fb4",
+			"styleAttributes":{},
+			"text":"## 3 Math\n\n`expr 30 + 10`\n`expr 10 \\* 2`\n`expr $mynum1 + $mynum2`",
+			"type":"text",
+			"width":403,
+			"x":-460,
+			"y":5306
+		},
+		{
+			"height":498,
+			"id":"65e91185cb7d1005",
+			"styleAttributes":{},
+			"text":"## Exit codes\n\n`ls -l /misc`\n`echo $?` \n0 - success, else - fail",
+			"type":"text",
+			"width":391,
+			"x":-21,
+			"y":5080
+		},
+		{
+			"height":414,
+			"id":"a7794662766e9794",
+			"styleAttributes":{},
+			"text":"## While loops\n\n```bash\n#!/bin/bash\n\ni=0\nwhile [ $i -lt 10 ]\ndo\n    echo $i\n    i=$(( $i + 1 ))\n    sleep 0.5\ndone\n\n```\n\n`grep -q \"Arch\" $release_file`",
+			"type":"text",
+			"width":421,
+			"x":404,
+			"y":4340
+		},
+		{
+			"height":614,
+			"id":"93cc5eaa4c44455a",
+			"styleAttributes":{},
+			"text":"## Fors\n\n```bash\n#!/bin/bash\n\nfor current_number in 1 2 3 4 5\ndo\n    echo $current_number\n    sleep 0.5\ndone\n\n\nfor current_number in {6..10}\ndo\n    echo $current_number\n    sleep 0.5\ndone\n\n\necho \"End.\"\n```\n\n```bash\n#!/bin/bash\n\nfor file in logfiles/*.log\ndo\n\ttar -czvf $file.tar.gz $file\ndone\n```",
+			"type":"text",
+			"width":421,
+			"x":404,
+			"y":4792
+		},
+		{
+			"height":148,
+			"id":"205d6320229477fb",
+			"styleAttributes":{},
+			"text":"## Where to store\n`/usr/local/bin/`\n`echo path`\n`export PATH=/usr/local/bin:$PATH`",
+			"type":"text",
+			"width":421,
+			"x":404,
+			"y":5430
+		},
+		{
+			"height":590,
+			"id":"9102566aeff25e74",
+			"styleAttributes":{},
+			"text":"## Functions\n\n```bash\n#!/bin/bash\n\nfirst() {\n    echo \"First function\"\n}\n\nadd() {\n    read -p \"First num: \" num_1\n    read -p \"Second num: \" num_2\n    echo \"Sum:\" $(( $num_1 + $num_2 ))\n}\n\nadd_with_args () {\n    echo $(( $1 + $2 ))\n}\n\nfirst\n\nadd\n\nadd_with_args 20 22\n\n```",
+			"type":"text",
+			"width":439,
+			"x":863,
+			"y":4547
+		},
+		{
+			"height":297,
+			"id":"04eecd0c2acaafa0",
+			"styleAttributes":{},
+			"text":"## Case\n\n```bash\n#!/bin/bash\n\nread -p \"Your var: \" var;\n\ncase $var in\n    1) echo \"One\";;\n    2) echo \"Two\";;\n    *) echo \"Other\";;\nesac\n\n```",
+			"type":"text",
+			"width":439,
+			"x":863,
+			"y":5175
+		},
+		{
+			"height":454,
+			"id":"eceea47f1851a34b",
+			"styleAttributes":{},
+			"text":"## Scheduling jobs\n### Via at\n`sudo pacman -S at`\n\n`at 17:01 -f ./jobs.sh`\n\n`atq`\n`atrm 3`\n\n### Via cron\n`crontab`\n`30 17 * * 4 /home/alyson/bashfiles/learn-bash/jobs.sh`",
+			"type":"text",
+			"width":420,
+			"x":1336,
+			"y":4340
+		},
+		{
+			"height":295,
+			"id":"0cc95132b4379da7",
+			"styleAttributes":{},
+			"text":"## Arguments\n\n```bash\n#!/bin/bash\n\necho \"You entered the argument: $1, $2, $3 and $4\"\n```\n\n`lines=$(ls -lh $1 | wc -1)`",
+			"type":"text",
+			"width":420,
+			"x":1336,
+			"y":4842
+		},
+		{
+			"height":176,
+			"id":"2a18ed96c56076d7",
+			"styleAttributes":{},
+			"text":"## Data streams\n\n`find /etc -type f 2> /dev/null`\nRedirecting stderr to black hole :)",
+			"type":"text",
+			"width":439,
+			"x":863,
+			"y":4340
+		},
+		{
+			"height":654,
+			"id":"00999e21dfb8739f",
+			"styleAttributes":{},
+			"text":"### Basic Script Structure\n\n```bash\n#!/bin/bash\n# Shebang line - specifies interpreter\n\n# Variables\nname=\"John\"\nage=25\nreadonly CONSTANT=\"unchangeable\"\n\n# Command substitution\ncurrent_date=$(date)\nfile_count=`ls | wc -l`  # Alternative syntax\n\necho \"Hello $name, you are $age years old\"\necho \"Today is $current_date\"\n```\n\n",
+			"type":"text",
+			"width":642,
+			"x":-479,
+			"y":2345
+		},
+		{
+			"height":945,
+			"id":"570778799e3ba0bb",
+			"styleAttributes":{},
+			"text":"### Functions\n```bash\n# Function definition\nbackup_file() {\n    local source_file=$1\n    local backup_dir=$2\n    \n    if [ -f \"$source_file\" ]; then\n        cp \"$source_file\" \"$backup_dir/\"\n        echo \"Backed up $source_file\"\n    else\n        echo \"File $source_file not found\"\n        return 1\n    fi\n}\n\n# Function call\nbackup_file \"important.txt\" \"/backup\"\n```\n### Arrays\n\n```bash\n# Array declaration\nfruits=(\"apple\" \"banana\" \"orange\")\nnumbers=(1 2 3 4 5)\n\n# Accessing elements\necho ${fruits[0]}        # First element\necho ${fruits[@]}        # All elements\necho ${#fruits[@]}       # Array length\n\n# Adding elements\nfruits+=(\"grape\")\n\n# Iterating\nfor fruit in \"${fruits[@]}\"; do\n    echo \"Fruit: $fruit\"\ndone\n```",
+			"type":"text",
+			"width":880,
+			"x":1022,
+			"y":2345
+		},
+		{
+			"height":1574,
+			"id":"27165fb5dd9081ae",
+			"styleAttributes":{},
+			"text":"### Conditional statements\n\n```bash\n# If-else structure\nif [ $age -gt 18 ]; then\n    echo \"Adult\"\nelif [ $age -eq 18 ]; then\n    echo \"Just turned adult\"\nelse\n    echo \"Minor\"\nfi\n\n# File tests\nif [ -f \"file.txt\" ]; then\n    echo \"File exists\"\nfi\n\nif [ -d \"directory\" ]; then\n    echo \"Directory exists\"\nfi\n\n# String comparisons\nif [ \"$string1\" = \"$string2\" ]; then\n    echo \"Strings are equal\"\nfi\n\nif [ -z \"$variable\" ]; then\n    echo \"Variable is empty\"\nfi\n```\n\n### Loops\n\n```bash\n# For loop with range\nfor i in {1..10}; do\n    echo \"Number: $i\"\ndone\n\n# For loop with files\nfor file in *.txt; do\n    echo \"Processing $file\"\n    # Process file\ndone\n\n# While loop\ncounter=1\nwhile [ $counter -le 10 ]; do\n    echo \"Counter: $counter\"\n    ((counter++))\ndone\n\n# Until loop\nuntil [ $counter -gt 10 ]; do\n    echo \"Counter: $counter\"\n    ((counter++))\ndone\n```",
+			"type":"text",
+			"width":772,
+			"x":195,
+			"y":2345
+		},
+		{
+			"height":588,
+			"id":"edf2e8a626eace73",
+			"styleAttributes":{},
+			"text":"### Error Handling\n\n```bash\n# Exit on error\nset -e                   # Exit if any command fails\nset -u                   # Exit if undefined variable used\nset -o pipefail         # Exit if any command in pipeline fails\n\n# Custom error handling\nerror_exit() {\n    echo \"Error: $1\" >&2\n    exit 1\n}\n\n# Usage\n[ -f \"required_file.txt\" ] || error_exit \"Required file not found\"\n```",
+			"type":"text",
+			"width":880,
+			"x":1022,
+			"y":3331
+		}
+	]
+}

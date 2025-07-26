@@ -1,0 +1,171 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "file": "Pictures/Pasted image 20250601192243.png",
+      "height": 243,
+      "id": "afc828a1f09bf121",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 395,
+      "x": -217,
+      "y": -176
+    },
+    {
+      "height": 60,
+      "id": "4e3cd8367de3a35a",
+      "styleAttributes": {
+      },
+      "text": "Switch / Access Point (Wi-Fi) for LAN ",
+      "type": "text",
+      "width": 396,
+      "x": -217,
+      "y": -236
+    },
+    {
+      "file": "Pictures/Pasted image 20250601192603.png",
+      "height": 195,
+      "id": "ea1c78b7bba46b7f",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 400,
+      "x": -217,
+      "y": 68
+    },
+    {
+      "height": 112,
+      "id": "bdaa5b90bedeadc6",
+      "styleAttributes": {
+      },
+      "text": "Message - packet\nLAN ports",
+      "type": "text",
+      "width": 400,
+      "x": -217,
+      "y": 287
+    },
+    {
+      "file": "Pictures/Pasted image 20250601192859.png",
+      "height": 243,
+      "id": "46aa7291f467d594",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 505,
+      "x": 337,
+      "y": -175
+    },
+    {
+      "height": 60,
+      "id": "0976f85b5a19ffe2",
+      "styleAttributes": {
+      },
+      "text": "Router  ",
+      "type": "text",
+      "width": 260,
+      "x": 337,
+      "y": -235
+    },
+    {
+      "file": "Pictures/Pasted image 20250601193340.png",
+      "height": 243,
+      "id": "3c6811f747c1a3eb",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 515,
+      "x": 975,
+      "y": -175
+    },
+    {
+      "height": 60,
+      "id": "c2bc2eceef1ebb02",
+      "styleAttributes": {
+      },
+      "text": "**Internet** - the network of the networks\nHome router (small env: switch + router)",
+      "type": "text",
+      "width": 427,
+      "x": 975,
+      "y": -235
+    },
+    {
+      "file": "Pictures/Pasted image 20250601194210.png",
+      "height": 294,
+      "id": "51c7a29a8fd00e6c",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 522,
+      "x": 977,
+      "y": 68
+    },
+    {
+      "height": 250,
+      "id": "cc836d6dc2f63135",
+      "styleAttributes": {
+      },
+      "text": "Each router has a special table inside called **routing table**. Router sends the packet to the appropriate port according to the information on the routing table\n**Port forwarding**",
+      "type": "text",
+      "width": 387,
+      "x": 1587,
+      "y": -235
+    },
+    {
+      "file": "Pictures/Pasted image 20250601200700.png",
+      "height": 398,
+      "id": "b11440d53d708529",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 707,
+      "x": 2022,
+      "y": 68
+    },
+    {
+      "file": "Pictures/Pasted image 20250601201300.png",
+      "height": 398,
+      "id": "7bd28c4e0105ca8a",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 707,
+      "x": 2022,
+      "y": 466
+    },
+    {
+      "file": "Pictures/Pasted image 20250601205552.png",
+      "height": 688,
+      "id": "2aa62249bbf13bb4",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 1223,
+      "x": 2896,
+      "y": -222
+    },
+    {
+      "file": "Pictures/Pasted image 20250601210358.png",
+      "height": 681,
+      "id": "7d42625c22d7180d",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 1210,
+      "x": 4193,
+      "y": -215
+    },
+    {
+      "file": "Pictures/Pasted image 20250601211349.png",
+      "height": 679,
+      "id": "146675a4388a8fb6",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 1207,
+      "x": 4193,
+      "y": 588
+    }
+  ]
+}

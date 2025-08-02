@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"b890bf0c9aeeb615","x":-109,"y":-26,"width":250,"height":146,"type":"text","text":"Мера Жордана: \ninf, sup мер внутренних/внешних элементарных множеств"},
+		{"id":"c772b25d4d7cc938","x":-109,"y":-120,"width":250,"height":60,"type":"text","text":"Элементарные множества"},
+		{"id":"c186c7c04fb4bf27","x":-109,"y":180,"width":250,"height":140,"type":"text","text":"Внешняя мера Лебега:\ninf счётных сумм мер внешних элементарных множеств "},
+		{"id":"c4641a5601f3051c","x":280,"y":120,"width":250,"height":60,"type":"text","text":"Мера элементарных сохраняется"},
+		{"id":"29df1b766fd861ee","x":280,"y":204,"width":250,"height":60,"type":"text","text":"Счётная субаддитивность"},
+		{"id":"5a55590c07d83ef6","x":-109,"y":370,"width":250,"height":70,"type":"text","text":"$X \\triangle Y$, $\\rho(X,Y)$"},
+		{"id":"ab0cdd4027509d90","x":268,"y":482,"width":250,"height":60,"type":"text","text":"Конечная аддитивность"},
+		{"id":"27390f7eb14664fe","x":269,"y":590,"width":250,"height":60,"type":"text","text":"Счётная аддитивность"},
+		{"id":"c1bc026bc7b876fc","x":269,"y":849,"width":250,"height":110,"type":"text","text":"Измеримость результатов бинарных операций"},
+		{"id":"1a76720b585dee16","x":269,"y":989,"width":250,"height":60,"type":"text","text":"Счётная аддитивность"},
+		{"id":"35d96ea753ea388f","x":-109,"y":929,"width":250,"height":60,"type":"text","text":"Измеримость по Лебегу"},
+		{"id":"51ba4a8b3130be41","x":16,"y":710,"width":250,"height":60,"type":"text","text":"Измеримость с бесконечной мерой"},
+		{"id":"a79eec3926efc7a1","x":-260,"y":590,"width":250,"height":180,"type":"text","text":"Измеримость по Лебегу с конечной мерой:\nможно приблизить с любой точностью элементарным"},
+		{"id":"0d4e52eadb5e5f5d","x":269,"y":1240,"width":250,"height":100,"type":"text","text":"Измеримость открытых и замкнутых множеств"},
+		{"id":"fa84a4e75b295065","x":269,"y":1080,"width":250,"height":134,"type":"text","text":"$\\bullet$ Измеримость счётного объединения, пересечения\n$\\bullet$ Непрерывность"}
+	],
+	"edges":[
+		{"id":"2847996d51bfdadc","fromNode":"c772b25d4d7cc938","fromSide":"bottom","toNode":"b890bf0c9aeeb615","toSide":"top"},
+		{"id":"83eed37e1de2a0c7","fromNode":"c186c7c04fb4bf27","fromSide":"right","toNode":"c4641a5601f3051c","toSide":"left"},
+		{"id":"8cac3eb5661d4f7d","fromNode":"c186c7c04fb4bf27","fromSide":"right","toNode":"29df1b766fd861ee","toSide":"left"},
+		{"id":"348a5410c3afc651","fromNode":"c186c7c04fb4bf27","fromSide":"bottom","toNode":"5a55590c07d83ef6","toSide":"top"},
+		{"id":"bdf613eab0f72e67","fromNode":"5a55590c07d83ef6","fromSide":"bottom","toNode":"a79eec3926efc7a1","toSide":"top"},
+		{"id":"79ab8b61fe4e518d","fromNode":"a79eec3926efc7a1","fromSide":"right","toNode":"ab0cdd4027509d90","toSide":"left"},
+		{"id":"a0b4f3e5368bffef","fromNode":"ab0cdd4027509d90","fromSide":"bottom","toNode":"27390f7eb14664fe","toSide":"top"},
+		{"id":"44aed08f8bd90f8a","fromNode":"5a55590c07d83ef6","fromSide":"bottom","toNode":"51ba4a8b3130be41","toSide":"top"},
+		{"id":"5443e3fc2b70f6ec","fromNode":"51ba4a8b3130be41","fromSide":"bottom","toNode":"35d96ea753ea388f","toSide":"top"},
+		{"id":"48bb9adc4a5004a9","fromNode":"a79eec3926efc7a1","fromSide":"bottom","toNode":"35d96ea753ea388f","toSide":"top"},
+		{"id":"5676589c9898ea68","fromNode":"35d96ea753ea388f","fromSide":"right","toNode":"c1bc026bc7b876fc","toSide":"left"},
+		{"id":"dcb1824dda40db94","fromNode":"35d96ea753ea388f","fromSide":"right","toNode":"1a76720b585dee16","toSide":"left"},
+		{"id":"855f4cb9680a49e4","fromNode":"35d96ea753ea388f","fromSide":"right","toNode":"fa84a4e75b295065","toSide":"left"},
+		{"id":"e01e7005b40d0139","fromNode":"35d96ea753ea388f","fromSide":"right","toNode":"0d4e52eadb5e5f5d","toSide":"left"}
+	]
+}

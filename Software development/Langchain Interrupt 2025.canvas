@@ -1,0 +1,39 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "height": 701,
+      "id": "034fa6a6f934a094",
+      "styleAttributes": {
+      },
+      "text": "###   Andrew Ng: State of AI Agents\n\n**Применение агентных систем**\n- Линейные бизнес-процессы с небольшими ответвлениями \n- Сложность превращения бизнес-процессов в агентные системы\n\n**Навыки разработчиков**\n- Оценка и анализ производительности\n\n**Голосовой набор**\n\n**Использование ИИ для кодинга**\n\n**MCP**\n- ИИ могут многое с достаточным контекстом\n- Но сложно доставить этот контекст до LLM (plumbing)\n- MCP стандартизирует подход\n\n**Agent to agent** протоколы",
+      "type": "text",
+      "width": 664,
+      "x": -366,
+      "y": -113
+    },
+    {
+      "height": 800,
+      "id": "bc8053f26d3b833b",
+      "styleAttributes": {
+      },
+      "text": "### How Uber Built AI Agents That Save 21,000 Developer Hours with LangGraph\n\n**Стратегия**\n- Валидация, автотесты\n\n**Validator**\n\n![[Pasted image 20250619154216.png]]\n\n![[Pasted image 20250619154429.png]]",
+      "type": "text",
+      "width": 696,
+      "x": 355,
+      "y": -113
+    },
+    {
+      "height": 1258,
+      "id": "6d628773258ec59c",
+      "styleAttributes": {
+      },
+      "text": "### How JP Morgan Built An AI Agent for Investment Research with LangGraph | LangChain Interrupt\n![[Pasted image 20250619154732.png]]\n\n![[Pasted image 20250619155010.png]]\n![[Pasted image 20250619155950.png]]\n\n- Start simple, refactor often\n- Evaluation driven development\n- Human in the loop",
+      "type": "text",
+      "width": 568,
+      "x": 1077,
+      "y": -113
+    }
+  ]
+}

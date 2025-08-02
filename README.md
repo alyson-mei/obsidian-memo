@@ -9,26 +9,25 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## saturday, 02 august 2025 | 17:59
+## saturday, 02 august 2025 | 18:00
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-08-02, 17:45)
+Weather in Moscow (2025-08-02, 18:00)
 
-🌡️ Warm 25°C (feels like 25°C) <br>
-🌤️ Condition: Mostly clear skies <br>
-💨 Wind: A gentle breeze from the Northwest at 3.7 m/s, with light gusts up to 6 m/s <br>
-💧 Humidity: 62% <br>
+🌡️ Temp: 24.8°C (feels like 24.8°C) <br>
+🌤️ Condition: Mostly Clear <br>
+💨 Wind: NW breeze at 3.4 m/s, gusts up to 6 m/s <br>
+💧 Humidity: 61% <br>
 📉 Pressure: 1014 mb (sea level), 1001 mb (surface) <br>
-☁️ Cloud cover: Only 23% (base at 1 km) <br>
-🌞 UV index: Low at 1 <br>
-👁 Visibility: Excellent at over 12.5 km <br>
+☁️ Cloud cover: 23% (cloud base at 1 km) <br>
+👁 Visibility: 12.6 km <br>
 
-🌤️ Pleasant Afternoon Glow <br>
-A beautiful, clear afternoon, perfect for enjoying the warmth and sunshine. The day is winding down with a gentle, comfortable feel.
+🌤️ Beautiful and Bright Afternoon <br>
+A perfectly clear and warm afternoon, inviting you to enjoy the last rays of sunshine. The day is gracefully transitioning, promising a pleasant evening ahead.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -50,13 +49,13 @@ even discarded tech holds its own quiet universe, etched with the unseen current
 
 ## bing image of the day
 ### Petroglyphs near Fruita in Capitol Reef National Park, Utah, United States
-![Bing](https://img.peapix.com/5c610ce9f6184c9cae317574d91090e6_1280.jpg)
+![Bing](https://img.peapix.com/5c610ce9f6184c9cae317574d91090e6_1920.jpg)
 
 There's something timeless about Capitol Reef National Park—a place where red rock cliffs, winding canyons and ancient stories come together under Utah's desert sky. Designated a national park in 1971, Capitol Reef invites reflection—not just on its vivid geology, but on the ancient narratives and cultural heritage etched into its landscape.
 
 Long before visitors laced up hiking boots and hit the trails at Capitol Reef, the Fremont and Ancestral Puebloan peoples called this place home. Between 300 and 1300 CE, they lived in pit houses and natural rock shelters, weaving farming into their hunter-gatherer lifestyle. Their connection to the land was both spiritual and practical—and they left behind some of the park's most captivating features, including petroglyphs like those found in Fruita, featured in today's image. These rock panels showcase an ancient visual language, featuring human figures adorned with headdresses and jewellery. Alongside them are animals like bighorn sheep and lizards, as well as abstract shapes alluding to ceremonies, migrations and celestial events. Together, they form a silent archive—a timeless record of the people who lived, moved and made meaning in this extraordinary landscape.
 
-_None_
+_© Nicolas VINCENT/Adobe Stoc_
 
 ## natural wonder of the day
 ### Plitvice Lakes National Park, Croatia
@@ -69,4 +68,4 @@ The park is renowned for its unique geological formation, featuring 16 interconn
 As you wander, the air is filled with the soothing roar of countless waterfalls, the gentle rustle of leaves in the dense surrounding forests, and the sight of countless fish darting through waters so clear you can see every pebble. The vibrant hues of the lakes shift with the light, offering ever-changing vistas. Welcoming over a million visitors each year, Plitvice Lakes is truly one of Europe's most beautiful natural sights, a place where the grandeur of nature leaves an indelible mark on the soul.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1754146741)
+![Cat](https://cataas.com/cat/cute?t=1754146818)

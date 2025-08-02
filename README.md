@@ -9,25 +9,26 @@ Cat as a service: [cataas.com](https://cataas.com/) \
 Tavily Search: [tavily.com](https://www.tavily.com/) \
 AI Model: [Gemini 2.5 Flash Preview 05-20](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash)
 
-## saturday, 02 august 2025 | 16:59
+## saturday, 02 august 2025 | 17:00
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./time-dark.svg">
   <img src="./time-light.svg" alt="Time Progress">
 </picture>
 
 ## weather outside
-Weather in Moscow (2025-08-02, 16:45)
+Weather in Moscow (2025-08-02, 17:00)
 
-🌡️ Temp: 23.9°C (feels like 23.9°C) <br>
+🌡️ Temp: 24.1°C (feels like 24.1°C) <br>
 ☀️ Condition: Clear and sunny <br>
-💨 Wind: A light breeze from the NW at 2.6 m/s, with occasional gusts up to 4.9 m/s <br>
+💨 Wind: A light NW breeze at 2.3 m/s, with gentle gusts up to 5 m/s <br>
 💧 Humidity: 63% <br>
-📉 Pressure: 1013 mb (sea level), 1000 mb (surface) <br>
-☁️ Cloud cover: Mostly clear skies (only 10%) <br>
+📈 Pressure: 1013 mb (at sea level) <br>
+☁️ Cloud cover: Only 10% – mostly clear skies! <br>
+🌞 UV index: 1 (very low) <br>
 👁️ Visibility: Excellent at 16 km <br>
 
-☀️ Bright and Breezy Afternoon <br>
-A beautiful, clear afternoon in Moscow. The sun is shining brightly, and a gentle breeze makes for perfect conditions to be out and about.
+☀️ Bright and Pleasant Afternoon <br>
+A beautiful, clear afternoon perfect for enjoying the outdoors. The air feels comfortable with a gentle breeze, making it an ideal time for a walk or simply relaxing in the sun.
 
 ## digital fragments: Liz's journal
 hi, i'm Liz! i write code for a living and live in a city where neon spills through windows at all hours and the gentle thrum of servers feels more like home than silence
@@ -48,12 +49,12 @@ then my fingers snagged on something small, palm-sized. an old data-reader, its 
 even discarded tech holds its own quiet universe, etched with the unseen currents of its past. always something more to see in the static 💫
 
 ## bing image of the day
-### Royal Mile, Edinburgh, Scotland
-![Bing](https://img.peapix.com/1f4e5517c492432f8e2175ddfa0c5053_1280.jpg)
+### Petroglyphs near Fruita in Capitol Reef National Park, Utah, United States
+![Bing](https://img.peapix.com/5c610ce9f6184c9cae317574d91090e6_1280.jpg)
 
-Every August, Edinburgh stops being just a city and starts acting up—literally. From pub basements to park benches, stages appear in the strangest places and shows pop up on quiet streets. Welcome to the Edinburgh Festival Fringe, or the Fringe. The story began in 1947, when eight theatre groups turned up uninvited to the Edinburgh International Festival. They performed anyway. That spirit of rebellion stuck, and the Fringe was born.
+There's something timeless about Capitol Reef National Park—a place where red rock cliffs, winding canyons and ancient stories come together under Utah's desert sky. Designated a national park in 1971, Capitol Reef invites reflection—not just on its vivid geology, but on the ancient narratives and cultural heritage etched into its landscape.
 
-Now it's the world's largest arts festival, with thousands of shows crammed into three action-packed weeks. Anyone can perform. If you have an idea and a venue, you're in. Even a shipping container counts—yes, that really happened. Comedy is the unofficial king of the festival, but there's also drama, dance, drag, musicals, magic, mime, spoken word, circus and acts that defy all categories. Comedy rules the roost: Canadian standups like Glenn Wool (a frequent Fringe performer since the '90s), JJ Whitehead (14 appearances to his credit) and Dana Alexander (a Chortle-nominated comic) have all brought their humour here. Street performers flood the Royal Mile, pictured here, offering sneak peeks, juggling acts and flyers.  The Edinburgh Festival Fringe is where experimental performances and high-end theatre thrive. It has launched careers: think of artists like Phoebe Waller-Bridge and Eddie Izzard.
+Long before visitors laced up hiking boots and hit the trails at Capitol Reef, the Fremont and Ancestral Puebloan peoples called this place home. Between 300 and 1300 CE, they lived in pit houses and natural rock shelters, weaving farming into their hunter-gatherer lifestyle. Their connection to the land was both spiritual and practical—and they left behind some of the park's most captivating features, including petroglyphs like those found in Fruita, featured in today's image. These rock panels showcase an ancient visual language, featuring human figures adorned with headdresses and jewellery. Alongside them are animals like bighorn sheep and lizards, as well as abstract shapes alluding to ceremonies, migrations and celestial events. Together, they form a silent archive—a timeless record of the people who lived, moved and made meaning in this extraordinary landscape.
 
 _None_
 
@@ -68,4 +69,4 @@ The park is renowned for its unique geological formation, featuring 16 interconn
 As you wander, the air is filled with the soothing roar of countless waterfalls, the gentle rustle of leaves in the dense surrounding forests, and the sight of countless fish darting through waters so clear you can see every pebble. The vibrant hues of the lakes shift with the light, offering ever-changing vistas. Welcoming over a million visitors each year, Plitvice Lakes is truly one of Europe's most beautiful natural sights, a place where the grandeur of nature leaves an indelible mark on the soul.
 
 ## cat as a service
-![Cat](https://cataas.com/cat/cute?t=1754143141)
+![Cat](https://cataas.com/cat/cute?t=1754143218)

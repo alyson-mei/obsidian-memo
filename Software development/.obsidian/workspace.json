@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "130743ffdf151392",
+    "type": "split",
+    "children": [
+      {
+        "id": "9203b0d6c32dd176",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7de34acf6d99d1fd",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "CRUD - SQLAlachemy, Pydantic, FastAPI.canvas",
+                "viewState": {
+                  "x": -415.87779387854965,
+                  "y": 3478.930894204,
+                  "zoom": -0.8000000000000002
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "CRUD - SQLAlachemy, Pydantic, FastAPI"
+            }
+          },
+          {
+            "id": "68725fb01af99f68",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Docker.canvas",
+                "viewState": {
+                  "x": -4145.6257193404135,
+                  "y": 3393.3929485066956,
+                  "zoom": -0.8000000000000006
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Docker"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b8235a884e24e9b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "f56f6eb75afbed42",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ebc4ea967b699565",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "23a32d7415626557",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0f739b3809ae9347",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "44ef85c9389af807",
+    "type": "split",
+    "children": [
+      {
+        "id": "03bc6924d609fbca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e65c3839b7a00ee",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Untitled"
+            }
+          },
+          {
+            "id": "4f668e4057a7ce91",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Untitled.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Untitled"
+            }
+          },
+          {
+            "id": "eea6350005297997",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0e825450c87a2abf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Untitled"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false,
+      "templates:Insert template": false
+    }
+  },
+  "active": "68725fb01af99f68",
+  "lastOpenFiles": [
+    "Compose.md",
+    "Aster.md",
+    "Untitled.canvas",
+    "Daily Tracker Project.canvas",
+    "Anya.md",
+    "Cosmic app.md",
+    "Coroutines.md",
+    "Obsidian Memo project.canvas",
+    "My app.md",
+    "LangGraph.canvas",
+    "Networks.canvas",
+    "Pasted image 20250619155010.png",
+    "Patterns.canvas",
+    "Pomodoro Bot.canvas",
+    "Some android stuff.canvas",
+    "Langchain Interrupt 2025.canvas",
+    "Pasted image 20250619155950.png",
+    "Pasted image 20250619154732.png",
+    "Pasted image 20250619154429.png",
+    "Pasted image 20250619154216.png",
+    "Pasted image 20250619154206.png",
+    "CRUD - SQLAlachemy, Pydantic, FastAPI.canvas",
+    "Jetpack Compose.md",
+    "States in Compose.md",
+    "todo MVVM.md",
+    "Android basics.md",
+    "Pictures/eb2d6637.png",
+    "Pictures/Pasted image 20240825112548.png",
+    "Pictures",
+    "Pictures/Pasted image 20250610120613.png",
+    "Pictures/Pasted image 20250602140151.png",
+    "App architecture.md",
+    "Welcome.md"
+  ]
+}

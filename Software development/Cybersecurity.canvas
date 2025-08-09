@@ -1,0 +1,28 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "height": 515,
+      "id": "dbb540a1be7ebeaf",
+      "styleAttributes": {
+      },
+      "text": "### Basic principles\n\n- Defense in depth\n- Least privilege\n- Separation of duties\n- Secure by design\n- KISS\n\nNot \"Security by obscurity\"",
+      "type": "text",
+      "width": 535,
+      "x": -220,
+      "y": -160
+    },
+    {
+      "height": 515,
+      "id": "6867931385d6196f",
+      "styleAttributes": {
+      },
+      "text": "### CIA\nConfidentiality, integrity, availability\n\nConfidentiality:\n- Authentication & Authorization\n- Encryption\n\t- Symmetric encryption (pre-shared)\n\nIntegrity: \n- E.g. using digital signatures and message authentification for tracking changes\n\nAvailability:\n- Systems should be available when needed\n\t- DDOS\n\t- SYN FLOOD",
+      "type": "text",
+      "width": 486,
+      "x": 315,
+      "y": -160
+    }
+  ]
+}

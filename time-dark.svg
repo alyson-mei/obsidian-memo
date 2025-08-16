@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-08-16T15:31:02.243826</dc:date>
+    <dc:date>2025-08-16T15:32:02.309131</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -41,43 +41,43 @@ z
    </g>
    <g id="patch_3">
     <path d="M 73.31125 192.763636 
-L 342.383181 192.763636 
-L 342.383181 163.309091 
+L 342.672194 192.763636 
+L 342.672194 163.309091 
 L 73.31125 163.309091 
 z
-" clip-path="url(#p97dbd0feee)" style="fill: #a8d5ba"/>
+" clip-path="url(#p983535b2b8)" style="fill: #a8d5ba"/>
    </g>
    <g id="patch_4">
     <path d="M 73.31125 155.945455 
-L 409.021526 155.945455 
-L 409.021526 126.490909 
+L 409.062813 155.945455 
+L 409.062813 126.490909 
 L 73.31125 126.490909 
 z
-" clip-path="url(#p97dbd0feee)" style="fill: #90c3d4"/>
+" clip-path="url(#p983535b2b8)" style="fill: #90c3d4"/>
    </g>
    <g id="patch_5">
     <path d="M 73.31125 119.127273 
-L 283.368409 119.127273 
-L 283.368409 89.672727 
+L 283.377732 119.127273 
+L 283.377732 89.672727 
 L 73.31125 89.672727 
 z
-" clip-path="url(#p97dbd0feee)" style="fill: #f3d6ba"/>
+" clip-path="url(#p983535b2b8)" style="fill: #f3d6ba"/>
    </g>
    <g id="patch_6">
     <path d="M 73.31125 82.309091 
-L 420.036814 82.309091 
-L 420.036814 52.854545 
+L 420.039956 82.309091 
+L 420.039956 52.854545 
 L 73.31125 52.854545 
 z
-" clip-path="url(#p97dbd0feee)" style="fill: #d6a8d1"/>
+" clip-path="url(#p983535b2b8)" style="fill: #d6a8d1"/>
    </g>
    <g id="patch_7">
     <path d="M 73.31125 45.490909 
-L 332.878187 45.490909 
-L 332.878187 16.036364 
+L 332.878979 45.490909 
+L 332.878979 16.036364 
 L 73.31125 16.036364 
 z
-" clip-path="url(#p97dbd0feee)" style="fill: #f2a8a8"/>
+" clip-path="url(#p983535b2b8)" style="fill: #f2a8a8"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="ytick_1">
@@ -633,8 +633,8 @@ z
     </g>
    </g>
    <g id="text_6">
-    <!-- 64.65% -->
-    <g style="fill: #ffffff" transform="translate(346.544981 180.916364) scale(0.12 -0.12)">
+    <!-- 64.72% -->
+    <g style="fill: #ffffff" transform="translate(346.833994 180.916364) scale(0.12 -0.12)">
      <defs>
       <path id="Poppins-Regular-36" d="M 2976 3526 
 Q 2835 4237 2099 4237 
@@ -697,6 +697,16 @@ Q 1062 192 950 77
 Q 838 -38 678 -38 
 z
 " transform="scale(0.015625)"/>
+      <path id="Poppins-Regular-37" d="M 3245 4173 
+L 1466 0 
+L 877 0 
+L 2682 4115 
+L 211 4115 
+L 211 4614 
+L 3245 4614 
+L 3245 4173 
+z
+" transform="scale(0.015625)"/>
       <path id="Poppins-Regular-25" d="M 269 3584 
 Q 269 4019 531 4278 
 Q 794 4538 1203 4538 
@@ -748,14 +758,14 @@ z
      <use xlink:href="#Poppins-Regular-36"/>
      <use xlink:href="#Poppins-Regular-34" transform="translate(63.499985 0)"/>
      <use xlink:href="#Poppins-Regular-2e" transform="translate(126.399979 0)"/>
-     <use xlink:href="#Poppins-Regular-36" transform="translate(147.399963 0)"/>
-     <use xlink:href="#Poppins-Regular-35" transform="translate(210.899948 0)"/>
-     <use xlink:href="#Poppins-Regular-25" transform="translate(273.699936 0)"/>
+     <use xlink:href="#Poppins-Regular-37" transform="translate(147.399963 0)"/>
+     <use xlink:href="#Poppins-Regular-32" transform="translate(201.999954 0)"/>
+     <use xlink:href="#Poppins-Regular-25" transform="translate(259.499939 0)"/>
     </g>
    </g>
    <g id="text_7">
-    <!-- 80.66% -->
-    <g style="fill: #ffffff" transform="translate(413.183326 144.098182) scale(0.12 -0.12)">
+    <!-- 80.67% -->
+    <g style="fill: #ffffff" transform="translate(413.224613 144.098182) scale(0.12 -0.12)">
      <defs>
       <path id="Poppins-Regular-38" d="M 1242 2406 
 Q 883 2547 691 2816 
@@ -805,25 +815,13 @@ z
      <use xlink:href="#Poppins-Regular-30" transform="translate(63.099991 0)"/>
      <use xlink:href="#Poppins-Regular-2e" transform="translate(125.899979 0)"/>
      <use xlink:href="#Poppins-Regular-36" transform="translate(146.899963 0)"/>
-     <use xlink:href="#Poppins-Regular-36" transform="translate(210.399948 0)"/>
-     <use xlink:href="#Poppins-Regular-25" transform="translate(273.899933 0)"/>
+     <use xlink:href="#Poppins-Regular-37" transform="translate(210.399948 0)"/>
+     <use xlink:href="#Poppins-Regular-25" transform="translate(264.999939 0)"/>
     </g>
    </g>
    <g id="text_8">
     <!-- 50.47% -->
-    <g style="fill: #ffffff" transform="translate(287.530209 107.28) scale(0.12 -0.12)">
-     <defs>
-      <path id="Poppins-Regular-37" d="M 3245 4173 
-L 1466 0 
-L 877 0 
-L 2682 4115 
-L 211 4115 
-L 211 4614 
-L 3245 4614 
-L 3245 4173 
-z
-" transform="scale(0.015625)"/>
-     </defs>
+    <g style="fill: #ffffff" transform="translate(287.539532 107.28) scale(0.12 -0.12)">
      <use xlink:href="#Poppins-Regular-35"/>
      <use xlink:href="#Poppins-Regular-30" transform="translate(62.799988 0)"/>
      <use xlink:href="#Poppins-Regular-2e" transform="translate(125.599976 0)"/>
@@ -834,7 +832,7 @@ z
    </g>
    <g id="text_9">
     <!-- 83.31% -->
-    <g style="fill: #ffffff" transform="translate(424.198614 70.461818) scale(0.12 -0.12)">
+    <g style="fill: #ffffff" transform="translate(424.201756 70.461818) scale(0.12 -0.12)">
      <defs>
       <path id="Poppins-Regular-31" d="M 243 4096 
 L 243 4627 
@@ -856,7 +854,7 @@ z
    </g>
    <g id="text_10">
     <!-- 62.37% -->
-    <g style="fill: #ffffff" transform="translate(337.039987 33.643636) scale(0.12 -0.12)">
+    <g style="fill: #ffffff" transform="translate(337.040779 33.643636) scale(0.12 -0.12)">
      <use xlink:href="#Poppins-Regular-36"/>
      <use xlink:href="#Poppins-Regular-32" transform="translate(63.499985 0)"/>
      <use xlink:href="#Poppins-Regular-2e" transform="translate(120.999969 0)"/>
@@ -868,7 +866,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p97dbd0feee">
+  <clipPath id="p983535b2b8">
    <rect x="73.31125" y="7.2" width="416.18" height="194.4"/>
   </clipPath>
  </defs>

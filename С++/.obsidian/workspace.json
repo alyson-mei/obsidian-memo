@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "5b9e4ad110e58e32",
+    "type": "split",
+    "children": [
+      {
+        "id": "884b371d4548aab0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f38e2bf1ab44e7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Basics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "777830422e21293e",
+    "type": "split",
+    "children": [
+      {
+        "id": "36725eaadee9d67d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55b6003202766163",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "416f4b5a9eed25c7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f043977a5da4c8cf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "c8d7d0d66b1500bd",
+    "type": "split",
+    "children": [
+      {
+        "id": "690a73ae89e66739",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1259973f8082c62f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Basics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Basics"
+            }
+          },
+          {
+            "id": "ff45e6eef54d22e5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Basics.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Basics"
+            }
+          },
+          {
+            "id": "d8b5d653ddacee5d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0cf98470e588301e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Basics.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Basics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "4f38e2bf1ab44e7e",
+  "lastOpenFiles": [
+    "Basics.md",
+    "Welcome.md"
+  ]
+}

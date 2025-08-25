@@ -1,0 +1,237 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "height": 1760,
+      "id": "1e3d23594d8731b3",
+      "styleAttributes": {
+      },
+      "text": "### Типы данных\n\n1\\. Числовые типы данных (int, float)\n```python\n+, -, *, /, //, %\nabs(x), round(x, n)\nint(x), float(x),\ndivmod(a, b)\n```\n```python\nmath.sqrt(x)\nmath.pow(x, y)\nmath.floor(x), math.ceil(x)\n```\n2\\. Строки (str)\n```python\nlen(s)\ns.lower(), s.upper(), s.strip(), s.lstrip(), s.rstrip()\ns.split(sep)         # \"a,b,c\".split(\",\") \ns.join(iterable)     # \", \".join([\"a\", \"b\", \"c\"]) | a, b, c\ns.replace(old, new)  # \"hello\".replace(\"l\", \"x\") | \"hexxo\"\ns.find(sub)          # \"hello\".find(\"l\")\ns.startswith(prefix), s.endswith(suffix)\ns.isdigit(), s.isalpha(), s.isalnum()\n\nf''\n```\n\n3\\. Списки (list)\n```python\nlen(lst)\nlst.append(x)\nlst.extend(iterable) # [1.2].extend([3,4])\nlst.insert(i, x)\nlst.remove(x)\nlst.pop(i)\nlst.index(x)\nlst.count(x)\nlst.sort()\nsorted(lst)\nlst.reverse()\nlst[start:stop:step]\n```\n\n4\\. Кортежи (tuple)\n``` python\nlen(t)\nt.count(x)\nt.index(x)\n```\n\n5\\. Словари (dict)\n```python\nlen(d)\nd[key]\nd.get(key, default)\nd.keys(), d.values(), d.items()\n! d.update(other) # d = {\"a\": 1}, d.update({\"b\":2})\n! d.pop(key) # {\"a\": 1, \"b\": 2} -> d.pop(\"a\") -> d = {\"b\", 2} \n```\n\n6\\. Множества (set)\n\n```python\nlen(s)\ns.add(x)\ns.remove(x)\n! s.discard(x)\ns.union(other), s.intersection(other), s.difference(other)\n```",
+      "type": "text",
+      "width": 620,
+      "x": -340,
+      "y": -80
+    },
+    {
+      "height": 300,
+      "id": "f74efdfe684812a7",
+      "styleAttributes": {
+      },
+      "text": "### Условные операторы \n```python\nif condition_1:\n\toperations_1\nelif condition_2:\n\toperations_2\nelse:\n\toperations_else\n\nand, or, not\n```",
+      "type": "text",
+      "width": 620,
+      "x": 280,
+      "y": -80
+    },
+    {
+      "height": 1460,
+      "id": "c123ac46530f4c5f",
+      "styleAttributes": {
+      },
+      "text": "### Циклы\n\nfor, enumerate\n```python\nfor element in iterable:\n\toperations\n\nfor i, fruit in enumerate(fruits):\n\toperations\n\nfor name, age in zip(names, ages):\n\toperations\n```\nwhile\n```python\nwhile condition:\n\toperations\n```\nbreak, continue\n\n### iterable\niterable - объекты, которые можно перебирать по одному за элементу раз\n```python\n__iter__() или __getitem()__\n```\n1) вызываем iter(), чтбы получит итератор\n2) next() для получения следующего элемента\n3) повторяемся, пока не возникнет StopIteration\n\nДля создания своего iterable: метод iter, который должен возвращать метод next\n\n```python\nclass MyIterable:\n\tdef __init__(self, n):\n\t\tself.n = n\n\tdef __ iter(self):\n\t\treturn MyIterator(self.n)\n\nclass MyIterator:\n\tdef __init__(self, n):\n\t\tself.n = n\n\t\tself.current = 0\n\tdef __next__(self):\n\t\tif self.current < self.n:\n\t\t\tresult = self.current\n\t\t\tself.current += 1\n\t\t\treturn result\n\t\telse:\n\t\t\traise StopIteration\n```\n\nГенераторы - способ создания итерируемых объектов.\n```python\ndef my_generator(n):\n\tfor i in range(n):\n\t\tyield i\n```",
+      "type": "text",
+      "width": 620,
+      "x": 280,
+      "y": 220
+    },
+    {
+      "height": 1080,
+      "id": "3b6e7efca523bd68",
+      "styleAttributes": {
+      },
+      "text": "### функции\n\n```python\ndef f(args):\n\tbody\n\treturn\nlambda x, y: x + y\n```\n\n```python\ndef f(*args):\n\treturn sum(args)\ndef f(**kwargs):\n\tfor key, value in kwargs.items():\n        print(f\"{key}: {value}\")\n```\n\nПеременные, определённые внутри функции, являются **локальными**\nПеременные, определённые вне функций, являются **глобальными**\n**global**:\n``` python\nx = 10\ndef func():\n\tglobal x\n\tx = 20\nfunc()\nprint(x)\n\nnonlocal x\n```\n**Замыкание** - функция, которая запоминает значение из внешней области видимости, даже если они больше не существуют\n\n```python\ndef outer():\n\tmessage = \"hello\"\n\n\tdef inner():\n\t\tprint(message)\n\n\treturn inner\n\nmy_func = outer()\nmy_func() #hello\n```\n\n**Декоратор** - функция, которая применят на вход другую функцию и расширяет ее поведение, не изменяя код",
+      "type": "text",
+      "width": 700,
+      "x": 900,
+      "y": -80
+    },
+    {
+      "height": 80,
+      "id": "987d74af7748cd25",
+      "styleAttributes": {
+      },
+      "text": "### Типы данных и операции",
+      "type": "text",
+      "width": 620,
+      "x": -340,
+      "y": -160
+    },
+    {
+      "height": 100,
+      "id": "ea6e7957823d4092",
+      "styleAttributes": {
+      },
+      "text": "### Работа с данными и файлами\n\n",
+      "type": "text",
+      "width": 510,
+      "x": 1730,
+      "y": -180
+    },
+    {
+      "height": 1080,
+      "id": "4b9517360bec5994",
+      "styleAttributes": {
+      },
+      "text": "### Обработка исключений\n\n**try-except-finally**\n- try - блок, в котором вызывается код, который может вызывать исключение\n- except - блок, который выполняется ,если в try возникло исключение\n- finally - блок, который выполняется всегда\n```python\ntry:\n\tresult = 10 / 0\nexcept ZeroDivisionError:\n\tprint('division by zero')\nfinally:\n\tprint('finally')\n```\n\nсвои исключения: наследование от Exception\n```python\nclass NegativeNumberError(Exception):\n    pass\n\ndef check_positive(number):\n    if number < 0:\n        raise NegativeNumberError(\"Число не должно быть отрицательным\")\n\ntry:\n    check_positive(-10)\nexcept NegativeNumberError as e:\n    print(e)\n```\n",
+      "type": "text",
+      "width": 510,
+      "x": 1730,
+      "y": -80
+    },
+    {
+      "height": 1080,
+      "id": "cb0154574d109d5f",
+      "styleAttributes": {
+      },
+      "text": "### Чтение/запись данных\n\n- r - чтение\n- w - запись \n- a - добавление в конец\n- b - бинарные режим\n\n```python\nwith open(\"example.txt\", \"r\") as file:\n\tcontent = file.read()\n\tprint(content)\nith open(\"example.txt\", \"w\") as file:\n    file.write(\"Hello, World!\")\nwith open(\"example.txt\", \"a\") as file:\n    file.write(\"\\nNew line\")\n```\n\nЗапись в CSV\n```python\nimport csv\n\ndata = [[\"Name\", \"Age\"], [\"Alice\", 25], [\"Bob\", 30]]\n\nwith open(\"output.csv\", \"w\", newline=\"\") as file:\n    writer = csv.writer(file)\n    writer.writerows(data)\n```\n\nJSON\n```python\nimport json\n\nwith open(\"data.json\", \"r\") as file:\n    data = json.load(file)\n    print(data)\n```\n```python\nimport json\n\ndata = {\"name\": \"Alice\", \"age\": 25}\n\nwith open(\"output.json\", \"w\") as file:\n    json.dump(data, file, indent=4)\n```\n\ncsv.reader()",
+      "type": "text",
+      "width": 640,
+      "x": 2240,
+      "y": -80
+    },
+    {
+      "height": 81,
+      "id": "84ec34839f898026",
+      "styleAttributes": {
+      },
+      "text": "### Продвинутые концепции",
+      "type": "text",
+      "width": 412,
+      "x": 3040,
+      "y": -161
+    },
+    {
+      "height": 260,
+      "id": "93d775deeabfe3b6",
+      "styleAttributes": {
+      },
+      "text": "### Генераторы и итераторы\n\nГенераторы - функции, которые возвращают итератор. При каждом вызове next()  генератор выполняет код до следующего yield. Когда завершает выполнение, выбрасывает StopIteration",
+      "type": "text",
+      "width": 600,
+      "x": 3040,
+      "y": -80
+    },
+    {
+      "height": 760,
+      "id": "e62e33c01d4e13f5",
+      "styleAttributes": {
+      },
+      "text": "### Работа с памятью\n\n**copy.copy** - поверхностное копирование. Создаёт новый объект, но вкладывает в него ссылки на те же элементы, что и в оригинальном объекте. Хорошо для неизменяемых объектов, проблемы с изменяемыми\n**copy.deepcopy** - создаёт новый объект и рекурсивно копирует все вложенные объекты\n\n```python\nimport copy\n\noriginal = [[1, 2, 3], [4, 5, 6]]\nshallow_copy = copy.copy(original)\n\n# Изменяем вложенный список в копии\nshallow_copy[0][0] = 99\n\nprint(original)     # [[99, 2, 3], [4, 5, 6]]\nprint(shallow_copy) # [[99, 2, 3], [4, 5, 6]]\n```\n\n```python\nimport copy\n\noriginal = [[1, 2, 3], [4, 5, 6]]\ndeep_copy = copy.deepcopy(original)\n\n# Изменяем вложенный список в копии\ndeep_copy[0][0] = 99\n\nprint(original)  # [[1, 2, 3], [4, 5, 6]]\nprint(deep_copy) # [[99, 2, 3], [4, 5, 6]]\n```",
+      "type": "text",
+      "width": 560,
+      "x": 3640,
+      "y": -80
+    },
+    {
+      "height": 320,
+      "id": "57339c06a0184fce",
+      "styleAttributes": {
+      },
+      "text": "### Контекстные менеджеры\n\nИспользуются для управления ресурсами (файлами, сетевыми соединениями). Гарантируют, что ресурсы будут корректно освобождены, даже если возникнет ошибка\n```python\nwith open(\"example.txt\", \"r\") as file:\n    content = file.read()\n    print(content)\n```\n\nМожно создавать свои ",
+      "type": "text",
+      "width": 560,
+      "x": 3640,
+      "y": 680
+    },
+    {
+      "height": 380,
+      "id": "f3d3fbf276db8691",
+      "styleAttributes": {
+      },
+      "text": "### Основные принципы\n\n**Класс** - шаблон для создания объектов. определяет атрибуты (данные) и методы (функции)\n**Объект** - экземпляр класса\n\n```python\nclass Dog:\n\tdef __init__(self, name, age):\n\t\tself.name = name\n\t\tself.age = age\ndef bark(self):\n\treturn f\"{self.name} says woof\"\nmy_dog = Dog(\"Buddy\", 3) print(my_dog.bark()) # Buddy says woof!\n```\n",
+      "type": "text",
+      "width": 600,
+      "x": 4320,
+      "y": -80
+    },
+    {
+      "height": 60,
+      "id": "641eb992eb09494c",
+      "styleAttributes": {
+      },
+      "text": "### ООП",
+      "type": "text",
+      "width": 250,
+      "x": 4320,
+      "y": -140
+    },
+    {
+      "height": 1100,
+      "id": "85fa6c2790aa5bd5",
+      "styleAttributes": {
+      },
+      "text": "### Основные принципы\n- **Наследование** - создание нового класса на основе существующего. Новый класс наследует атрибуты и методы родительского\n```python\nclass Animal:\n\tdef __init__(self, name):\n\t\tself.name = name\n\tdef speak(self):\n\t\treturn \"some sound\"\n\nclass Dog(animal):\n\tdef speak(self):\n\t\treturn f\"{self.name} says woof\"\n ```\n- **Полиморфизм** - использование объектов разных классов через один интерфекйс\n```python\nclass Cat(Animal):\n    def speak(self):\n        return f\"{self.name} says meow!\"\n\nanimals = [Dog(\"Buddy\"), Cat(\"Whiskers\")]\nfor animal in animals:\n    print(animal.speak())\n```\n\n- **Инкапсуляция** - сокрытие внутренней реализации класса\nАтрибуты/методы с \\_ защищённые, атрибуты/методы с \\__ приватные\n\n```python\nclass BankAccount:\n    def __init__(self, balance):\n        self.__balance = balance  # Приватный атрибут\n\n    def deposit(self, amount):\n        self.__balance += amount\n\n    def get_balance(self):\n        return self.__balance\n\naccount = BankAccount(100)\naccount.deposit(50)\nprint(account.get_balance())  # 150\n# print(account.__balance)  # Ошибка: атрибут недоступен\n```",
+      "type": "text",
+      "width": 600,
+      "x": 4920,
+      "y": -80
+    },
+    {
+      "height": 780,
+      "id": "1cbbca1e4214b5d8",
+      "styleAttributes": {
+      },
+      "text": "### Магические методы (dunder methods)\n\nНачинаются и заканчиваются \\_\\_, взаимодействе с функциями python\n```python\n__init__\n__str__ # строковое представление\n__repr__ # официальное строковое представление\n__len__ # длина объекта\n\nclass MyList:\n    def __init__(self, items):\n        self.items = items\n\n    def __len__(self):\n        return len(self.items)\n\n    def __str__(self):\n        return f\"MyList: {self.items}\"\n\n    def __repr__(self):\n        return f\"MyList({self.items})\"\n\nmy_list = MyList([1, 2, 3])\nprint(len(my_list))  # 3\nprint(str(my_list))  # MyList: [1, 2, 3]\nprint(repr(my_list)) # MyList([1, 2, 3])\n```",
+      "type": "text",
+      "width": 580,
+      "x": 5520,
+      "y": -80
+    },
+    {
+      "height": 88,
+      "id": "3c6f7d373b0d4ef1",
+      "styleAttributes": {
+      },
+      "text": "### Модули и пакеты",
+      "type": "text",
+      "width": 280,
+      "x": 6240,
+      "y": -168
+    },
+    {
+      "height": 200,
+      "id": "df87c31c32e278fc",
+      "styleAttributes": {
+      },
+      "text": "### Импорт\n\nimport module\nfrom module import func",
+      "type": "text",
+      "width": 440,
+      "x": 6240,
+      "y": -80
+    },
+    {
+      "height": 240,
+      "id": "568b79782512414d",
+      "styleAttributes": {
+      },
+      "text": "### Создание модулей и пакетов\n\n**Модуль** - файл с .py, который содержит код\n**Пакет** - директория, содержащая несколько модулей и файл \\_\\_init\\_\\_.py",
+      "type": "text",
+      "width": 440,
+      "x": 6240,
+      "y": 120
+    },
+    {
+      "height": 360,
+      "id": "6d9e7a52607133f4",
+      "styleAttributes": {
+      },
+      "text": "### Виртуальные окружения\n\nВиртуальные окружения позволяют изолировать зависимости пакета от глобальных установленных пакетов\n```bash\npython -m venv myenv\n```",
+      "type": "text",
+      "width": 440,
+      "x": 6240,
+      "y": 360
+    },
+    {
+      "height": 640,
+      "id": "8a7bc46f6805a393",
+      "styleAttributes": {
+      },
+      "text": "### List/Dict Comprehensions\n\n**List comprehensions**\n```python\n[выражение for elment in итерируемый_объект if условие]\n\nnumbers = [1, -2, 3, -4, 5]\npositive_squares = [x ** 2 for x in numbers if x > 0]\nprint(positive_squares)  # [1, 9, 25]\n\nwords = [\"hello\", \"world\", \"python\"] upper_words = [word.upper() for word in words] print(upper_words) # ['HELLO', 'WORLD', 'PYTHON']\n```\n\n**Dict comprehensions**\n```python\n{ключ: значение for элемент in итерируемый_объект if условие}\n```\n\n**Set comprehensions**\n```python\n{выражение for элемент in итерируемый_объект if условие}\n```\n\n",
+      "type": "text",
+      "width": 600,
+      "x": 3040,
+      "y": 360
+    }
+  ]
+}

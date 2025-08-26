@@ -1,0 +1,193 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "height": 1092,
+      "id": "2bf118146755582e",
+      "label": "Creational",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 2012,
+      "x": -340,
+      "y": 900
+    },
+    {
+      "height": 909,
+      "id": "a89240b77a8ebd55",
+      "label": "Behavioral",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1261,
+      "x": 860,
+      "y": 2060
+    },
+    {
+      "height": 897,
+      "id": "fae07acbd22a56d0",
+      "label": "Structural",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1163,
+      "x": -340,
+      "y": 2053
+    },
+    {
+      "height": 555,
+      "id": "a9180a6960385195",
+      "styleAttributes": {
+      },
+      "text": "### Repository\nРепозиторий создаёт абстракцию над хранилищем данных, предоставляя интерфейс. Скрывает детали получения, хранения и обработки запросов\n\n- Когда нужно отделить бизнес-логику от деталей доступа к данным\n- При необходимости лёгкого тестирования\n- При возможной смене источника данных (бд, API, файловая система)\n\n```\nИнтерфейс UserRepository:\n    - Получить(id)\n    - ПолучитьВсе()\n    - Добавить(объект)\n    - Обновить(объект)\n    - Удалить(id)\n```\n```",
+      "type": "text",
+      "width": 527,
+      "x": -313,
+      "y": -243
+    },
+    {
+      "height": 555,
+      "id": "24e6a8a576ce4443",
+      "styleAttributes": {
+      },
+      "text": "### Unit of Work (Единица работы)\nОтслеживет все изменения, которые произошли во время бизнес-трнзкции, координирует запись изменений, решает проблемы параллелизма. Обеспечивает атомарность операций.\n\n- При необходимости обеспечения нескольких транзакций как одной атомарной транзакции\n- Когда нужно координировать работу нескольких репозиториев\n- При желание централизовать управление транзакциями\n\n```\nКласс UnitOfWork:\n    - Репозитории (пользователи, заказы, продукты...)\n    - НачатьТранзакцию()\n    - Зафиксировать()\n    - ОтменитьИзменения()\n```",
+      "type": "text",
+      "width": 495,
+      "x": 214,
+      "y": -243
+    },
+    {
+      "height": 555,
+      "id": "0827f2b0f7db789f",
+      "styleAttributes": {
+      },
+      "text": "### Data Mapper (преобразователь данных)\nОбеспечивает передачу данных между хранилищем и объектами домена, сохраняя их независимость друг от друга\n\n- При работе со сложной доменной моделью\n- Когда структура базы данных отличается от структуры объектов в приложении\n- Для отделения логики доступа к БД от бизнес-логики\n\n```\nКласс UserMapper:\n    - ИзБазыВОбъект(строкаБД)\n    - ИзОбъектаВБазу(объектПользователя)\n```",
+      "type": "text",
+      "width": 514,
+      "x": 709,
+      "y": -243
+    },
+    {
+      "height": 479,
+      "id": "582659c51b2bc25a",
+      "styleAttributes": {
+      },
+      "text": "### DTO (Data Transfer Object)\nОбъект без поведения, который служит для передачи данных между подсистемами приложения\n\n- При передаче данных через границы приложения (API, слои)\n- Для ограничения передаваемых данных (не все поля модели)\n- Для объединения данных из нескольких источников\n\n```\nКласс UserDTO:\n    - имя\n    - email\n    - роль\n    (без методов, только данные)\n```",
+      "type": "text",
+      "width": 524,
+      "x": -313,
+      "y": 312
+    },
+    {
+      "height": 498,
+      "id": "5d8d62feb824732f",
+      "styleAttributes": {
+      },
+      "text": "### Singleton\n\nOnly be instantiated once\n\n```typescript\nclass Settings {\n\n\tstatic instance: Settings;\t\n\tpublic readonly mode = 'dark';\n\n\tprivate constructor() {\n\t\n\t}\n\n\tstatic getInstance(): Settings {\n\t\tif (!Settings.instance) {\n\t\t\tSettings.instance = new Settings();\n\t\t}\n\t}\n}\n```",
+      "type": "text",
+      "width": 618,
+      "x": -313,
+      "y": 922
+    },
+    {
+      "height": 498,
+      "id": "72fc6ca2710dd6f7",
+      "styleAttributes": {
+      },
+      "text": "### Prototype\nAlternative way to implement inheritance\n\n```typescript\nconst zombie {\n\teatBrains() {\n\t\treturn 'yum brain';\n\t}\n}\n\nconst chad = Object.create(zombie, {name: {value: 'chad'} });\n\nchad.eatBrains();\n\nchad.__proto__;\nObject.getPrototypeOf(chad);\n```",
+      "type": "text",
+      "width": 609,
+      "x": 347,
+      "y": 922
+    },
+    {
+      "height": 908,
+      "id": "2d0ab6c2e6a4928f",
+      "styleAttributes": {
+      },
+      "text": "### Builder\n\nStandard way: everything in a constructor\nAlternative way: step by step\n\n```typescript\nclass HotDog {\n\tconstructor(\n\t\tpublic bread: string,\n\t\tpublic ketchup?: boolean,\n\t\tpublic mustard?: boolean,\n\t\tpublic kraut?: boolean\n\t) {}\n}\n```\nvs. \n\n```typescript\nclass HotDog {\n\tconstructor(\n\t) {}\n\n\taddKetchup() {\n\t\tthis.ketchup = true;\n\t}\n\taddMustard() {\n\t\tthis.mustard = true;\n\t}\n\taddKraut() {\n\t\tthis.kraut = true;\n\t}\n}\n\nconst myLunch = new HotDog('gluten free')\n\nmyLunch\n\t.addKetchup()\n\t.addMustard()\n\t.addKraut();\n```",
+      "type": "text",
+      "width": 650,
+      "x": 1009,
+      "y": 922
+    },
+    {
+      "height": 472,
+      "id": "5e92d1d640a252bb",
+      "styleAttributes": {
+      },
+      "text": "### Factory\n\n```typescript\n\nclass ButtonFactory {\n\tcreateButton(os: string): IOSButton | AndroidButton {\n\t\tif (os === 'ios') {\n\t\t\treturn new IOSButton();\n\t\t} else {\n\t\t\treturn new AndroidButton();\n\t\t}\n\t}\n}\n\nconst factory = new ButtonFactory();\nconst btn1 = factory.createButton(os);\nconst btn2 = factory.createButton(os);\n```",
+      "type": "text",
+      "width": 618,
+      "x": 38,
+      "y": 1466
+    },
+    {
+      "height": 857,
+      "id": "5a1d7d860a1c3bbb",
+      "styleAttributes": {
+      },
+      "text": "### Facade\n\nSimplified API to hide other low level \n\n```typescript \nclass PlumbingSystem {\n\tsetPressure(v: number) {}\n\tturnOn() {}\n\tturnOff()\n}\n\nclass ElectricalSystem {\n\tsetVoltage(v: number) {}\n\tturnOn() {}\n\tturnOff()\n}\n\nclass House {\n\n\tprivate plumbing = new PlumbingSystem();\n\tprivate electrical = new ElectricalSystem();\n\n\tpublic turnOnSystems() {\n\t\tthis.electrical.setVoltage(120);\n\t\tthis.electrical.turnOn();\n\t\tthis.plumbing.setPressure(500);\n\t\tthis.plumbing.turnOn();\n\t}\n\n\tpublic ShutDown() {\n\t\tthis.plumbing.turnOff();\n\t\tthis.electrical.turnOff();\n\t}\n}\n\nconst client = new House();\nclient.turnOnSystems();\n```",
+      "type": "text",
+      "width": 516,
+      "x": -313,
+      "y": 2081
+    },
+    {
+      "height": 857,
+      "id": "ac22c37c16101e2e",
+      "styleAttributes": {
+      },
+      "text": "### Proxy\nSubstitute\n\n```typescript\nconst original = { name: 'jeff' };\n\nconst reactive = new Proxy(original, {\n\tget(target, key) {\n\t\tconsole.log('Tracking: ', key);\n\t\treturn target[key];\n\t},\n\tset(target, key, value) {\n\t\tconsole.log('updating UI...');\n\t\treturn Reflect.set(target, key, value);\n\t},\n})\n```",
+      "type": "text",
+      "width": 555,
+      "x": 255,
+      "y": 2081
+    },
+    {
+      "height": 429,
+      "id": "21790388011515aa",
+      "styleAttributes": {
+      },
+      "text": "### Iterator\n\n```typescript\nfunction range(start: number, end: number, step=1) {\n\treturn {\n\t\t[Symbol.iterator]() {\n\t\t\treturn this;\n\t\t},\n\t\tnext() {\n\t\t\tif (start < end) {\n\t\t\t\tstart = start + step;\n\t\t\t\treturn { value: start, done: false }\n\t\t\t}\n\t\t\treturn { done: true, value: end };\n\t\t}\n\t}\n}\n```",
+      "type": "text",
+      "width": 613,
+      "x": 879,
+      "y": 2081
+    },
+    {
+      "height": 429,
+      "id": "52b4bc8258edb2da",
+      "styleAttributes": {
+      },
+      "text": "### Observer\nAllows many objects to subscribe to events that are broadcast by another object \n\n\n",
+      "type": "text",
+      "width": 543,
+      "x": 1557,
+      "y": 2081
+    },
+    {
+      "height": 394,
+      "id": "12fec4ee12c55932",
+      "styleAttributes": {
+      },
+      "text": "### Mediator\n\nMiddleman / broker. Many to many is dangerous\nMiddleware",
+      "type": "text",
+      "width": 613,
+      "x": 879,
+      "y": 2556
+    },
+    {
+      "height": 382,
+      "id": "e610f294485be240",
+      "styleAttributes": {
+      },
+      "text": "### State\n\nStart with one base class then provide it with different functionality",
+      "type": "text",
+      "width": 543,
+      "x": 1557,
+      "y": 2556
+    }
+  ]
+}

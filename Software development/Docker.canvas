@@ -1,0 +1,160 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "height": 1349,
+      "id": "b859c614f6d5d326",
+      "styleAttributes": {
+      },
+      "text": "### Порты\n\n**Порт** — это **виртуальный номер**, который используется в сетях, чтобы отличать **разные сервисы и приложения**, работающие на одном устройстве.\n\n- Порты — это числа от **0 до 65535**.\n    \n- Каждое приложение, использующее сеть, «слушает» определённый порт.\n    \n- Например:\n    \n    - Веб-сервер (HTTP) слушает порт **80**\n        \n    - Веб-сервер (HTTPS) — порт **443**\n        \n    - SSH — порт **22**\n        \n    - PostgreSQL — порт **5432**\n        \n    - MySQL — порт **3306**\n    - \nПредставь, что у тебя есть **многоквартирный дом**:\n\n- Адрес дома — это **IP-адрес** (уникален в сети).\n    \n- Номер квартиры — это **порт**.\n    \n\nЕсли ты знаешь только IP, ты пришёл к дому.  \nНо чтобы найти нужного человека (сервис), тебе нужен ещё номер квартиры (порт).\n\n| Протокол | Описание                                                 |\n| -------- | -------------------------------------------------------- |\n| **TCP**  | Надёжный, с подтверждениями (веб, почта, SSH)            |\n| **UDP**  | Быстрый, но без гарантии доставки (видео, стриминг, DNS) |\n### Юзкейсы\n**Сценарий:**  \nТы разрабатываешь сайт на Flask/Django/Node.js и хочешь тестировать его в браузере.\n\n```bash\ndocker run -p 3000:3000 my-app\n```\n\n- Внутри контейнера сервер запускается на порту `3000`.\n    \n- Ты можешь открыть `http://localhost:3000` и видеть свой сайт.",
+      "type": "text",
+      "width": 1209,
+      "x": -3050,
+      "y": -200
+    },
+    {
+      "height": 428,
+      "id": "6c8f11496402c650",
+      "styleAttributes": {
+      },
+      "text": "Common Commands: \n\t \n run         Create and run a new container from an image  \n exec        Execute a command in a running container  \n ps          List containers  \n build       Build an image from a Dockerfile  \n bake        Build from a file  \n pull        Download an image from a registry  \n push        Upload an image to a registry  \n images      List images  \n login       Authenticate to a registry  \n logout      Log out from a registry  \n search      Search Docker Hub for images  \n version     Show the Docker version information  \n info        Display system-wide information",
+      "type": "text",
+      "width": 650,
+      "x": -1497,
+      "y": -200
+    },
+    {
+      "height": 598,
+      "id": "60d5a7a551b378f7",
+      "styleAttributes": {
+      },
+      "text": "### Getting started\n```bash\ndocker run -d -p 80:80 docker/getting-started\n```\n-d, --detach       Run container in background and print container ID\n -p, --publish list                Publish a container's port(s) to the host\n `-p 80:80` — пробрасывает порт: внешний порт 80 (на хосте) → внутренний порт 80 (в контейнере)-p 80:80 — пробрасывает порт: внешний порт 80 (на хосте) → внутренний порт 80 (в контейнере)\n\nКоманда:\n\n```bash\ndocker run -p 8080:80 image-name\n```\nЧитается так:\n\n> «Если кто-то (например, браузер) обратится к **моему компьютеру** на порт **8080**, перенаправь этот запрос **в контейнер** на порт **80**».",
+      "type": "text",
+      "width": 602,
+      "x": -744,
+      "y": -200
+    },
+    {
+      "height": 1580,
+      "id": "bd618236e4ebdb91",
+      "styleAttributes": {
+      },
+      "text": "### Info\n\n```bash\ndocker info\n```\nServer:  \nContainers: 1  \n Running: 1  \n Paused: 0  \n Stopped: 0  \nImages: 1  \nServer Version: 28.1.1  \nStorage Driver: overlayfs  \n driver-type: io.containerd.snapshotter.v1  \nLogging Driver: json-file  \nCgroup Driver: cgroupfs  \nCgroup Version: 2  \nPlugins:  \n Volume: local  \n Network: bridge host ipvlan macvlan null overlay  \n Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog  \nCDI spec directories:  \n /etc/cdi  \n /var/run/cdi  \nSwarm: inactive  \nRuntimes: io.containerd.runc.v2 runc  \nDefault Runtime: runc  \nInit Binary: docker-init  \ncontainerd version: 05044ec0a9a75232cad458027ca83437aae3f4da  \nrunc version: v1.2.5-0-g59923ef  \ninit version: de40ad0  \nSecurity Options:  \n seccomp  \n  Profile: unconfined  \n cgroupns  \nKernel Version: 6.10.14-linuxkit  \nOperating System: Docker Desktop  \nOSType: linux  \nArchitecture: x86_64  \nCPUs: 8  \nTotal Memory: 3.673GiB  \nName: docker-desktop  \nID: ea6f53a7-c459-4860-9d3e-a7290e29e463  \nDocker Root Dir: /var/lib/docker  \nDebug Mode: false  \nHTTP Proxy: http.docker.internal:3128  \nHTTPS Proxy: http.docker.internal:3128  \nNo Proxy: hubproxy.docker.internal  \nLabels:  \n com.docker.desktop.address=unix:///home/alyson/.docker/desktop/docker-cli.sock  \nExperimental: false  \nInsecure Registries:  \n hubproxy.docker.internal:5555  \n ::1/128  \n 127.0.0.0/8  \nLive Restore Enabled: false\n\n```bash\ndocker images\n```",
+      "type": "text",
+      "width": 1209,
+      "x": -1497,
+      "y": 1108
+    },
+    {
+      "height": 534,
+      "id": "b63fc012b2cbf403",
+      "styleAttributes": {
+      },
+      "text": "Docker run\n\n|Флаг|Назначение|\n|---|---|\n|`-d`|Detached mode — в фоне|\n|`-p host:container`|Проброс портов|\n|`--name mycontainer`|Имя контейнера|\n|`-v host:container`|Монтирование тома (volume)|\n|`-e VAR=value`|Установить переменную окружения|\n|`--rm`|Удаляет контейнер после остановки|\n|`-it`|Интерактивный режим + терминал (`-i` + `-t`)|\n|`--network`|Указать сетевое подключение|\n|`--restart`|Условия перезапуска (`no`, `on-failure`, `always`)|",
+      "type": "text",
+      "width": 650,
+      "x": -1497,
+      "y": 283
+    },
+    {
+      "height": 245,
+      "id": "b13bc9c778a92c0d",
+      "styleAttributes": {
+      },
+      "text": "docker ps -> CONTAINER ID -> docker stop CONTAINER ID\nstart, pause, unpause\n",
+      "type": "text",
+      "width": 606,
+      "x": -1497,
+      "y": -514
+    },
+    {
+      "height": 562,
+      "id": "e6b4092a5c21b466",
+      "styleAttributes": {
+      },
+      "text": "### L2\n\ndocker pull openjdk //version\ndocker images\ndocker run openjdk //-it \ndocker ps -a\n",
+      "type": "text",
+      "width": 637,
+      "x": -11,
+      "y": -200
+    },
+    {
+      "height": 330,
+      "id": "24cd6ccc1c7650b8",
+      "styleAttributes": {
+      },
+      "text": "docker ps (-a)\ndocker images\ndocker pause ID\ndocker unpause ID\ndocker stop ID\ndocker kill ID\n\ndocker run -d (-it) --rm  --name My-Container ubuntu:20.04 echo \"Hello, world\"\ndocker inspect | stats | logs ID\n\ndocker system prune -a --volumes",
+      "type": "text",
+      "width": 668,
+      "x": -3050,
+      "y": 1344
+    },
+    {
+      "file": "Pictures/Pasted image 20250609113606.png",
+      "height": 250,
+      "id": "1fbffc5613bad214",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 399,
+      "x": -3620,
+      "y": 1770
+    },
+    {
+      "height": 941,
+      "id": "005f24231e3109fc",
+      "styleAttributes": {
+      },
+      "text": "### Port forwarding\n\ne3338fbd3dec   nginx     \"/docker-entrypoint.…\"   7 seconds ago   Up 7 seconds   80/tcp    web\n\ndocker run -d --name web1 -p 80:80 nginx\ndfb6a3de5cf5   nginx     \"/docker-entrypoint.…\"   34 seconds ago   Up 33 seconds   0.0.0.0:80->80/tcp   web1\n\n\nDockerhub -> в документации можно найти информацию про порты\nGrafana, ElasticSearch\n\n### Environment variables\n\ndocker run -e\n\n```console\n docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d \n```\n\nMYSQL_DATABASE, MYSQL_USER, ...\n\nenv\n\n### Volumes\ndocker volumes ls\ndocker run --name web01 -v /some/content:/usr/share/nginx/html:ro -d nginx",
+      "type": "text",
+      "width": 843,
+      "x": -3180,
+      "y": 1770
+    },
+    {
+      "height": 1105,
+      "id": "3e35cb691e6cbfee",
+      "styleAttributes": {
+      },
+      "text": "\n### ip a  \n**Output**:\n1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000  \n   link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00  \n   inet 127.0.0.1/8 scope host lo  \n      valid_lft forever preferred_lft forever  \n   inet6 ::1/128 scope host noprefixroute    \n      valid_lft forever preferred_lft forever  \n\n- Это **локальный интерфейс**, через него работает `localhost` (`127.0.0.1`).\n- Внутренние запросы (например, к Nginx через браузер) идут через него.\n- - Контейнер `nginx` отвечает на этом интерфейсе, так как ты пробросила порт `80:80`.\n\n2: enp0s31f6: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000  \n   link/ether f8:75:a4:5c:93:09 brd ff:ff:ff:ff:ff:ff  \n   altname enxf875a45c9309  \n\n- Это **Ethernet-интерфейс**.\n- `NO-CARRIER` и `state DOWN` говорят, что **провод не подключён**, интерфейс не используется.\n\n4: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000  \n   link/ether c8:09:a8:d4:23:80 brd ff:ff:ff:ff:ff:ff  \n   inet 100.65.20.232/24 brd 100.65.20.255 scope global dynamic noprefixroute wlan0  \n      valid_lft 1026sec preferred_lft 1026sec  \n   inet6 fe80::ca09:a8ff:fed4:2380/64 scope link proto kernel_ll    \n      valid_lft forever preferred_lft forever  \n\n- Это твой **активный сетевой интерфейс**, через который работает интернет.\n- IP: `100.65.20.232` — это **CGNAT-адрес (Carrier-Grade NAT)**, часто используется в мобильных/провайдерских сетях (не публичный).\n- Ты через него подключена к интернету.\n- Он не влияет на работу Docker локально, но если ты хочешь раздавать контейнер наружу (в интернет или по локалке) — нужно будет учитывать его.\n\n5: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 9000 qdisc fq_codel state UNKNOWN group default qlen 500  \n   link/none    \n   inet 172.19.0.1/28 brd 172.19.0.15 scope global tun0  \n      valid_lft forever preferred_lft forever  \n   inet6 fe80::efcf:9a40:7d58:1360/64 scope link stable-privacy proto kernel_ll    \n      valid_lft forever preferred_lft forever\n\n- Это **виртуальный интерфейс**, созданный VPN-клиентом (например, `OpenVPN` или `WireGuard`).\n- IP `172.19.0.1` — это **внутренний IP VPN-сети**, доступен только внутри VPN.\n- VPN может перенаправлять весь трафик (в зависимости от конфигурации), **влиять на DNS или блокировать локальные соединения**.",
+      "type": "text",
+      "width": 1066,
+      "x": -4286,
+      "y": 2060
+    },
+    {
+      "file": "Pictures/Pasted image 20250609122246.png",
+      "height": 223,
+      "id": "d9b8d2db5a45ea70",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 399,
+      "x": -2252,
+      "y": 1770
+    },
+    {
+      "file": "Pictures/Pasted image 20250609125326.png",
+      "height": 219,
+      "id": "521778132df32bf6",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 400,
+      "x": -2252,
+      "y": 2022
+    },
+    {
+      "height": 3074,
+      "id": "1c00e67b2961d66b",
+      "styleAttributes": {
+      },
+      "text": "Отличный вопрос — понимание, как **работает файловая система в Docker**, — это ключ к уверенной работе с контейнерами. Давай разберём **основы и детали**, опираясь на твой контекст и проект.\n\n---\n\n## 📁 1. Как устроена файловая система внутри контейнера?\n\nКаждый Docker-контейнер — это изолированная среда со своей **виртуальной файловой системой**, похожей на Linux. Она создаётся на основе базового образа, например:\n\n```dockerfile\nFROM python:3.11-slim\n```\n\nЭтот образ содержит:\n\n```\n/\n├── bin/\n├── usr/\n│   └── src/\n├── lib/\n├── etc/\n├── tmp/\n└── ...\n```\n\n👉 То есть, внутри контейнера есть всё как в обычной Linux-системе, но:\n\n- **это отдельная среда**, у неё нет доступа к твоим системным файлам;\n    \n- каждый контейнер имеет свою копию этих директорий;\n    \n- **она создаётся заново при сборке образа** и может быть неизменяемой без volumes.\n    \n\n---\n\n## 📂 2. Что такое `WORKDIR`?\n\n```dockerfile\nWORKDIR /usr/src/app\n```\n\nЭто эквивалент `cd /usr/src/app` перед выполнением следующих инструкций.\n\nПримеры:\n\n```dockerfile\nWORKDIR /code\nCOPY . .       # Копирует файлы в /code\nRUN python app/main.py  # Запускается из /code\n```\n\n📌 Если `WORKDIR` не существует — он **будет создан автоматически**.\n\n---\n\n## 🧠 Почему используют `/usr/src/app`?\n\nЭто просто **распространённая практика**:\n\n- `/usr/src/` — традиционно место для исходного кода в Unix-подобных системах.\n    \n- `/app` — название твоего приложения.\n    \n\nТы можешь использовать любой путь — например, `/app`, `/code`, `/workspace`.\n\n---\n\n## 🛠 Как это выглядит на практике?\n\n### Пример: ты пишешь\n\n```dockerfile\nWORKDIR /usr/src/app\nCOPY . .\n```\n\n📦 Допустим, на твоём компьютере проект выглядит так:\n\n```\nproject/\n├── Dockerfile\n├── app/\n│   ├── main.py\n│   └── config.py\n├── requirements.txt\n```\n\n🔁 `COPY . .` скопирует **всё содержимое `project/` внутрь контейнера**, в `/usr/src/app`.\n\nИ внутри контейнера будет:\n\n```\n/usr/src/app/\n├── Dockerfile\n├── app/\n│   ├── main.py\n│   └── config.py\n├── requirements.txt\n```\n\nТеперь, если ты внутри контейнера сделаешь:\n\n```bash\ncd /usr/src/app\nls\n```\n\nТы увидишь:\n\n```\nDockerfile  app  requirements.txt\n```\n\n---\n\n## 🧪 Хочешь увидеть это руками?\n\nМожешь протестировать в интерактивном режиме:\n\n```bash\ndocker-compose run --rm obsidian_app bash\n```\n\nИ затем внутри:\n\n```bash\nls /usr/src/app\ncd app\npython -m app.main\n```\n\n---\n\n## 🧩 Резюме\n\n|Команда|Что делает|\n|---|---|\n|`WORKDIR /path`|Устанавливает текущую рабочую директорию|\n|`COPY . .`|Копирует из текущей хостовой папки в текущую контейнерную|\n|`/usr/src/app`|Просто путь — ты можешь выбрать любой (`/app`, `/code`, ...)|\n|`docker exec -it ...`|Позволяет \"зайти внутрь\" контейнера и смотреть структуру|\n\n---\n\nХочешь, мы сделаем `WORKDIR /app`, чтобы было короче и понятнее? Или оставим `/usr/src/app`, как в хороших практиках?",
+      "type": "text",
+      "width": 1439,
+      "x": -4390,
+      "y": 3299
+    }
+  ]
+}

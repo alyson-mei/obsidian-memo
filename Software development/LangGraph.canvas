@@ -1,0 +1,177 @@
+{
+  "edges": [
+    {
+      "fromNode": "69b446b3cb07f4ba",
+      "fromSide": "bottom",
+      "id": "1a2797f61a687100",
+      "toNode": "df60c86a6c2dbd39",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "df60c86a6c2dbd39",
+      "fromSide": "bottom",
+      "id": "bf718c337f9bcc21",
+      "toNode": "54aa4161f15f80f4",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "d1d35efe22244b8e",
+      "fromSide": "bottom",
+      "id": "1665b74d9f6f329e",
+      "toNode": "598a9faf23a642fb",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "598a9faf23a642fb",
+      "fromSide": "bottom",
+      "id": "5a2cdad8caa77dc4",
+      "toNode": "0c84e2360ae7ff3e",
+      "toSide": "top"
+    }
+  ],
+  "nodes": [
+    {
+      "height": 1540,
+      "id": "df94546534b6d27b",
+      "label": "Concept based approach",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 2160,
+      "x": -540,
+      "y": -2700
+    },
+    {
+      "height": 74,
+      "id": "69b446b3cb07f4ba",
+      "styleAttributes": {
+      },
+      "text": "### From tutorial\n",
+      "type": "text",
+      "width": 580,
+      "x": 1040,
+      "y": -300
+    },
+    {
+      "height": 294,
+      "id": "e94b356dbefc1f42",
+      "styleAttributes": {
+      },
+      "text": "### Libraries\n- `TypedDict` - словарь с фиксированными типами\n- `Annotated[list, add_messages]`\n- `StateGraph` - объект для построения графа\n- `START`, `END` - узлы начала и конца",
+      "type": "text",
+      "width": 493,
+      "x": -180,
+      "y": -194
+    },
+    {
+      "height": 1214,
+      "id": "d1d35efe22244b8e",
+      "styleAttributes": {
+      },
+      "text": "**Определение состояния и графа**\n```python\nclass State(TypedDict):\n    messages: Annotated[list, add_messages]\n\nbraph_builder = StateGraph(State)\n```\n- Определяем структуру состояния, `graph_builder` - строитель графа, основанный на этом состоянии\n- `add_messages` работает как редуктор, добавляя новые сообщения\n\n**Создание LLM и функции-узла**\n```python\nfrom langchain.chat_models import init_chat_moel\nllm = init_chat_model(\"anthropic:claude-3-5-sonnet-latest\")\n\ndef chatbot(state: State):\n\treturn {\"messages\": [llm.invoke(state[\"messages\"])]}\ngraph_builder.add_node(\"chatbot\", chatbot)\n```\n- `llm.invoke(state[\"messages\"])` - вызывает LLM с историей сообщений \n- Возвращается новое сообщение, обёрнутое в `{\"messages\":[...]}`\n- `add_node(\"chatbot\", ...)` добавляет функцию как узелв в граф\n\n**Определение переходов**\n```python\ngraph_builder.add_edge(START, \"chatbot\")\ngraph_builder.add_edge(\"chatbot\", END)\n```\n**Компиляция графа и визуализация**\n```python\ngraph = graph_builder.compile()\ngraph.get_graph().draw_mermaid_png()\n```\n\n**Запуск графа с пользовательским вводом**\n```python\ndef stream_graph_updates(user_input: str):\n\tfor event in graph.stream({\"messages\": [{\"role\": \"user\", \"content\": user_input}]}):\n\t\tfor value in event.values():\n\t\t\tprint(\"Assistant:\" value[\"messages\"][-1].content())\n```\n- `graph.stream(...)` — запускает граф.\n    \n- Передаётся состояние: один пользовательский ввод.\n    \n- В ответ приходит поток событий (можно использовать в асинхронных или пошаговых сценариях).\n    \n- Выводится последнее сообщение ассистента.",
+      "type": "text",
+      "width": 640,
+      "x": 340,
+      "y": -194
+    },
+    {
+      "height": 374,
+      "id": "df60c86a6c2dbd39",
+      "styleAttributes": {
+      },
+      "text": "### Module 0\n\n1\\. Setting up environment: \n1) langgraph folder, git clone\n2) set up venv, install requirements\n3) pass api keys to venv (export | .env) and /studio in every module\n4) set up langgraph studio\n\n2\\. Basics \n1) `stream`, `invoke`, passing messages",
+      "type": "text",
+      "width": 580,
+      "x": 1040,
+      "y": -194
+    },
+    {
+      "height": 1300,
+      "id": "54aa4161f15f80f4",
+      "styleAttributes": {
+      },
+      "text": "### Module 1\n\n1\\. Motivation\n- Agent $\\approx$ control flow defined by LLM\n- e.g Router, Fully Autonomous\n- Reliability vs. Agent's level of control\n- LangGraph + LangChain\n- Modules overview\n\n2\\. Simple graph\n- `State`\n- Nodes, edges\n- Graph: add nodes, add (conditional) edges, compile, invoke\n- LangGraph Studio, Threads\n\n4\\. Chains\n- Messages: `AIMessage`, `HumanMessage`. Invoking on dialog history. Metadata\n- Tools: `bind_tools`, `tool_calls`\n- Using messages as a state, Reducers: `add_messages`\n- Building a simple graph, invoking llm with tool\n\n5\\. Router\nIdea: return a tool call o return a natural language response\n- Prebuilt: `ToolNode`. Important: here tools are applied automatically. Important: behavior can be unsafe\n- Studio (fix model name in pyfile)\n\n6\\. Agent\nIdea: get tool message, send it back to the model\nReAct: `act`, `observe`, `reason\n- Conditional edge \"assistant -> tools\", Edge \"tools -> assistant\"\n- Parallel calls, chain of thought!\n\n7\\. Agent with memory\nIdea: \"Add 3 and 4\" -> \"Multiply that by 2\". Without memory agent doesn't know what to do\n- Checkpointers save the state of the graph at each step. Compile the graph with checkpointer\n- Thread - a collection of checkpoints\n- `config`\n\n8\\. Intro to deployment",
+      "type": "text",
+      "width": 580,
+      "x": 1040,
+      "y": 220
+    },
+    {
+      "height": 1100,
+      "id": "598a9faf23a642fb",
+      "styleAttributes": {
+      },
+      "text": "**1\\.**\n`state` — это **глобальное хранилище** для всего, что происходит в графе:\n\nОн содержит все данные, которые проходят через узлы графа. Это может быть:\n\n- История сообщений (как здесь: `messages`)\n    \n- Данные пользователя\n    \n- Временные метки\n    \n- Флаги или признаки для ветвлений\n    \n- Результаты API-запросов\n    \n- Логи или внутренние состояния агентов\n\n```python\nclass State(TypedDict):\n    messages: Annotated[list, add_messages]\n    search_results: str\n    user_profile: dict\n\n```\n**2\\.** LLM-модели ожидают на вход список историю сообщений - список словарей вида\n```python\n[\n  {\"role\": \"user\", \"content\": \"Hello\"},\n  {\"role\": \"assistant\", \"content\": \"Hi, how can I help you?\"},\n  ...\n]\n```\n\n `state` — это словарь (`TypedDict`), и доступ к его полям осуществляется через ключи: `state[\"messages\"]`\n\n**3\\.** `graph.stream()` - метод графа, который запускает выполнение узлов, начиная со `START`. Принимает начальное состояние в виде словаря:\n```python\n{\"messages\": [{\"role\": \"user\", \"content\": user_input}]}\n```\n- `stream(...)` возвращает **итератор событий** (event stream), где **каждое событие** соответствует выполнению одного узла графа\n- Каждый `event` — это словарь (типично `{\"chatbot\": state}`), где ключ — имя узла, значение — **обновлённое состояние** после его выполнения.",
+      "type": "text",
+      "width": 640,
+      "x": 340,
+      "y": 1100
+    },
+    {
+      "height": 600,
+      "id": "0c84e2360ae7ff3e",
+      "styleAttributes": {
+      },
+      "text": "```\nUser: Привет! Что ты знаешь о LangGraph?\n```\n```python\nstream_graph_updates(\"Привет! Что ты знаешь о LangGraph?\")\n```\nВызов:\n```python\ngraph.stream({\n    \"messages\": [\n        {\"role\": \"user\", \"content\": \"Привет! Что ты знаешь о LangGraph?\"}\n    ]\n})\n```\n\nШаги выполнения графа\nSTART -> chatbot:\n1\\. Граф начинает выполнение с узла `chatbot`\n2\\. Вызов функции `chatbot`:\n```python\ndef chatbot(state: State):\n    return {\n        \"messages\": [llm.invoke(state[\"messages\"])]\n    }\n```",
+      "type": "text",
+      "width": 800,
+      "x": 340,
+      "y": 2280
+    },
+    {
+      "height": 1460,
+      "id": "51c206112adf996b",
+      "styleAttributes": {
+      },
+      "text": "### State\n- Common state types\n```python\nclass TypedDictState(TypedDict):\n    name: str\n    mood: Literal[\"happy\",\"sad\"]\n\n@dataclass\nclass DataclassState:\n    name: str\n    mood: Literal[\"happy\",\"sad\"]\n\nclass PydanticState(BaseModel):\n    name: str\n    mood: str \n\n    @field_validator('mood')\n    @classmethod\n    def validate_mood(cls, value):\n        if value not in [\"happy\", \"sad\"]:\n            raise ValueError(\"Each mood must be either 'happy' or 'sad'\")\n        return value\n\n```\n\n- State roles (by default OverallState!)\n```python\nclass PrivateState(...):\n\t...\nclass OverallState(...):\n\t...\nclass InputState(...):\n\t...\nclass OutputState(...):\n\t...\n\ndef input_node(state: InputState) -> PrivateState:\n\t...\ndef intemediate_node(state: PrivateState) -> OverallState:\n\t...\ndef output_node(state: OverallState) -> PrivateState:\n\t...\nStateGraph(OverallState)\n\n```\n- Reducers\n```python\nclass CustomMessagesState(TypedDict):\n\tintegers: Annotated[list[int], add]\n    messages: Annotated[list[AnyMessage], add_messages]\n\ndelete_messages = [RemoveMessage(id=m.id) for m in messages[:-2]]\nadd_messages(messages, delete_messages)\n```\n \\+ trimming and filtering messages\n \\+ pipeline with summarization",
+      "type": "text",
+      "width": 640,
+      "x": -500,
+      "y": -2660
+    },
+    {
+      "height": 1100,
+      "id": "fb779a25d0eb2b0f",
+      "styleAttributes": {
+      },
+      "text": "### Parallelization\n\n- Use reducers for default parallel execution\n- Subgraphs",
+      "type": "text",
+      "width": 780,
+      "x": 200,
+      "y": -2660
+    },
+    {
+      "height": 1654,
+      "id": "a78f8f83cc852bf4",
+      "styleAttributes": {
+      },
+      "text": "### Module 2\n\n1\\. State reducers\n- Intro\na) State with `foo: int`, `node_1` updates foo: `state['foo']+1`. Default is overwriting\nb) Two output edges from `node_1` with same updates => InvalidUpdateError\nOne update per step\n- Reducers\nIn State `foo: Annotated[list[int], add]`. Update: `\"foo\": [state['foo'][0] + 1]`\nAfter this `[1, 2, 3, 3]`\n- Custom reducers (e.g. handling errors)\n- Messages\nMessagesState with add_messages\nRewriting + removal by id (RemoveMessage)\n\n2\\. Multiple schemas\n- Intro\nIdea: internal nodes may pass info that is not required in the graph's input/output, different input/output\n- PrivateState\n`OverallState`, `PrivateState`. `node_1(state: OverallState)`, overwrite `foo`, `node_2(state: PrivateState)`, overwrite `baz` => only `foo` in the end\n- Input/Output schema\n`InputState`, question; `OutputState`, answer. In `OverallState` stuff is hidden from user\n\n3\\. Filtering, trimming messages\n- Intro\nWe can start using previous concepts. Goal: chatbot with long-term memory\n- Reducer\nChallenge: working with long-running conversations\n- RemoveMessages:\n```python\n    delete_messages = [RemoveMessage(id=m.id) for m in state[\"messages\"][:-2]]\n    return {\"messages\": delete_messages}\n```\nAlso filtering: \n```python\n    return {\"messages\": [llm.invoke(state[\"messages\"][-1:])]}\n```\nAlso trim: \n```python\nfrom langchain_core.messages import trim_messages\n```\n\n4\\. Message summarization\n- Intro\nState with summary; call_model - if there's a summary, append it to any newer messages\nsummarize_conversation; removing all but 2 most recent\nlen(messages) >  6 -> summarize\nGeneral idea: if < 6 messages, then just add. Else leave 2 latest (human + AI) + summary. Summary updates with time using new messages\n- Threads\n\n5\\. Memory summarization + external DB memory\n- SQLite checkpointer\n```python\nfrom langgraph.checkpoint.sqlite import SqliteSaver\nmemory = SqliteSaver(conn)\n```",
+      "type": "text",
+      "width": 880,
+      "x": 1640,
+      "y": -194
+    },
+    {
+      "height": 2134,
+      "id": "4249034ced480ab0",
+      "styleAttributes": {
+      },
+      "text": "### Module 3\n\n1\\. Streaming\n- `.stream`, `.astream`\nLangGraph supports a few different streaming models for graph state:\n`values` - streams the full state of the graph after each node is called\n`updates` - streams updates to the state after each node is called\n```python\nfor chunk in graph.stream({\"messages\": [HumanMessage(content=\"hi! I'm Lance\")]}, config, stream_mode=\"updates\"):\n    print(chunk)\n```\nEach `chunk` is a dict with `node_name` as the key and the updated state as the value\n\n- Streaming tokens\n`.astream_events`\nEach event is a dict: `event`, `name`, `data`, `metadata`\n\n2\\. Breakpoints\n- Intro:\nIdea: `approval`, `debugging`, `editing`\n- Approval\n```python\ngraph = builder.compile(interrupt_before=[\"tools\"], checkpointer=memory)\n```\nGoes before the first interruption\n```python\nfor event in graph.stream(initial_input, thread, stream_mode=\"values\"):\n    event['messages'][-1].pretty_print()\n```\n`graph.get_state(thread)`\n\n```python\n# Get user feedback\nuser_approval = input(\"Do you want to call the tool? (yes/no): \")\n\n# Check approval\nif user_approval.lower() == \"yes\":\n    \n    # If approved, continue the graph execution\n    for event in graph.stream(None, thread, stream_mode=\"values\"):\n        event['messages'][-1].pretty_print()\n```\n\n3\\. Editing\n- Intro:\nIdea - edit the graph state and insert human feedback\n- Editing\n```python\ngraph.update_state(\n    thread,\n    {\"messages\": [HumanMessage(content=\"No, actually multiply 3 and 3!\")]},\n)\n```\n- Awaiting user input\n\n4\\. Dynamic breakpoints\nIdea: interrupting based on logic\n\n5\\. Time travel\n- Intro\nIdea: we can replay a graph from any point\n```python\nall_states = [s for s in graph.get_state_history(thread)]\n```\n\n```python\nto_replay = all_states[-2]\nfor event in graph.stream(None, to_replay.config, stream_mode=\"values\"):\n    event['messages'][-1].pretty_print()\n```\n- Forking\nRunning same state with different input\n```python\nto_fork = all_states[-2]\nto_fork.values[\"messages\"]\n```",
+      "type": "text",
+      "width": 920,
+      "x": 2560,
+      "y": -194
+    },
+    {
+      "height": 1674,
+      "id": "4dc4c561eca9c03f",
+      "styleAttributes": {
+      },
+      "text": "### Module 4\n\n1\\. Parallelization\n- Intro\n```python\nclass ReturnNodeValue:\n    def __init__(self, node_secret: str):\n        self._value = node_secret\n\n    def __call__(self, state: State) -> Any:\n        print(f\"Adding {self._value} to {state['state']}\")\n        return {\"state\": [self._value]}\n```\nWithout additional stuff parallelization doesn't work\nWith add reducer works\n- Waiting for nodes to finish\nBy default automatically\n- Setting the order of state updates\nCustom reducer\n- Working with LLM\nAggregating 2 different requests\n\n2\\. Sub-graphs\n- Intro\nSub-graphs allow to create and manage different states in different parts of the graph\nSystem with loops, two separate sub-tasks by diff agents, two operations in two different sub-graphs\n- Sub graph\nWe need to use reducers\ng1: get_failures -> generate_summary; g2: generate_summary -> send_to_slack\ng: clean_logs -> a) g_1, b) g_2\n```python\nentry_builder.add_node(\"question_summarization\", qs_builder.compile())\nentry_builder.add_node(\"failure_analysis\", fa_builder.compile())\n\n```\n\n3\\. Map-reduce\n- Intro\nMap-reduce: for task decomposition and parallel processing\n`Map` - break a task into smaller sub-tasks\n`Reduce` - aggregate the results across all the completed sub-tasks\ne.g.\n`Map` - creates jokes, `Reduce` - picks one\n- \n```python\nfrom langgraph.constants import Send\ndef continue_to_jokes(state: OverallState):\n    return [Send(\"generate_joke\", {\"subject\": s}) for s in state[\"subjects\"]]\n```\n\n4\\. Research assistant",
+      "type": "text",
+      "width": 820,
+      "x": 3520,
+      "y": -194
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "height": 632,
+      "id": "5b2f8ebd3f7250ec",
+      "styleAttributes": {
+      },
+      "text": "## Todo:\n\nFrontend:\n- Refactoring\n\t- Change/add some lines README.md +\n\t- Maybe some rounded corners for .svg\n- Features\n\t- Morning and evening messages\n\t- Picture of the day\n\nBackend:\n- Refactoring\n\t- Check paths +\n\t- Check structure +\n\t- Change naming +\n\t- Reinitialize git\n- Features\n\t- Manage update time more precisely for different parts of README.md",
+      "type": "text",
+      "width": 469,
+      "x": -480,
+      "y": -380
+    },
+    {
+      "height": 392,
+      "id": "81dca8f33e3685ef",
+      "styleAttributes": {
+      },
+      "text": "### Todo (20.06)\n\n- Test other weather api\n- Make updates more efficient\n- Rebase\n\n\ntest <br> ",
+      "type": "text",
+      "width": 469,
+      "x": -480,
+      "y": 329
+    }
+  ]
+}

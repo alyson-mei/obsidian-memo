@@ -172,8 +172,8 @@ class UIState:
         self.date = now.strftime("%d %b %Y").lower()
         try:
             async with AsyncSessionLocal() as session:
+                print(session)
                 repo_factory = RepositoryFactory(session)
-                print("here")
                 # Load all data types
                 await self._load_commits(repo_factory)
                 await self._load_bing_data(repo_factory)

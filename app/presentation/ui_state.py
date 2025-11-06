@@ -170,26 +170,26 @@ class UIState:
         if now.hour < JOURNAL_MESSAGE_HOUR:
             now -= timedelta(days=1)
         self.date = now.strftime("%d %b %Y").lower()
-        try:
-            async with AsyncSessionLocal() as session:
-                print(session)
-                repo_factory = RepositoryFactory(session)
-                # Load all data types
-                await self._load_commits(repo_factory)
-                await self._load_bing_data(repo_factory)
-                await self._load_weather(repo_factory)
-                await self._load_time_data(repo_factory)
-                await self._load_geo_data(repo_factory)
-                await self._load_journal_data(repo_factory)
-                
-                if self.has_errors:
-                    logger.warning("Some data failed to load")
-                else:
-                    logger.info("All data loaded successfully")
+        #try:
+        async with AsyncSessionLocal() as session:
+            print(session)
+            repo_factory = RepositoryFactory(session)
+            # Load all data types
+            await self._load_commits(repo_factory)
+            await self._load_bing_data(repo_factory)
+            await self._load_weather(repo_factory)
+            await self._load_time_data(repo_factory)
+            await self._load_geo_data(repo_factory)
+            await self._load_journal_data(repo_factory)
+            
+            if self.has_errors:
+                logger.warning("Some data failed to load")
+            else:
+                logger.info("All data loaded successfully")
                     
-        except Exception as e:
-            logger.error(f"Failed to load state: {e}")
-            self.has_errors = True
+        # except Exception as e:
+        #     logger.error(f"Failed to load state: {e}")
+        #     self.has_errors = True
 
     def render_readme(self) -> bool:
         """Render README from template. Returns True if successful."""

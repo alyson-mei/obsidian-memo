@@ -44,7 +44,7 @@ from app.generators.journal_gen import generate_journal_message
 
 from app.services.weather import get_weather
 from app.services.time import get_time_info
-from app.data.db_init import init_db
+from app.data.database_init import init_database as init_db
 from app.presentation.ui_state import state
 
 from app.config import (

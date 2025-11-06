@@ -274,5 +274,39 @@ def setup_logger(name: str, indent: int = 0, logging_settings: Optional[LoggingS
 settings = Settings()
 logging_settings = LoggingSettings()
 
+UI_DIR, TEMPLATES_DIR, NUM_NEW_COMMIT_MSG, JOURNAL_MESSAGE_HOUR, REPO_DIR, README_PATH, COMMIT_MSG_PATH, TIME_DARK_SVG_PATH, TIME_LIGHT_SVG_PATH, FREEWEATHER_URL, TOMORROWIO_URL, WEATHER_URL = (
+    settings.ui_dir,
+    settings.templates_dir,
+    settings.num_new_commit_msg,
+    settings.journal_message_hour,
+    settings.repo_dir,
+    settings.readme_path,
+    settings.commit_msg_path,
+    settings.time_dark_svg_path,
+    settings.time_light_svg_path,
+    settings.freeweather_url,
+    settings.tomorrowio_url,
+    settings.weather_url
+)
+
+GITHUB_USERNAME = settings.github_username
+GITHUB_API_KEY = settings.github_api_key
+REMOTE_URL = settings.remote_url
+TIME_MESSAGE_INTERVAL = settings.time_message_interval
+BING_MESSAGE_INTERVAL = settings.bing_message_interval
+WEATHER_COMMIT_INTERVAL = settings.weather_commit_interval
+GEO_MESSAGE_TIME = settings.geo_message_time
+GEO_MESSAGE_HOUR = settings.geo_message_hour
+GEO_MESSAGE_MINUTE = settings.geo_message_minute
+JOURNAL_MESSAGE_TIME = settings.journal_message_time
+JOURNAL_MESSAGE_HOUR = settings.journal_message_hour
+JOURNAL_MESSAGE_MINUTE = settings.journal_message_minute
+MAX_COMMITS_BEFORE_REBASE = settings.max_commits_before_rebase
+DEFAULT_BRANCH = settings.default_branch
+FORCE_PUSH_ON_STARTUP = settings.force_push_on_startup
+FORCE_PUSH_SCHEDULE_HOUR = settings.force_push_schedule_hour
+FORCE_PUSH_SCHEDULE_MINUTE = settings.force_push_schedule_minute    
+
+
 # --- Export for convenience ---
 __all__ = ['settings', 'logging_settings', 'setup_logger']

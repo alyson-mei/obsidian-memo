@@ -43,8 +43,13 @@ async def generate_bing_message(country: str = "ca", count: int = 1) -> dict:
     """
     
     logger.info("Generating Bing message")
-    bing_data = await get_peapix_data(country, count)
+    bing_response = await get_peapix_data(country, count)
+
+    if not bing_response or bing_response["error"] is not None:
+        logger.error(f"Failed to generate Bing message")
+        return bing_response
     
+    bing_data = bing_response["data"]
     if bing_data and bing_data["image_url"] != "" and bing_data["title"] != "":
         logger.info("Saving Bing message to database")
         try:
@@ -61,8 +66,9 @@ async def generate_bing_message(country: str = "ca", count: int = 1) -> dict:
                 )
         except Exception as e:
             logger.error(f"Failed to save Bing message: {e}")
+            bing_response["error"] = e
         logger.info(f"Bing message saved to the database")
     else:
         logger.error(f"Failed to generate Bing message")
     
-    return bing_data
+    return bing_response

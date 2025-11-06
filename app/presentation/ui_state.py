@@ -170,11 +170,10 @@ class UIState:
         if now.hour < JOURNAL_MESSAGE_HOUR:
             now -= timedelta(days=1)
         self.date = now.strftime("%d %b %Y").lower()
-        print('here')
         try:
             async with AsyncSessionLocal() as session:
                 repo_factory = RepositoryFactory(session)
-                
+                print("here")
                 # Load all data types
                 await self._load_commits(repo_factory)
                 await self._load_bing_data(repo_factory)

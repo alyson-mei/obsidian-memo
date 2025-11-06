@@ -133,8 +133,8 @@ class Settings(BaseSettings):
         return BASE_DIR / "app"
     
     @property
-    def resources_dir(self) -> Path:
-        return self.app_dir / "resources"
+    def assets_dir(self) -> Path:
+        return self.app_dir / "assets"
     
     @property
     def ui_dir(self) -> Path:
@@ -146,7 +146,7 @@ class Settings(BaseSettings):
     
     @property
     def templates_dir(self) -> Path:
-        return self.resources_dir / "templates"
+        return self.assets_dir / "templates"
     
     @property
     def readme_path(self) -> Path:

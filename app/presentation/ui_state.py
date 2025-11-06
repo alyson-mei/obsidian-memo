@@ -170,7 +170,7 @@ class UIState:
         if now.hour < JOURNAL_MESSAGE_HOUR:
             now -= timedelta(days=1)
         self.date = now.strftime("%d %b %Y").lower()
-
+        print('here')
         try:
             async with AsyncSessionLocal() as session:
                 repo_factory = RepositoryFactory(session)

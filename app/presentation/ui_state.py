@@ -29,7 +29,7 @@ from typing import Dict, List
 
 from app.data.repository import RepositoryFactory
 from app.data.models import Commit, Journal, Weather, Time, Bing, Geo
-from app.data.database import AsyncSessionLocal
+from app.data import database 
 from app.config import UI_DIR, TEMPLATES_DIR, NUM_NEW_COMMIT_MSG, JOURNAL_MESSAGE_HOUR
 from app.config import setup_logger
 
@@ -171,7 +171,7 @@ class UIState:
             now -= timedelta(days=1)
         self.date = now.strftime("%d %b %Y").lower()
         #try:
-        async with AsyncSessionLocal() as session:
+        async with database.AsyncSessionLocal() as session:
             print(session)
             repo_factory = RepositoryFactory(session)
             # Load all data types
